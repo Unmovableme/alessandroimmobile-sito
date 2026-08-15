@@ -90,6 +90,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Footer (componente condiviso, aggiornato ovunque): "Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e founder come advisor, business angel e investor, dalla costituzione alla raccolta di capitali fino alla governance."
 - Notifica Netlify (form "prenota-call" → alessandro.immobile@gmail.com): passo MANUALE da impostare nel pannello Netlify al deploy (Forms > Settings > Form notifications > Email notification).
 
+## Aggiornamenti testo /processi (15/08/2026)
+- Aggiunto un secondo paragrafo di apertura (dopo il primo, prima del blocco Aziende) sul "processo fatto bene" che sposta il valore nel metodo.
+- Riscritto il blocco Startup (Descriptor invariato + due paragrafi nuovi, dalla crescita governata a "piani di incentivazione in equity e vesting"). Resto della pagina invariato.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

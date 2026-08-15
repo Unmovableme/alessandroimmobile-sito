@@ -18,6 +18,13 @@ export default function Processi() {
           sapere come lavora davvero, non come dovrebbe lavorare secondo l'organigramma.
         </Lead>
 
+        <Body>
+          Un processo fatto bene toglie valore alla componente individuale e lo sposta nel metodo.
+          Il risultato smette di dipendere da chi lo esegue, perché la conoscenza è già scritta
+          dentro il processo stesso, verificabile e ripetibile, non custodita nella testa di una
+          persona sola.
+        </Body>
+
         <SectionTitle>Aziende</SectionTitle>
         <Descriptor>Processi cresciuti per sedimentazione, mai ridisegnati.</Descriptor>
         <Body>
@@ -59,17 +66,18 @@ export default function Processi() {
         <Body>
           Una startup che cresce ha quasi sempre già dei processi: nati in fretta, con l'orizzonte
           del problema che c'era da risolvere in quel momento. Il lavoro è estenderli, dare loro
-          respiro, insieme a chi li ha pensati e a chi dovrà seguirli ogni giorno. Serve per
-          governare la crescita, anticipare le criticità prima che diventino urgenti, mostrare a chi
-          valuta se investire che le operations sono sotto controllo.
+          respiro, insieme a chi li ha pensati e a chi dovrà seguirli ogni giorno. Un processo
+          esteso bene sposta la conoscenza dalla testa del founder al metodo: il risultato smette
+          di dipendere da chi lo esegue. Serve per governare la crescita, anticipare le criticità
+          prima che diventino urgenti, e mostrare a chi valuta se investire che le operations sono
+          sistemiche, non affidate all'estro di una persona sola.
         </Body>
         <Body>
-          Processi di validazione del modello, prima di scalare quello che ancora non funziona.
-          Processi di governance dei soci, attraverso uno statuto pensato per i round futuri.
-          Processi di raccolta, con modalità che responsabilizzano gli investitori che aderiscono.
-          Processi di pianificazione dei round successivi, con la diluizione governata nel tempo.
-          Processi di attrazione e mantenimento dei talenti, con piani di incentivazione in equity e
-          vesting.
+          Validare il modello, prima di scalare quello che ancora non funziona. Governare i soci,
+          attraverso uno statuto pensato per i round futuri. Raccogliere capitale, con modalità che
+          responsabilizzano gli investitori che aderiscono. Pianificare i round successivi, con la
+          diluizione governata nel tempo. Attrarre e trattenere i talenti, con piani di
+          incentivazione in equity e vesting.
         </Body>
         <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder">
           Un founder, gli agenti come squadra
