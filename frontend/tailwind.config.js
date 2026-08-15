@@ -14,8 +14,8 @@ module.exports = {
       },
       colors: {
         navy: {
-          DEFAULT: '#0A192F',
-          soft: 'rgba(10,25,47,0.28)'
+          DEFAULT: '#1B2A4A',
+          soft: 'rgba(27,42,74,0.30)'
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

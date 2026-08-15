@@ -8,9 +8,8 @@ export const FadeIn = ({ children, delay = 0, className = "", as = "div", ...pro
   return (
     <MotionTag
       initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.55, delay, ease: EASE }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay, ease: EASE }}
       className={className}
       {...props}
     >

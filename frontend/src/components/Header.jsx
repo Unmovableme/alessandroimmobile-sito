@@ -29,7 +29,7 @@ export const Header = () => {
           to="/"
           data-testid="brand-link"
           onClick={() => setOpen(false)}
-          className="text-[15px] font-semibold tracking-tight text-gray-900"
+          className="text-[15px] font-semibold tracking-tight text-navy"
         >
           Alessandro Immobile
         </Link>
