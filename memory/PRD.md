@@ -51,6 +51,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
   - Netlify Forms: form statico nascosto in public/index.html (name="prenota-call", data-netlify) per il rilevamento; submit via fetch POST "/" x-www-form-urlencoded; honeypot bot-field; success message in-page.
   - DA FARE PRIMA DEL DEPLOY: sostituire IBAN placeholder (IBAN in PrenotaCall.jsx) con quello reale. Le notifiche email arrivano solo su deploy Netlify.
 
+## Ripristino veste + note prenotazione (15/08/2026 · agg.)
+- Home e Contatti riportate alla versione PRECEDENTE alle prove foto: nessun ritratto. Il componente `Portrait` resta usato SOLO nel prototipo /template-a (foto non mischiate col progetto reale).
+- Email di conferma automatica al cliente: NON implementata (scelta utente). Resta la conferma manuale via email (già indicata nel testo del blocco). Nome mittente confermato dall'utente: "Alessandro Immobile" (per eventuale futura attivazione).
+- Netlify Forms "prenota-call": la notifica al titolare va impostata nel pannello Netlify verso alessandro.immobile@gmail.com. IBAN placeholder da sostituire prima del go-live (fornito dall'utente).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
