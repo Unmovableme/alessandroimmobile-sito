@@ -43,6 +43,14 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Componente `Portrait` in Editorial.jsx con varianti: `bw` (bianco e nero, usata su Home/Contatti) e `navy` (duotone navy, usata sul prototipo /template-a per confronto colore).
 - Immagine: /app/frontend/public/portrait-hero.png.
 
+## Footer + Prenota una call (15/08/2026)
+- Footer (componente condiviso, aggiornato ovunque): "Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco le startup come advisor e business angel: costituzione, raccolta di capitali e governance."
+- Nuovo blocco "Prenota una call" in /contatti (sotto "Scrivimi", invariato). Componente `src/components/PrenotaCall.jsx`.
+  - Campi: azienda, ruolo, tema, problema (textarea max 500 con contatore), risultato, urgenza (select), categoria (select), email. Poi 3 card formato (radio): 10 min gratuita / 30 min 300€ / Sprint 900€.
+  - Logica condizionale: opzioni a pagamento mostrano box IBAN + causale ("{azienda} — {formato}"); l'opzione gratuita no.
+  - Netlify Forms: form statico nascosto in public/index.html (name="prenota-call", data-netlify) per il rilevamento; submit via fetch POST "/" x-www-form-urlencoded; honeypot bot-field; success message in-page.
+  - DA FARE PRIMA DEL DEPLOY: sostituire IBAN placeholder (IBAN in PrenotaCall.jsx) con quello reale. Le notifiche email arrivano solo su deploy Netlify.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

@@ -33,6 +33,21 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
+
+        <!-- Form statico nascosto: necessario a Netlify per rilevare i campi in fase di build -->
+        <form name="prenota-call" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="prenota-call" />
+            <input type="text" name="bot-field" />
+            <input type="text" name="azienda" />
+            <input type="text" name="ruolo" />
+            <input type="text" name="tema" />
+            <textarea name="problema"></textarea>
+            <textarea name="risultato"></textarea>
+            <input type="text" name="urgenza" />
+            <input type="text" name="categoria" />
+            <input type="email" name="email" />
+            <input type="text" name="formato" />
+        </form>
         <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

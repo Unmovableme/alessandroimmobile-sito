@@ -1,6 +1,22 @@
 import { Seo } from "@/components/Seo";
 import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink, Portrait } from "@/components/Editorial";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
+import PrenotaCall from "@/components/PrenotaCall";
+
+const formats = [
+  {
+    title: "Intro & Focus Call — 10 minuti — gratuita",
+    desc: "Ci conosciamo, definiamo il tema, prepariamo la sessione successiva.",
+  },
+  {
+    title: "Executive Advisory — 30 minuti — 300 €",
+    desc: "Una domanda aziendale specifica. Un confronto senior. Una raccomandazione operativa.",
+  },
+  {
+    title: "Corporate Strategic Sprint — 3 sessioni da 60 minuti, in circa tre settimane — 900 €",
+    desc: "Dalla diagnosi al piano operativo: si comprende il problema, si valutano le alternative, si costruisce una soluzione e una roadmap a novanta giorni.",
+  },
+];
 
 export default function Contatti() {
   return (
@@ -49,6 +65,53 @@ export default function Contatti() {
 
           <Portrait variant="bw" testId="contatti-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
         </div>
+
+        {/* ---------- Prenota una call ---------- */}
+        <section data-testid="prenota-call-section" className="mt-24 md:mt-32 border-t border-gray-200 pt-16 md:pt-20">
+          <FadeIn>
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
+              Prenota una call
+            </h2>
+          </FadeIn>
+
+          <FadeIn delay={0.05}>
+            <p className="mt-8 text-lg leading-relaxed text-gray-700">
+              Il confronto può toccare anche organizzazione, innovazione e intelligenza
+              artificiale, oltre alle tre aree del sito.
+            </p>
+          </FadeIn>
+
+          <FadeIn delay={0.08}>
+            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+              Compila il modulo prima della call: azienda, ruolo, tema, una descrizione del
+              problema in poche righe, il risultato che vorresti ottenere, entro quando vuoi
+              decidere.
+            </p>
+          </FadeIn>
+
+          <div className="mt-12 space-y-8">
+            {formats.map((f, i) => (
+              <FadeIn key={f.title} delay={i * 0.05}>
+                <div data-testid={`prenota-formato-desc-${i}`}>
+                  <p className="font-serif text-lg font-semibold tracking-tight text-gray-900">
+                    {f.title}
+                  </p>
+                  <p className="mt-2 text-base leading-relaxed text-gray-600">{f.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn>
+            <p className="mt-12 text-base leading-relaxed text-gray-500">
+              Per i formati a pagamento, dopo la prenotazione compaiono IBAN e causale per il
+              bonifico, da effettuare prima della call. Ricevuta la prenotazione, confermo
+              l'appuntamento via email.
+            </p>
+          </FadeIn>
+
+          <PrenotaCall />
+        </section>
       </PageContainer>
     </>
   );
