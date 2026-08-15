@@ -86,7 +86,7 @@ export default function Home() {
             </FadeIn>
           </div>
 
-          <Portrait variant="navy" testId="home-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
+          <Portrait variant="bw" testId="home-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
         </div>
 
         <SectionTitle>Le tre aree</SectionTitle>

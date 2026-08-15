@@ -113,6 +113,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - "Le tre aree" (layout a colonne) e "In evidenza" (TintBand) invariati.
 - Ritratto: tinta navy come nel prototipo; commutabile in bianco e nero (Portrait variant="bw") se richiesto.
 
+## Ritratto B&N Home + hero su Contatti/Percorso (15/08/2026)
+- Home: ritratto passato a variant="bw" (bianco e nero).
+- Contatti: intestazione (titolo, hint referenze, lead, email, LinkedIn) in colonna sinistra + ritratto B&N a destra; blocco Prenota/Evidenza invariati.
+- Percorso: intestazione (titolo + lead) a due colonne con ritratto B&N a destra; timeline e Pubblicazioni invariate.
+- Continuità hero con ritratto ora su Home, Contatti, Percorso.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
