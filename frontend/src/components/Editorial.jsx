@@ -28,7 +28,7 @@ export const PageTitle = ({ children, testId }) => (
   <FadeIn>
     <h1
       data-testid={testId}
-      className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900 leading-[1.05]"
+      className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-navy leading-[1.05]"
     >
       {children}
     </h1>
