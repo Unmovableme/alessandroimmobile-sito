@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 import PrenotaCall from "@/components/PrenotaCall";
+import { Evidenza } from "@/components/Evidenza";
 
 const summary = [
   { name: "Intro & Focus Call", meta: "10 minuti", price: "gratuita" },
@@ -141,6 +142,22 @@ export default function Contatti() {
               l'appuntamento via email.
             </p>
           </FadeIn>
+
+          <div className="mt-16 md:mt-20">
+            <FadeIn>
+              <div className="flex items-baseline justify-between gap-4">
+                <h3 className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-navy">
+                  Cosa dicono di me
+                </h3>
+                <ArrowLink to="/referenze" testId="contatti-evidenza-link" labelClassName="text-sm">
+                  Tutte le referenze
+                </ArrowLink>
+              </div>
+            </FadeIn>
+            <div className="mt-6">
+              <Evidenza variant="compact" testId="contatti-evidenza" />
+            </div>
+          </div>
 
           <PrenotaCall />
         </section>

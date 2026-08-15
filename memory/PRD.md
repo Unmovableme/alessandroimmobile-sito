@@ -76,6 +76,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Referenze: aggiunte/corrette le qualifiche di Fabrizio Gallante (Managing Partner Enzima12, CEO 12Venture), Matteo Fornaca (Founder e CEO, The Spiritual Machine), Barbara Rizzi (Commercialista); Federico Gasparini rinominato "Federico Chigbuh Gasparini" con ruolo COO @MarshYellow, Business Designer, Startup Mentor (aggiornato anche nella scheda In evidenza).
 - Home: aggiunta riga discreta "Cosa dicono di me →" verso /referenze, dopo la bio.
 
+## Evidenza condivisa in Contatti (15/08/2026)
+- Estratto il blocco "In evidenza" in componente condiviso `src/components/Evidenza.jsx` (array `featured` + componente `Evidenza` con variant "full"/"compact").
+- Referenze usa `Evidenza variant="full"`; Contatti mostra `Evidenza variant="compact"` (miniatura) vicino al form di prenotazione, con titolo "Cosa dicono di me" e link "Tutte le referenze" → /referenze.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
