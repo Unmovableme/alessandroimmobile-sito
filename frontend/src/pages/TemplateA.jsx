@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { Body, SectionTitle, FadeIn, ArrowLink } from "@/components/Editorial";
@@ -261,6 +262,76 @@ export function TemplateCHome() {
 
         {/* Bio */}
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <Body>
+            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+          </Body>
+          <Body>
+            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+            per i round di finanziamento.
+          </Body>
+          <Body>
+            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+          </Body>
+        </div>
+
+        <HomeSections />
+      </main>
+    </>
+  );
+}
+
+
+/* ---------- HOME — opzione 4: ritratto a comparsa allo scroll (reveal/parallax) ---------- */
+export function TemplateDHome() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
+
+  return (
+    <>
+      <Seo title="Template A — Reveal (opz. 4)" description="Anteprima Home con ritratto a comparsa e parallasse allo scroll." />
+      <main data-testid="template-d-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
+        <DemoBanner />
+
+        {/* Intestazione tipografica */}
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-16">
+          <FadeIn>
+            <p className="mb-4 text-xs uppercase tracking-[0.22em] text-navy/70 font-medium">
+              Assetti societari · Processi · Finanza
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.04}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+              Alessandro Immobile
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.08}>
+            <p className="mt-6 max-w-2xl font-serif text-2xl md:text-[1.7rem] italic leading-snug text-gray-800">
+              Struttura societaria, processi e finanza, per aziende e startup.
+            </p>
+          </FadeIn>
+        </div>
+
+        {/* Ritratto a comparsa con parallasse */}
+        <div
+          ref={ref}
+          data-testid="template-d-reveal"
+          className="mt-14 md:mt-20 w-full h-[58vh] md:h-[80vh] overflow-hidden bg-[#EDF0F5] relative"
+        >
+          <motion.img
+            style={{ y, opacity }}
+            src="/portrait-hero.png"
+            alt="Ritratto di Alessandro Immobile"
+            loading="eager"
+            className="absolute inset-x-0 -top-[8%] h-[116%] w-full object-cover object-[center_22%] grayscale contrast-[1.03]"
+          />
+        </div>
+
+        {/* Bio */}
+        <div className="mx-auto max-w-3xl px-6 mt-14 md:mt-16">
           <Body>
             Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
             gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.

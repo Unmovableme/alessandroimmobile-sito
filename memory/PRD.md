@@ -132,6 +132,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova rotta /template-a-immersivo (TemplateCHome): hero full-bleed con foto di sfondo (object-cover), overlay navy in gradiente (from #0d1526 via #1B2A4A/70 to #1B2A4A/25), eyebrow/H1/lead in bianco in basso a sinistra; poi bio + HomeSections.
 - Confronto completo: /template-a (opz.5), /template-a-banda (opz.2), /template-a-immersivo (opz.3). In attesa scelta utente per migrazione su Home reale.
 
+## Variante prototipo D — reveal/parallax (opz.4) — 15/08/2026
+- Nuova rotta /template-a-reveal (TemplateDHome): hero tipografico + ritratto full-width che compare con dissolvenza e parallasse allo scroll (framer-motion useScroll/useTransform, y ±8%, opacity 0→1). Poi bio + HomeSections.
+- Import aggiunti in TemplateA.jsx: useRef, motion/useScroll/useTransform.
+- Confronto completo 4 opzioni: /template-a (5), /template-a-banda (2), /template-a-immersivo (3), /template-a-reveal (4). In attesa scelta utente.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
