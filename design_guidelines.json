@@ -1,0 +1,62 @@
+{
+  "theme": "Light theme strictly. Pure white backgrounds for absolute clarity and sober authority.",
+  "typography": {
+    "font_family": "System font stack. Tailwind's default `font-sans` (-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif). Do not import external fonts like Inter or Google Fonts.",
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl font-semibold tracking-tight text-gray-900 leading-tight. Generous whitespace above and below.",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 mt-20 mb-8",
+      "h3": "text-xl md:text-2xl font-medium tracking-normal text-gray-900 mt-12 mb-4",
+      "body": "text-lg md:text-xl leading-relaxed text-gray-700 max-w-3xl",
+      "small": "text-sm text-gray-500"
+    },
+    "alignment": "Strictly left-aligned for all editorial content to maintain reading flow and authoritative tone. Avoid center alignment except for minimal navigational elements."
+  },
+  "colors": {
+    "background": "#FFFFFF",
+    "surface_subtle": "#F5F5F7 (Apple light grey, use extremely sparingly if a section must be divided, but pure white is preferred)",
+    "primary_text": "#111827",
+    "secondary_text": "#4B5563",
+    "accent": "#0A192F (Deep Navy / Blu navy profondo - Use strictly for active links, hover states on text, or extremely subtle underlines. No large solid navy blocks.)",
+    "border": "#E5E7EB"
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "editorial_container": "max-w-3xl mx-auto (essential for optimal reading line length)",
+    "spacing_scale": "Extremely generous. Use `py-24` or `py-32` for page sections. Large margins between text blocks.",
+    "grid": "Rigorous and precise. Maintain vertical rhythm. No overlapping elements or chaotic 'bento' layouts."
+  },
+  "components": {
+    "header": "Solid white background (`bg-white`), z-50. No glassmorphism, no transparent overlays. Simple flex layout: 'Alessandro Immobile' on left (bold, clean), text links on right. Mobile: pure text-based menu list.",
+    "footer": "Fixed at the bottom or standard bottom footer, identical on every page. Very minimal: 1-2 lines of credentials (aziendalista e dottore commercialista, etc.) in `text-sm text-gray-500`. Minimal top border (`border-t border-gray-200`).",
+    "navigation_links": "text-base font-medium text-gray-600 hover:text-[#0A192F] transition-colors. Active state: text-[#0A192F] (Deep Navy).",
+    "buttons_or_ctas": "No flashy buttons. Interactions should be elegant text links, perhaps with a 1px bottom border or just changing to the Deep Navy accent color.",
+    "cards": "FORBIDDEN. Do not use UI cards. Present content as raw, well-spaced editorial text and lists.",
+    "forms": "FORBIDDEN. The 'Contatti' page only uses a simple mailto: link and a LinkedIn link."
+  },
+  "motion": {
+    "general": "Minimal, discreet, never flashy. No parallax, no scale transforms, no bouncy spring physics.",
+    "page_load": "Very subtle fade-in: opacity 0 -> 1 over 0.5s. Maybe a tiny y-axis shift (5px -> 0).",
+    "interactions": "Hover states are purely color-based transitions. No lifting or shadowing."
+  },
+  "site_structure": {
+    "menu_pages": ["Home", "Assetti societari", "Processi", "Finanza", "Percorso", "Contatti"],
+    "deep_pages": ["/quando-il-problema-arriva", "/metriche-e-statuto", "/ai-senza-governance", "/prima-che-manchi-la-liquidita"],
+    "implementation_note": "Ensure React Router or similar handles these paths. The deep pages must only be accessible via inline text links within the main pages."
+  },
+  "strict_constraints": {
+    "forbidden_elements": [
+      "No SaaS landing page visual patterns (no 'as seen on', no feature grids with icons)",
+      "No decorative icons (do not use lucide-react except possibly for a mobile hamburger menu)",
+      "No stock imagery (no people, no offices, no abstract art)",
+      "No heavy box-shadows or neumorphism",
+      "No colorful gradients",
+      "No complex forms",
+      "No cookie banner, newsletter, popup, or blog sections",
+      "No client logos"
+    ],
+    "seo": "Implement basic per-page SEO (Title + Meta description) via React Helmet or standard document manipulation.",
+    "data_testid": "All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"nav-home-link\"`)."
+  },
+  "images": "NO IMAGES REQUIRED. The aesthetic relies 100% on typography and spacing.",
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": "Build an ultra-minimalist, typography-driven, editorial multi-page site for a senior professional. The tone is '30 years of professional experience consulting for founders'. Rely entirely on text size, weight, and white space for visual hierarchy. Do NOT use Shadcn components like Cards, Dialogs, or standard SaaS widgets. Use pure semantic HTML (article, section, h1, h2, p) and raw Tailwind CSS. Make it mobile-first and strictly responsive. Do NOT center-align large blocks of text. Ensure all layouts follow a strict, invisible reading grid."
+}
