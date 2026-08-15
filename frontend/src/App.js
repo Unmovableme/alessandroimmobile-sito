@@ -7,6 +7,7 @@ import Processi from "@/pages/Processi";
 import Finanza from "@/pages/Finanza";
 import Percorso from "@/pages/Percorso";
 import Contatti from "@/pages/Contatti";
+import Grazie from "@/pages/Grazie";
 import QuandoIlProblemaArriva from "@/pages/QuandoIlProblemaArriva";
 import MetricheEStatuto from "@/pages/MetricheEStatuto";
 import AiSenzaGovernance from "@/pages/AiSenzaGovernance";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/finanza" element={<Finanza />} />
           <Route path="/percorso" element={<Percorso />} />
           <Route path="/contatti" element={<Contatti />} />
+          <Route path="/grazie" element={<Grazie />} />
           <Route path="/quando-il-problema-arriva" element={<QuandoIlProblemaArriva />} />
           <Route path="/metriche-e-statuto" element={<MetricheEStatuto />} />
           <Route path="/ai-senza-governance" element={<AiSenzaGovernance />} />

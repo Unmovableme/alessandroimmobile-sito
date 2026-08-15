@@ -56,6 +56,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Email di conferma automatica al cliente: NON implementata (scelta utente). Resta la conferma manuale via email (già indicata nel testo del blocco). Nome mittente confermato dall'utente: "Alessandro Immobile" (per eventuale futura attivazione).
 - Netlify Forms "prenota-call": la notifica al titolare va impostata nel pannello Netlify verso alessandro.immobile@gmail.com. IBAN placeholder da sostituire prima del go-live (fornito dall'utente).
 
+## Riepilogo formati + pagina Grazie (15/08/2026)
+- Aggiunta riga di riepilogo in cima al blocco "Prenota una call" (/contatti): 3 formati con prezzi in evidenza (gratuita / 300 € / 900 €), griglia a 3 colonne.
+- Nuova pagina /grazie (`src/pages/Grazie.jsx`, rotta in App.js): ringraziamento post-prenotazione, con box promemoria bonifico visibile solo per i formati a pagamento (via location.state { paid, formato }).
+- PrenotaCall: al submit riuscito naviga a /grazie (useNavigate) invece del messaggio inline. In preview il POST a "/" non è gestito (mostra errore di fallback); il flusso completo funziona su Netlify.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

@@ -3,6 +3,12 @@ import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 import PrenotaCall from "@/components/PrenotaCall";
 
+const summary = [
+  { name: "Intro & Focus Call", meta: "10 minuti", price: "gratuita" },
+  { name: "Executive Advisory", meta: "30 minuti", price: "300 €" },
+  { name: "Corporate Strategic Sprint", meta: "3 × 60 minuti", price: "900 €" },
+];
+
 const formats = [
   {
     title: "Intro & Focus Call — 10 minuti — gratuita",
@@ -66,6 +72,23 @@ export default function Contatti() {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
               Prenota una call
             </h2>
+          </FadeIn>
+
+          <FadeIn delay={0.03}>
+            <div
+              data-testid="prenota-riepilogo"
+              className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-lg border border-gray-200 bg-gray-200"
+            >
+              {summary.map((s) => (
+                <div key={s.name} className="bg-white px-5 py-5">
+                  <p className="font-serif text-base font-semibold tracking-tight text-gray-900 leading-snug">
+                    {s.name}
+                  </p>
+                  <p className="mt-1 text-sm text-gray-500">{s.meta}</p>
+                  <p className="mt-2 text-lg font-semibold text-navy">{s.price}</p>
+                </div>
+              ))}
+            </div>
           </FadeIn>
 
           <FadeIn delay={0.05}>

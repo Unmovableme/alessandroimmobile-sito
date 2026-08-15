@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FadeIn } from "@/components/Editorial";
 
 // IBAN da sostituire con quello reale prima della messa online
@@ -65,7 +66,8 @@ export default function PrenotaCall() {
   });
   const [formato, setFormato] = useState("");
   const [botField, setBotField] = useState("");
-  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
+  const [status, setStatus] = useState("idle"); // idle | submitting | error
+  const navigate = useNavigate();
 
   const selected = FORMATS.find((f) => f.id === formato);
 
@@ -91,32 +93,13 @@ export default function PrenotaCall() {
         body: encode(payload),
       });
       if (!res.ok) throw new Error("Network response was not ok");
-      setStatus("success");
+      navigate("/grazie", {
+        state: { paid: Boolean(selected?.paid), formato: selected ? selected.title : "" },
+      });
     } catch (err) {
       setStatus("error");
     }
   };
-
-  if (status === "success") {
-    return (
-      <FadeIn>
-        <div
-          data-testid="prenota-success"
-          className="mt-8 rounded-lg border border-[#E5EAF3] bg-[#F4F6FA] p-8"
-        >
-          <h3 className="font-serif text-2xl font-semibold tracking-tight text-navy">
-            Prenotazione ricevuta
-          </h3>
-          <p className="mt-4 text-base leading-relaxed text-gray-700">
-            Grazie. Confermo l'appuntamento via email al più presto.
-            {selected?.paid
-              ? " Ricorda di effettuare il bonifico prima della call, come indicato."
-              : ""}
-          </p>
-        </div>
-      </FadeIn>
-    );
-  }
 
   return (
     <FadeIn>
