@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { Body, SectionTitle, FadeIn, ArrowLink, Portrait } from "@/components/Editorial";
+import { Body, SectionTitle, FadeIn, ArrowLink } from "@/components/Editorial";
 
 /* ---------- Banner di anteprima (solo per il prototipo) ---------- */
 const DemoBanner = () => (
@@ -45,17 +45,20 @@ export function TemplateAHome() {
       <main data-testid="template-a-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
         <DemoBanner />
 
-        {/* ---------- Hero a due colonne con ritratto ---------- */}
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-24">
-          <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
-            <div className="order-2 sm:order-1">
+        {/* ---------- Hero full-bleed asimmetrico (opzione 5) ---------- */}
+        <section
+          data-testid="template-a-hero"
+          className="mt-10 md:mt-14 grid lg:grid-cols-2 lg:min-h-[78vh]"
+        >
+          <div className="order-2 lg:order-1 flex items-center">
+            <div className="w-full max-w-xl mx-auto px-6 lg:pr-14 py-12 lg:py-0">
               <FadeIn>
-                <p className="text-xs uppercase tracking-[0.22em] text-navy/70 font-medium">
+                <p className="mb-4 text-xs uppercase tracking-[0.22em] text-navy/70 font-medium">
                   Assetti societari · Processi · Finanza
                 </p>
               </FadeIn>
               <FadeIn delay={0.04}>
-                <h1 className="mt-4 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
                   Alessandro Immobile
                 </h1>
               </FadeIn>
@@ -78,12 +81,17 @@ export function TemplateAHome() {
                 Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
               </Body>
             </div>
-
-            <FadeIn delay={0.08} className="order-1 sm:order-2 sm:pt-3">
-              <Portrait variant="navy" testId="template-a-hero-portrait" className="max-w-[15rem]" />
-            </FadeIn>
           </div>
-        </div>
+
+          <div className="order-1 lg:order-2 relative min-h-[54vh] lg:min-h-full bg-[#EDF0F5] overflow-hidden">
+            <img
+              src="/portrait-hero.png"
+              alt="Ritratto di Alessandro Immobile"
+              loading="eager"
+              className="absolute inset-0 h-full w-full object-cover object-top grayscale contrast-[1.03]"
+            />
+          </div>
+        </section>
 
         <div className="mx-auto max-w-3xl px-6">
           <SectionTitle>Le tre aree</SectionTitle>

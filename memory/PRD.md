@@ -119,6 +119,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Percorso: intestazione (titolo + lead) a due colonne con ritratto B&N a destra; timeline e Pubblicazioni invariate.
 - Continuità hero con ritratto ora su Home, Contatti, Percorso.
 
+## Prototipo hero full-bleed (opzione 5) — 15/08/2026
+- /template-a: hero ridisegnato "full-bleed asimmetrico": ritratto B&N che occupa la metà destra e tocca il bordo schermo (object-cover object-top), testo su colonna stretta a sinistra (eyebrow, H1, lead corsivo, hairline, bio). Su mobile: immagine a tutta larghezza sopra, testo sotto.
+- Portrait component non più usato nel prototipo (img raw full-bleed). In attesa approvazione per migrare su Home reale.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
