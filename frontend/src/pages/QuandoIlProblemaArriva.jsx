@@ -1,46 +1,13 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle } from "@/components/Editorial";
+import { Body } from "@/components/Editorial";
+import { CriterioPage } from "@/components/Criterio";
 
-export default function QuandoIlProblemaArriva() {
-  return (
-    <>
-      <Seo
-        title="Quando il problema arriva, le opzioni sono già finite — Alessandro Immobile"
-        description="Cinque situazioni diverse, la stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva. Dove sta il lavoro, e quando conviene farlo."
-      />
-      <PageContainer testId="quando-page">
-        <PageTitle testId="quando-title">
-          Quando il problema arriva, le opzioni sono già finite
-        </PageTitle>
-
-        <Lead>Alcune delle situazioni da cui nasce un incarico.</Lead>
-
-        <Body>
-          La banca ha sospeso l'istruttoria di un finanziamento: la delibera richiede bilanci
-          depositati, e la società è una società di persone.
-        </Body>
-        <Body>
-          Un cliente di dimensioni maggiori subordina la firma di un contratto quadro alla forma di
-          società di capitali.
-        </Body>
-        <Body>
-          Un figlio entra in azienda, l'altro ha preso un'altra strada, e la ripartizione delle
-          quote non corrisponde più a chi l'impresa la manda avanti.
-        </Body>
-        <Body>Un socio vuole uscire.</Body>
-        <Body>Un imprenditore valuta la cessione dell'azienda, o di un ramo.</Body>
-        <Body>
-          Sono cinque situazioni diverse e hanno la stessa forma. In tutte e cinque c'è un'impresa
-          che si è mossa e una struttura societaria che è rimasta ferma. La forma giuridica è stata
-          scelta quando l'azienda era un'altra cosa, spesso vent'anni prima, e da allora nessuno
-          l'ha più guardata perché funzionava.
-        </Body>
-        <Body>
-          Funzionava finché non è arrivata la banca, il cliente grande, il figlio, il socio che
-          esce, il compratore.
-        </Body>
-
-        <SectionTitle>Quello che si scopre</SectionTitle>
+const sections = [
+  {
+    id: "quello-che-si-scopre",
+    title: "Quello che si scopre",
+    content: (
+      <>
         <Body>Chi arriva pensa di avere un problema. Sta scoprendo di non avere più opzioni.</Body>
         <Body>
           Trasformare una società di persone, separare un ramo, costituire una holding,
@@ -58,8 +25,14 @@ export default function QuandoIlProblemaArriva() {
           Nel mezzo si perde l'operazione, oppure la si fa in condizioni peggiori di quelle che
           sarebbero state possibili con sei mesi di anticipo.
         </Body>
-
-        <SectionTitle>Cosa costa il ritardo</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "cosa-costa-il-ritardo",
+    title: "Cosa costa il ritardo",
+    content: (
+      <>
         <Body>
           Un'operazione condotta in urgenza costa più di una condotta con margine: si comprime il
           lavoro, si pagano professionisti in emergenza, si accettano condizioni che con tempo
@@ -71,8 +44,14 @@ export default function QuandoIlProblemaArriva() {
           non annulla. Una compagine costruita su accordi fra persone che nel frattempo hanno
           cambiato idea non si riscrive senza il consenso di chi trae vantaggio dal negarlo.
         </Body>
-
-        <SectionTitle>Dove sta il lavoro</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "dove-sta-il-lavoro",
+    title: "Dove sta il lavoro",
+    content: (
+      <>
         <Body>Il lavoro che conta si fa quando l'operazione non è ancora necessaria.</Body>
         <Body>
           Pianificazione societaria: la forma giuridica, la separazione fra ciò che opera e ciò che
@@ -87,8 +66,14 @@ export default function QuandoIlProblemaArriva() {
         <Body>
           In quella fase si sceglie fra alternative. Dopo, si rimedia nel tempo disponibile.
         </Body>
-
-        <SectionTitle>Con chi lavoro</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "con-chi-lavoro",
+    title: "Con chi lavoro",
+    content: (
+      <>
         <Body>
           Imprese italiane, in tutta Italia. Società di persone e ditte individuali cresciute oltre
           la forma in cui sono nate, PMI e imprese familiari indicativamente fra i cinque e i
@@ -100,8 +85,14 @@ export default function QuandoIlProblemaArriva() {
           cliente: in quel caso intervengo sulla singola operazione, e il rapporto con il cliente
           resta loro.
         </Body>
-
-        <SectionTitle>Cinque domande</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "cinque-domande",
+    title: "Cinque domande",
+    content: (
+      <>
         <Body>
           Se un cliente più strutturato chiedesse domani di contrattare con una società di capitali,
           in quanto tempo sarebbe possibile?
@@ -122,8 +113,14 @@ export default function QuandoIlProblemaArriva() {
           Chi resta senza risposta su due di queste ha un problema che non è ancora arrivato. È il
           momento in cui costa meno affrontarlo.
         </Body>
-
-        <SectionTitle>Come lavoro</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "come-lavoro",
+    title: "Come lavoro",
+    content: (
+      <>
         <Body>
           In un'operazione societaria intervengono figure diverse, ciascuna competente sul proprio
           pezzo: il notaio sull'atto, l'avvocato sui contratti e sulle garanzie, il fiscalista sugli
@@ -146,8 +143,14 @@ export default function QuandoIlProblemaArriva() {
           boutique M&A che fanno quel mestiere e lo fanno bene. Il mio lavoro comincia prima, quando
           la struttura da cui l'operazione dovrà passare non è ancora pronta a reggerla.
         </Body>
-
-        <SectionTitle>Alcuni esempi</SectionTitle>
+      </>
+    ),
+  },
+  {
+    id: "alcuni-esempi",
+    title: "Alcuni esempi",
+    content: (
+      <>
         <Body>
           Riorganizzazione di un gruppo chimico industriale con presenza internazionale: quattro
           conferimenti in due anni, all'interno di un piano di risanamento attestato, con
@@ -172,14 +175,63 @@ export default function QuandoIlProblemaArriva() {
           operative. Oggi affianco imprese e soci sulle stesse materie, dall'interno delle
           operazioni.
         </Body>
+      </>
+    ),
+  },
+  {
+    id: "se-vuoi-parlarne",
+    title: "Se vuoi parlarne",
+    content: (
+      <Body>
+        Se una delle cinque domande è rimasta senza risposta, o se c'è già una scadenza, scrivimi.
+        La prima conversazione serve a capire quali strade sono ancora aperte e quanto tempo resta.
+      </Body>
+    ),
+  },
+];
 
-        <SectionTitle>Se vuoi parlarne</SectionTitle>
-        <Body>
-          Se una delle cinque domande è rimasta senza risposta, o se c'è già una scadenza, scrivimi.
-          La prima conversazione serve a capire quali strade sono ancora aperte e quanto tempo
-          resta.
-        </Body>
-      </PageContainer>
+export default function QuandoIlProblemaArriva() {
+  return (
+    <>
+      <Seo
+        title="Quando il problema arriva, le opzioni sono già finite — Alessandro Immobile"
+        description="Cinque situazioni diverse, la stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva. Dove sta il lavoro, e quando conviene farlo."
+      />
+      <CriterioPage
+        testId="quando-page"
+        titleTestId="quando-title"
+        title="Quando il problema arriva, le opzioni sono già finite"
+        lead="Alcune delle situazioni da cui nasce un incarico."
+        intro={
+          <>
+            <Body>
+              La banca ha sospeso l'istruttoria di un finanziamento: la delibera richiede bilanci
+              depositati, e la società è una società di persone.
+            </Body>
+            <Body>
+              Un cliente di dimensioni maggiori subordina la firma di un contratto quadro alla forma
+              di società di capitali.
+            </Body>
+            <Body>
+              Un figlio entra in azienda, l'altro ha preso un'altra strada, e la ripartizione delle
+              quote non corrisponde più a chi l'impresa la manda avanti.
+            </Body>
+            <Body>Un socio vuole uscire.</Body>
+            <Body>Un imprenditore valuta la cessione dell'azienda, o di un ramo.</Body>
+            <Body>
+              Sono cinque situazioni diverse e hanno la stessa forma. In tutte e cinque c'è
+              un'impresa che si è mossa e una struttura societaria che è rimasta ferma. La forma
+              giuridica è stata scelta quando l'azienda era un'altra cosa, spesso vent'anni prima, e
+              da allora nessuno l'ha più guardata perché funzionava.
+            </Body>
+            <Body>
+              Funzionava finché non è arrivata la banca, il cliente grande, il figlio, il socio che
+              esce, il compratore.
+            </Body>
+          </>
+        }
+        sections={sections}
+      />
     </>
   );
 }

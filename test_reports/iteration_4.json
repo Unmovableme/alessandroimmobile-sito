@@ -1,0 +1,18 @@
+{
+  "summary": "Frontend-only testing of the 4 criterio pages after refactor to data-driven sections with numbered chapters, sticky side TOC (scroll-spy) and alternating navy tint bands. Verified numbering, TOC visibility/responsiveness/click-scroll/active-state colors, tint colors, horizontal-overflow at 1920/1280/390, no stuck-invisible content, content integrity (git prose diff), deep-link regressions, footer and document titles. All checks passed; no issues found.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/tests/content_integrity_check.py"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Criterio.jsx tint band uses `left-1/2 w-screen -translate-x-1/2`; it currently does not overflow because Layout root has overflow-x-hidden. Keep that root class - removing it would reintroduce horizontal scroll when a vertical scrollbar consumes viewport width (100vw > clientWidth).",
+    "IntersectionObserver scroll-spy sets active on any intersecting entry (last-wins per batch); with rootMargin -45%/-50% only one section is in the band so it behaves correctly today, but with shorter sections the active item could flicker. Consider picking the topmost intersecting entry."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (no backend)", "frontend": "100%"},
+  "seed_data_creation": "none",
+  "should_call_test_agent_after_fix": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Verified details: numbers 01..NN sequential and matching section order on all 4 pages (quando 8, ai 8, liquidita 8, metriche 7 sections). Even-index sections (2,4,6,8) have bg rgb(244,246,250) full-bleed bands; odd are transparent/white. criterio-toc visible at 1440/1920/1280, hidden at 1024 and 390. Clicking toc-<id> smooth-scrolls section top to y=100. Active item aria-current=true and color rgb(30,58,107); inactive rgb(156,163,175). Scroll-spy verified for all 8 sections of /quando-il-problema-arriva. No element in <main> with opacity<0.9 after scrolling to bottom. documentElement.scrollWidth == clientWidth at 1920/1280/390 on all 4 pages. TOC vs content gap at 1280 = 40px (no overlap). Deep links assetti-deeplink-quando, processi-deeplink-ai, finanza-deeplink-liquidita, highlight-quando-link, highlight-metriche-link all navigate correctly; Home/Percorso/Contatti load with footer; per-page titles correct. content_integrity_check.py shows no prose words dropped (only code identifiers changed).",
+  "rca_of_the_issue": "N/A - no defects found"
+}
