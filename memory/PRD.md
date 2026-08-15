@@ -94,6 +94,19 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Aggiunto un secondo paragrafo di apertura (dopo il primo, prima del blocco Aziende) sul "processo fatto bene" che sposta il valore nel metodo.
 - Riscritto il blocco Startup (Descriptor invariato + due paragrafi nuovi, dalla crescita governata a "piani di incentivazione in equity e vesting"). Resto della pagina invariato.
 
+## CHECKPOINT prototipo (15/08/2026)
+- Backup "punto di partenza" del prototipo salvato in /app/memory/checkpoints/ (TemplateA.baseline.jsx, Editorial.baseline.jsx). Commit di riferimento: 12c18d8.
+- Comando utente per ripristinare SOLO il prototipo: "ripristina il prototipo" → copiare i file baseline su src/pages/TemplateA.jsx e src/components/Editorial.jsx.
+- Direzione approvata per l'evoluzione: Opzione A (editoriale con ritratto) + rifiniture di B (tipografia più decisa, indici numerati, pull-quote grafiche). Lavorare SOLO su /template-a.
+
+## Rifinitura prototipo /template-a (15/08/2026 · A + B)
+- Home prototipo evoluta in direzione A (editoriale con ritratto) + tocchi di B (tipografia più decisa):
+  - Hero: eyebrow "ASSETTI SOCIETARI · PROCESSI · FINANZA", H1 serif, lead in serif corsivo, hairline navy, ritratto tinta navy.
+  - Le tre aree: card numerate 01/02/03.
+  - Pull-quote editoriale (serif corsivo navy + barra navy) tra aree e "In evidenza".
+  - "In evidenza": articoli con indice numerato.
+- In attesa approvazione utente: se ok, migrare su Home reale; se no, comando "ripristina il prototipo" (baseline in /app/memory/checkpoints/).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

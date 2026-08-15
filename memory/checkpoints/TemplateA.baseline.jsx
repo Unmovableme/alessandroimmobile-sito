@@ -50,21 +50,10 @@ export function TemplateAHome() {
           <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
             <div className="order-2 sm:order-1">
               <FadeIn>
-                <p className="text-xs uppercase tracking-[0.22em] text-navy/70 font-medium">
-                  Assetti societari · Processi · Finanza
-                </p>
-              </FadeIn>
-              <FadeIn delay={0.04}>
-                <h1 className="mt-4 text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
                   Alessandro Immobile
                 </h1>
               </FadeIn>
-              <FadeIn delay={0.08}>
-                <p className="mt-6 font-serif text-2xl md:text-[1.7rem] italic leading-snug text-gray-800">
-                  Struttura societaria, processi e finanza, per aziende e startup.
-                </p>
-              </FadeIn>
-              <div className="mt-8 h-px w-16 bg-navy/25" />
               <Body>
                 Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
                 gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
@@ -107,22 +96,13 @@ export function TemplateAHome() {
             ))}
           </div>
 
-          <FadeIn>
-            <figure className="mt-24 md:mt-28 border-l-2 border-navy pl-6 md:pl-8">
-              <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
-                Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
-              </blockquote>
-            </figure>
-          </FadeIn>
-
           <div className="mt-24 md:mt-28 rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-8 md:p-12">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">In evidenza</h2>
             <div className="mt-10 space-y-12">
               {highlights.map((h, i) => (
                 <FadeIn key={h.id} delay={i * 0.05}>
                   <article data-testid={h.id}>
-                    <span className="font-serif text-3xl leading-none text-navy/25 tabular-nums">{`0${i + 1}`}</span>
-                    <h3 className="mt-3 font-serif text-2xl md:text-[1.75rem] font-medium tracking-tight text-gray-900 leading-snug">
+                    <h3 className="font-serif text-2xl md:text-[1.75rem] font-medium tracking-tight text-gray-900 leading-snug">
                       {h.title}
                     </h3>
                     <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
