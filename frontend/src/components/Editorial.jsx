@@ -139,7 +139,6 @@ export const PullQuote = ({ children, testId }) => (
   </FadeIn>
 );
 
-// Ritratto editoriale: variante "bw" (bianco e nero) o "navy" (duotone navy)
 export const Portrait = ({ variant = "bw", className = "", testId = "portrait" }) => (
   <figure data-testid={testId} className={`relative ${className}`}>
     <div className="relative overflow-hidden rounded-2xl bg-[#EDF0F5] shadow-[0_20px_50px_-28px_rgba(30,58,107,0.45)]">
@@ -157,16 +156,4 @@ export const Portrait = ({ variant = "bw", className = "", testId = "portrait" }
       )}
     </div>
   </figure>
-);
-
-// Firma discreta: nome in font manoscritto sotto il titolo
-export const Signature = ({ testId = "signature", className = "" }) => (
-  <FadeIn delay={0.04} className={`mt-6 ${className}`}>
-    <span
-      data-testid={testId}
-      className="font-signature text-navy text-4xl md:text-5xl leading-none select-none"
-    >
-      Alessandro Immobile
-    </span>
-  </FadeIn>
 );

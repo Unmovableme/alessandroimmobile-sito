@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { Body, SectionTitle, FadeIn, ArrowLink, Portrait, Signature } from "@/components/Editorial";
+import { Body, SectionTitle, FadeIn, ArrowLink, Portrait } from "@/components/Editorial";
 
 /* ---------- Banner di anteprima (solo per il prototipo) ---------- */
 const DemoBanner = () => (
@@ -54,7 +54,6 @@ export function TemplateAHome() {
                   Alessandro Immobile
                 </h1>
               </FadeIn>
-              <Signature testId="template-a-signature" />
               <Body>
                 Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
                 gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.

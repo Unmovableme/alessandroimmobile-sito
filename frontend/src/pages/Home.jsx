@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn, Portrait, Signature } from "@/components/Editorial";
+import { PageContainer, PageTitle, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn, Portrait } from "@/components/Editorial";
 
 const areas = [
   {
@@ -48,7 +48,6 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
           <div className="order-2 sm:order-1">
             <PageTitle testId="home-title">Alessandro Immobile</PageTitle>
-            <Signature testId="home-signature" />
 
             <Body>
               Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
