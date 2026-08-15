@@ -107,6 +107,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
   - "In evidenza": articoli con indice numerato.
 - In attesa approvazione utente: se ok, migrare su Home reale; se no, comando "ripristina il prototipo" (baseline in /app/memory/checkpoints/).
 
+## Migrazione impostazione prototipo su Home reale (15/08/2026)
+- Home reale (Home.jsx) aggiornata con l'impostazione del prototipo A+B: hero a due colonne con eyebrow tipografico, H1 serif, lead in serif corsivo, hairline navy e ritratto in tinta navy (Portrait variant="navy", 15rem). Bio completa e link Referenze preservati.
+- Aggiunta pull-quote editoriale (serif corsivo navy + barra navy) tra "Le tre aree" e "In evidenza".
+- "Le tre aree" (layout a colonne) e "In evidenza" (TintBand) invariati.
+- Ritratto: tinta navy come nel prototipo; commutabile in bianco e nero (Portrait variant="bw") se richiesto.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
