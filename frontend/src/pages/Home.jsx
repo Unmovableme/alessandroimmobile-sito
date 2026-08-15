@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
+import { PageContainer, PageTitle, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
 
 const areas = [
   {
@@ -47,10 +47,10 @@ export default function Home() {
       <PageContainer testId="home-page">
         <PageTitle testId="home-title">Alessandro Immobile</PageTitle>
 
-        <Lead>
+        <Body>
           Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
           gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
-        </Lead>
+        </Body>
 
         <Body>
           Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
