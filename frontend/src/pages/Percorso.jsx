@@ -70,8 +70,8 @@ export default function Percorso() {
               <div className="relative" data-testid={`timeline-stage-${i + 1}`}>
                 <span
                   aria-hidden
-                  className="absolute top-2 h-2.5 w-2.5 rounded-full bg-navy ring-4 ring-white"
-                  style={{ left: "calc(-2rem - 5px)" }}
+                  className="absolute top-2 h-3 w-3 rounded-full bg-navy ring-4 ring-white"
+                  style={{ left: "calc(-2rem - 6px)" }}
                 />
                 <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
                   {s.title}

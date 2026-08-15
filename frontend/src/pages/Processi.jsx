@@ -47,11 +47,9 @@ export default function Processi() {
         </Body>
         <Body>Riorganizzazione: ruoli e responsabilità ridisegnati insieme al processo.</Body>
         <PullQuote testId="processi-pullquote">
-          Il layer informativo si progetta a valle dei processi.
+          Il layer informativo si progetta a valle dei processi. Chi salta l'analisi ottiene un
+          archivio ordinato che non cambia come l'impresa lavora.
         </PullQuote>
-        <Body>
-          Chi salta l'analisi ottiene un archivio ordinato che non cambia come l'impresa lavora.
-        </Body>
         <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai">
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
