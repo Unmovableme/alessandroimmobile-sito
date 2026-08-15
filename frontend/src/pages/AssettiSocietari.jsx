@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote } from "@/components/Editorial";
 
 export default function AssettiSocietari() {
   return (
@@ -17,7 +17,7 @@ export default function AssettiSocietari() {
           può entrare e a quali condizioni.
         </Lead>
 
-        <Body>Va progettata prima che serva.</Body>
+        <PullQuote testId="assetti-pullquote">Va progettata prima che serva.</PullQuote>
 
         <SectionTitle>Aziende</SectionTitle>
         <Descriptor>

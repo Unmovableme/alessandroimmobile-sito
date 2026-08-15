@@ -67,11 +67,15 @@ export default function Home() {
         </Body>
 
         <SectionTitle>Le tre aree</SectionTitle>
-        <div className="mt-10 space-y-12">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0 md:divide-x md:divide-navy/15">
           {areas.map((a, i) => (
-            <FadeIn key={a.id} delay={i * 0.05}>
+            <FadeIn
+              key={a.id}
+              delay={i * 0.05}
+              className={i === 0 ? "md:pr-12" : i === areas.length - 1 ? "md:pl-12" : "md:px-6"}
+            >
               <div data-testid={a.id}>
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-base leading-relaxed text-gray-700">
                   <strong className="font-semibold text-gray-900">{a.name}</strong>
                   {a.text}
                 </p>

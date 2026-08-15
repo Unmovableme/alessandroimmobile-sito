@@ -127,3 +127,14 @@ export const BandTitle = ({ children }) => (
     </h2>
   </FadeIn>
 );
+
+export const PullQuote = ({ children, testId }) => (
+  <FadeIn>
+    <p
+      data-testid={testId}
+      className="font-serif italic text-navy text-[1.75rem] md:text-[2rem] leading-snug my-16 md:my-24"
+    >
+      {children}
+    </p>
+  </FadeIn>
+);
