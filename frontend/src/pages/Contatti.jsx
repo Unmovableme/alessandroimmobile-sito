@@ -1,4 +1,5 @@
 import { Seo } from "@/components/Seo";
+import { Link } from "react-router-dom";
 import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 import PrenotaCall from "@/components/PrenotaCall";
@@ -33,6 +34,20 @@ export default function Contatti() {
       />
       <PageContainer testId="contatti-page">
         <PageTitle testId="contatti-title">Contatti</PageTitle>
+
+        <FadeIn delay={0.05}>
+          <p className="mt-8 text-base leading-relaxed text-gray-600" data-testid="contatti-referenze-hint">
+            Prima di scrivere,{" "}
+            <Link
+              to="/referenze"
+              data-testid="contatti-referenze-link"
+              className="relative inline-block pb-0.5 text-navy after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-100 after:bg-navy/40 after:transition-transform after:duration-300 hover:after:bg-navy"
+            >
+              leggi cosa dicono di me le persone con cui ho lavorato
+            </Link>
+            .
+          </p>
+        </FadeIn>
 
         <Lead>Scrivimi direttamente, senza moduli da compilare. Rispondo io.</Lead>
 

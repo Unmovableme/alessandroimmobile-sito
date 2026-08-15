@@ -61,6 +61,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova pagina /grazie (`src/pages/Grazie.jsx`, rotta in App.js): ringraziamento post-prenotazione, con box promemoria bonifico visibile solo per i formati a pagamento (via location.state { paid, formato }).
 - PrenotaCall: al submit riuscito naviga a /grazie (useNavigate) invece del messaggio inline. In preview il POST a "/" non è gestito (mostra errore di fallback); il flusso completo funziona su Netlify.
 
+## Referenze + Pubblicazioni + richiamo Contatti (15/08/2026)
+- Nuova pagina fuori menu /referenze (`src/pages/Referenze.jsx`, rotta in App.js): H1 "Referenze", apertura e 10 schede testuali (nome grassetto serif, ruolo corsivo grigio, citazione, separatori navy). Contenuto verbatim fornito dall'utente.
+- /contatti: aggiunta riga-richiamo sotto l'H1, prima del blocco Scrivimi, con link a /referenze. Nient'altro modificato.
+- /percorso: nuova sezione H2 "Pubblicazioni" dopo il blocco "Oggi", con testo capitolo Zanichelli e link esterno "Il volume".
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

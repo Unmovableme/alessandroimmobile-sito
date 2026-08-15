@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, FadeIn } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, FadeIn, ArrowLink } from "@/components/Editorial";
 
 const stages = [
   {
@@ -81,6 +81,33 @@ export default function Percorso() {
             </FadeIn>
           ))}
         </div>
+
+        <section data-testid="percorso-pubblicazioni" className="mt-24 md:mt-28">
+          <FadeIn>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
+              Pubblicazioni
+            </h2>
+          </FadeIn>
+          <FadeIn delay={0.05}>
+            <p className="mt-6 text-lg leading-relaxed text-gray-700">
+              Capitolo &laquo;La finanza alternativa, dalla startup alla quotazione&raquo;, in
+              &laquo;Diritto dell'innovazione e P.M.I.&raquo;, a cura di Oreste Cagnasso e Angelo
+              Mambriani, Zanichelli. Firmato Alessandro Immobile Molaro.
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <ArrowLink
+              href="https://www.zanichelli.it/ricerca/prodotti/diritto-dell-innovazione-e-p-m-i-con-risorse-digitali-cagnasso"
+              target="_blank"
+              rel="noopener noreferrer"
+              testId="percorso-pubblicazioni-link"
+              className="mt-6"
+              labelClassName="text-lg"
+            >
+              Il volume
+            </ArrowLink>
+          </FadeIn>
+        </section>
       </PageContainer>
     </>
   );
