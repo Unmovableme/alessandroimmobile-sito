@@ -1,15 +1,17 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const EASE = [0.22, 1, 0.36, 1];
 
-export const FadeIn = ({ children, delay = 0, className = "", as = "div", ...props }) => {
+export const FadeIn = ({ children, delay = 0, className = "", as = "div", y = 18, ...props }) => {
+  const reduce = useReducedMotion();
   const MotionTag = motion[as] || motion.div;
   return (
     <MotionTag
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay, ease: EASE }}
+      initial={reduce ? false : { opacity: 0, y }}
+      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.6, delay, ease: EASE }}
       className={className}
       {...props}
     >
@@ -28,7 +30,7 @@ export const PageTitle = ({ children, testId }) => (
   <FadeIn>
     <h1
       data-testid={testId}
-      className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-navy leading-[1.05]"
+      className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]"
     >
       {children}
     </h1>
@@ -43,13 +45,13 @@ export const Lead = ({ children }) => (
 
 export const Body = ({ children, className = "" }) => (
   <FadeIn>
-    <p className={`mt-7 text-lg leading-relaxed text-gray-700 ${className}`}>{children}</p>
+    <p className={`mt-6 text-lg leading-relaxed text-gray-700 ${className}`}>{children}</p>
   </FadeIn>
 );
 
 export const SectionTitle = ({ children }) => (
   <FadeIn>
-    <h2 className="mt-24 md:mt-28 text-2xl md:text-3xl font-semibold tracking-tight text-gray-900">
+    <h2 className="mt-28 md:mt-40 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
       {children}
     </h2>
   </FadeIn>
@@ -65,21 +67,63 @@ export const SubTitle = ({ children }) => (
 
 export const Descriptor = ({ children }) => (
   <FadeIn>
-    <p className="mt-5 text-lg italic text-gray-500 leading-relaxed">{children}</p>
+    <blockquote className="border-l-2 border-navy pl-6 text-lg italic text-gray-500 leading-relaxed">
+      {children}
+    </blockquote>
   </FadeIn>
 );
 
 export const Rule = () => <div className="mt-20 border-t border-gray-200" />;
 
-export const DeepLink = ({ to, children, testId }) => (
-  <FadeIn>
-    <Link
-      to={to}
-      data-testid={testId}
-      className="group mt-10 inline-flex items-baseline gap-2 text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
-    >
-      <span className="text-lg">{children}</span>
-      <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+export const ArrowLink = ({ to, href, children, testId, className = "", labelClassName = "", target, rel }) => {
+  const cls = `group inline-flex items-baseline gap-2 text-navy ${className}`;
+  const inner = (
+    <>
+      <span
+        className={`relative inline-block pb-0.5 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100 ${labelClassName}`}
+      >
+        {children}
+      </span>
+      <span aria-hidden className="transition-transform duration-300 ease-out group-hover:translate-x-1">
+        →
+      </span>
+    </>
+  );
+  if (href) {
+    return (
+      <a href={href} data-testid={testId} target={target} rel={rel} className={cls}>
+        {inner}
+      </a>
+    );
+  }
+  return (
+    <Link to={to} data-testid={testId} className={cls}>
+      {inner}
     </Link>
+  );
+};
+
+export const DeepLink = ({ to, children, testId }) => (
+  <FadeIn className="mt-12">
+    <ArrowLink to={to} testId={testId} labelClassName="text-lg">
+      {children}
+    </ArrowLink>
+  </FadeIn>
+);
+
+export const TintBand = ({ children, testId }) => (
+  <div
+    data-testid={testId}
+    className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-20 md:mt-28 mb-0"
+  >
+    <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">{children}</div>
+  </div>
+);
+
+export const BandTitle = ({ children }) => (
+  <FadeIn>
+    <h2 className="mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+      {children}
+    </h2>
   </FadeIn>
 );

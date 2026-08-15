@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle } from "@/components/Editorial";
 
 export default function AssettiSocietari() {
   return (
@@ -76,24 +76,26 @@ export default function AssettiSocietari() {
           investitore che vuole voce in capitolo.
         </Body>
 
-        <SectionTitle>Come lavoro</SectionTitle>
-        <Body>
-          In un'operazione societaria intervengono figure diverse, ciascuna competente sul proprio
-          pezzo: il notaio sull'atto, l'avvocato sui contratti e sulle garanzie, il fiscalista sugli
-          effetti tributari, l'esperto sulla stima, il consulente del lavoro sul personale. Il
-          mandato di ciascuna si ferma al proprio perimetro, e il disegno complessivo resta senza un
-          titolare.
-        </Body>
-        <Body>
-          È il ruolo che ricopro. Definisco l'obiettivo con chi decide, scelgo la struttura fra le
-          alternative possibili, coordino i professionisti coinvolti e verifico che ogni pezzo resti
-          coerente con il resto fino all'atto.
-        </Body>
-        <Body>
-          La perizia di stima la affido di regola a un terzo indipendente: chi struttura
-          un'operazione e chi ne attesta i valori dovrebbero essere due persone diverse ogni volta
-          che è possibile.
-        </Body>
+        <TintBand testId="assetti-come-lavoro">
+          <BandTitle>Come lavoro</BandTitle>
+          <Body>
+            In un'operazione societaria intervengono figure diverse, ciascuna competente sul proprio
+            pezzo: il notaio sull'atto, l'avvocato sui contratti e sulle garanzie, il fiscalista sugli
+            effetti tributari, l'esperto sulla stima, il consulente del lavoro sul personale. Il
+            mandato di ciascuna si ferma al proprio perimetro, e il disegno complessivo resta senza un
+            titolare.
+          </Body>
+          <Body>
+            È il ruolo che ricopro. Definisco l'obiettivo con chi decide, scelgo la struttura fra le
+            alternative possibili, coordino i professionisti coinvolti e verifico che ogni pezzo resti
+            coerente con il resto fino all'atto.
+          </Body>
+          <Body>
+            La perizia di stima la affido di regola a un terzo indipendente: chi struttura
+            un'operazione e chi ne attesta i valori dovrebbero essere due persone diverse ogni volta
+            che è possibile.
+          </Body>
+        </TintBand>
       </PageContainer>
     </>
   );

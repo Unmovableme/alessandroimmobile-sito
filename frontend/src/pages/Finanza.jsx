@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle } from "@/components/Editorial";
 
 export default function Finanza() {
   return (
@@ -66,14 +66,16 @@ export default function Finanza() {
           La crisi finanziaria inizia prima che manchi la liquidità
         </DeepLink>
 
-        <SectionTitle>Come lavoro</SectionTitle>
-        <Body>
-          Ho costruito sistemi di reporting e di controllo su gruppi con attività in più paesi,
-          guidato ristrutturazioni con piani industriali e rinegoziazione del debito, ricoperto
-          ruoli di direzione finanziaria in società operative. Su startup e PMI innovative affianco
-          chi guida l'impresa sulla struttura della raccolta, sulla scelta degli strumenti e sul
-          rapporto con gli investitori.
-        </Body>
+        <TintBand testId="finanza-come-lavoro">
+          <BandTitle>Come lavoro</BandTitle>
+          <Body>
+            Ho costruito sistemi di reporting e di controllo su gruppi con attività in più paesi,
+            guidato ristrutturazioni con piani industriali e rinegoziazione del debito, ricoperto
+            ruoli di direzione finanziaria in società operative. Su startup e PMI innovative affianco
+            chi guida l'impresa sulla struttura della raccolta, sulla scelta degli strumenti e sul
+            rapporto con gli investitori.
+          </Body>
+        </TintBand>
       </PageContainer>
     </>
   );

@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, FadeIn } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 
 export default function Contatti() {
@@ -19,9 +19,11 @@ export default function Contatti() {
             <a
               href={`mailto:${EMAIL}`}
               data-testid="contatti-email-link"
-              className="text-xl md:text-2xl font-medium text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
+              className="group inline-block text-xl md:text-2xl font-medium text-navy"
             >
-              {EMAIL}
+              <span className="relative inline-block pb-0.5 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100">
+                {EMAIL}
+              </span>
             </a>
             <p className="mt-3 text-sm italic text-gray-500">
               (provvisoria, in attesa dell'email su dominio proprio)
@@ -30,16 +32,16 @@ export default function Contatti() {
         </FadeIn>
 
         <FadeIn delay={0.15}>
-          <a
+          <ArrowLink
             href={LINKEDIN}
             target="_blank"
             rel="noopener noreferrer"
-            data-testid="contatti-linkedin-link"
-            className="group mt-10 inline-flex items-baseline gap-2 text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
+            testId="contatti-linkedin-link"
+            className="mt-10"
+            labelClassName="text-lg"
           >
-            <span className="text-lg">LinkedIn</span>
-            <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </a>
+            LinkedIn
+          </ArrowLink>
         </FadeIn>
       </PageContainer>
     </>

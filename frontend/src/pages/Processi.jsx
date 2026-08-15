@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle } from "@/components/Editorial";
 
 export default function Processi() {
   return (
@@ -72,17 +72,19 @@ export default function Processi() {
           vesting.
         </Body>
 
-        <SectionTitle>Come lavoro</SectionTitle>
-        <Body>
-          Sui processi porto una lunga esperienza maturata in una primaria società di consulenza
-          internazionale, su processi finance per grandi banche e corporate, poi mappatura,
-          reingegnerizzazione e riorganizzazione di funzioni in gruppi bancari e aziende di
-          produzione e logistica. Per le startup l'esperienza è diretta: sono founder e investitore
-          in startup che nascono con l'intelligenza artificiale integrata nel prodotto fin dal primo
-          giorno. Il lavoro più recente sull'AI applicata ai processi delle aziende nasce nel
-          percorso istituzionale con l'Osservatorio Intelligenza Artificiale e Trasformazione
-          Digitale dell'ODCEC di Torino.
-        </Body>
+        <TintBand testId="processi-come-lavoro">
+          <BandTitle>Come lavoro</BandTitle>
+          <Body>
+            Sui processi porto una lunga esperienza maturata in una primaria società di consulenza
+            internazionale, su processi finance per grandi banche e corporate, poi mappatura,
+            reingegnerizzazione e riorganizzazione di funzioni in gruppi bancari e aziende di
+            produzione e logistica. Per le startup l'esperienza è diretta: sono founder e investitore
+            in startup che nascono con l'intelligenza artificiale integrata nel prodotto fin dal primo
+            giorno. Il lavoro più recente sull'AI applicata ai processi delle aziende nasce nel
+            percorso istituzionale con l'Osservatorio Intelligenza Artificiale e Trasformazione
+            Digitale dell'ODCEC di Torino.
+          </Body>
+        </TintBand>
       </PageContainer>
     </>
   );

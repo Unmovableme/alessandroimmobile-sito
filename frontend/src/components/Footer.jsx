@@ -1,3 +1,5 @@
+import { ArrowLink } from "@/components/Editorial";
+
 export const EMAIL = "alessandro.immobile@gmail.com";
 export const LINKEDIN = "https://www.linkedin.com/in/alessandroimmobile/";
 
@@ -12,14 +14,9 @@ export const Footer = () => (
         1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco anche le
         startup, dalla costituzione alla raccolta di capitale.
       </p>
-      <a
-        href={`mailto:${EMAIL}`}
-        data-testid="footer-scrivimi-link"
-        className="group mt-6 inline-flex items-baseline gap-2 text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
-      >
-        <span className="text-sm">Scrivimi</span>
-        <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-      </a>
+      <ArrowLink href={`mailto:${EMAIL}`} testId="footer-scrivimi-link" className="mt-6" labelClassName="text-sm">
+        Scrivimi
+      </ArrowLink>
     </div>
   </footer>
 );

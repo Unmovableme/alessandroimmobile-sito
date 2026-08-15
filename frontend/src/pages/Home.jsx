@@ -1,6 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, DeepLink, FadeIn } from "@/components/Editorial";
-import { Link } from "react-router-dom";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
 
 const areas = [
   {
@@ -76,40 +75,32 @@ export default function Home() {
                   <strong className="font-semibold text-gray-900">{a.name}</strong>
                   {a.text}
                 </p>
-                <Link
-                  to={a.to}
-                  data-testid={`${a.id}-link`}
-                  className="group mt-4 inline-flex items-baseline gap-2 text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
-                >
-                  <span className="text-[15px]">Scopri di più</span>
-                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </Link>
+                <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                  Scopri di più
+                </ArrowLink>
               </div>
             </FadeIn>
           ))}
         </div>
 
-        <SectionTitle>In evidenza</SectionTitle>
-        <div className="mt-10 space-y-14">
-          {highlights.map((h, i) => (
-            <FadeIn key={h.id} delay={i * 0.05}>
-              <article data-testid={h.id}>
-                <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900 leading-snug">
-                  {h.title}
-                </h3>
-                <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
-                <Link
-                  to={h.to}
-                  data-testid={`${h.id}-link`}
-                  className="group mt-4 inline-flex items-baseline gap-2 text-navy border-b border-navy-soft hover:border-navy pb-1 transition-colors duration-300"
-                >
-                  <span className="text-[15px]">Leggi</span>
-                  <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                </Link>
-              </article>
-            </FadeIn>
-          ))}
-        </div>
+        <TintBand testId="home-in-evidenza">
+          <BandTitle>In evidenza</BandTitle>
+          <div className="space-y-14">
+            {highlights.map((h, i) => (
+              <FadeIn key={h.id} delay={i * 0.05}>
+                <article data-testid={h.id}>
+                  <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900 leading-snug">
+                    {h.title}
+                  </h3>
+                  <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
+                  <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                    Leggi
+                  </ArrowLink>
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+        </TintBand>
       </PageContainer>
     </>
   );

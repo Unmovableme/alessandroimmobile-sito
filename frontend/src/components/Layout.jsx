@@ -11,7 +11,7 @@ export const Layout = () => {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-white overflow-x-hidden">
       <Header />
       <div className="flex-1">
         <Outlet />

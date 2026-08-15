@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, TintBand, BandTitle } from "@/components/Editorial";
 
 export default function PrimaCheManchiLaLiquidita() {
   return (
@@ -115,14 +115,16 @@ export default function PrimaCheManchiLaLiquidita() {
           con numeri che reggono alle domande.
         </Body>
 
-        <SectionTitle>Come lavoro</SectionTitle>
-        <Body>
-          Ho costruito sistemi di reporting e controllo di gestione su gruppi con attività in più
-          paesi, guidato ristrutturazioni con piani industriali e rinegoziazione del debito,
-          ricoperto ruoli di direzione finanziaria in società operative. Per le startup lavoro sulla
-          stessa logica applicata a una fase diversa: dimensionare la raccolta su ciò che la startup
-          consuma davvero, costruire una valutazione che regge al confronto con un investitore.
-        </Body>
+        <TintBand testId="liquidita-come-lavoro">
+          <BandTitle>Come lavoro</BandTitle>
+          <Body>
+            Ho costruito sistemi di reporting e controllo di gestione su gruppi con attività in più
+            paesi, guidato ristrutturazioni con piani industriali e rinegoziazione del debito,
+            ricoperto ruoli di direzione finanziaria in società operative. Per le startup lavoro sulla
+            stessa logica applicata a una fase diversa: dimensionare la raccolta su ciò che la startup
+            consuma davvero, costruire una valutazione che regge al confronto con un investitore.
+          </Body>
+        </TintBand>
       </PageContainer>
     </>
   );
