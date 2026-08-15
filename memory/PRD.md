@@ -137,6 +137,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Import aggiunti in TemplateA.jsx: useRef, motion/useScroll/useTransform.
 - Confronto completo 4 opzioni: /template-a (5), /template-a-banda (2), /template-a-immersivo (3), /template-a-reveal (4). In attesa scelta utente.
 
+## Variante prototipo E — byline discreto (opz.1) — 15/08/2026
+- Nuova rotta /template-a-byline (TemplateEHome): mini-ritratto tondo (64px, B&N) accanto a nome + ruolo (firma d'autore) + enunciato tipografico grande in serif corsivo; poi bio + HomeSections.
+- Confronto completo 5 opzioni: /template-a-byline (1), /template-a-banda (2), /template-a-immersivo (3), /template-a-reveal (4), /template-a (5). In attesa scelta utente per migrazione su Home reale.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

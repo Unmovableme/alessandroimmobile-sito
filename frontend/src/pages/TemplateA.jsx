@@ -353,6 +353,63 @@ export function TemplateDHome() {
 }
 
 
+/* ---------- HOME — opzione 1: byline discreto (mini-ritratto inline) ---------- */
+export function TemplateEHome() {
+  return (
+    <>
+      <Seo title="Template A — Byline (opz. 1)" description="Anteprima Home con mini-ritratto in stile firma d'autore ed enunciato tipografico." />
+      <main data-testid="template-e-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
+        <DemoBanner />
+
+        <div className="mx-auto max-w-3xl px-6 mt-12 md:mt-20">
+          <FadeIn>
+            <div className="flex items-center gap-4" data-testid="template-e-byline">
+              <img
+                src="/portrait-hero.png"
+                alt="Ritratto di Alessandro Immobile"
+                loading="eager"
+                className="h-16 w-16 rounded-full object-cover object-[center_22%] grayscale ring-1 ring-navy/15"
+              />
+              <div>
+                <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-navy leading-tight">
+                  Alessandro Immobile
+                </h1>
+                <p className="mt-0.5 text-sm text-gray-500">
+                  Dottore commercialista e revisore legale · Torino
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.08}>
+            <p className="mt-12 md:mt-16 font-serif text-3xl md:text-5xl italic leading-[1.15] text-navy">
+              Struttura societaria, processi e finanza, per aziende e startup.
+            </p>
+          </FadeIn>
+
+          <div className="mt-10 h-px w-16 bg-navy/25" />
+
+          <Body>
+            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+          </Body>
+          <Body>
+            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+            per i round di finanziamento.
+          </Body>
+          <Body>
+            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+          </Body>
+        </div>
+
+        <HomeSections />
+      </main>
+    </>
+  );
+}
+
+
 /* ---------- PAGINA DI CRITERIO — versione A pura ---------- */
 const two = (n) => String(n).padStart(2, "0");
 
