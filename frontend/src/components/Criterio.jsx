@@ -5,9 +5,14 @@ const two = (n) => String(n).padStart(2, "0");
 
 const SectionHeading = ({ number, title }) => (
   <FadeIn>
-    <div className="mb-8">
-      <span className="block text-sm font-medium tabular-nums text-navy mb-3">{number}</span>
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+    <div className="relative mb-8 pt-16 md:pt-20">
+      <span
+        aria-hidden
+        className="pointer-events-none select-none absolute left-0 top-0 z-0 text-7xl md:text-8xl font-thin leading-none tabular-nums text-navy/[0.12]"
+      >
+        {number}
+      </span>
+      <h2 className="relative z-10 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
         {title}
       </h2>
     </div>
@@ -17,7 +22,7 @@ const SectionHeading = ({ number, title }) => (
 const CriterioSection = ({ id, number, title, tint, children }) => {
   if (tint) {
     return (
-      <div className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-24 md:mt-32 py-16 md:py-20">
+      <div className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-24 md:mt-32 pt-8 md:pt-10 pb-16 md:pb-20">
         <section id={id} data-testid={`section-${id}`} className="scroll-mt-28">
           <div className="mx-auto max-w-3xl px-6">
             <SectionHeading number={number} title={title} />
@@ -28,7 +33,7 @@ const CriterioSection = ({ id, number, title, tint, children }) => {
     );
   }
   return (
-    <section id={id} data-testid={`section-${id}`} className="scroll-mt-28 mt-24 md:mt-32">
+    <section id={id} data-testid={`section-${id}`} className="scroll-mt-28 mt-14 md:mt-20">
       <div className="mx-auto max-w-3xl px-6">
         <SectionHeading number={number} title={title} />
         {children}
@@ -53,7 +58,7 @@ export function CriterioPage({ testId, titleTestId, title, lead, intro, sections
         const topmost = sections.find((s) => visible.has(s.id));
         if (topmost) setActive(topmost.id);
       },
-      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+      { rootMargin: "-30% 0px -55% 0px", threshold: 0 }
     );
     els.forEach((el) => obs.observe(el));
     return () => obs.disconnect();
