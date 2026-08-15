@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { Body } from "@/components/Editorial";
+import { Body, FadeIn } from "@/components/Editorial";
 import { CriterioPage } from "@/components/Criterio";
 
 const sections = [
@@ -66,10 +66,9 @@ const sections = [
     title: "Dove sta il valore",
     content: (
       <Body>
-        Il lavoro che conta si fa prima che l'investitore faccia la prima domanda: statuto pensato
-        per i round che verranno, cap table progettata come infrastruttura di governance, valuation
-        costruita su metriche verificabili, quote e diritti differenziati per il contributo reale di
-        chi entra.
+        Statuto pensato per i round che verranno, cap table progettata come infrastruttura di
+        governance, valuation costruita su metriche verificabili, quote e diritti differenziati per
+        il contributo reale di chi entra.
       </Body>
     ),
   },
@@ -98,6 +97,15 @@ export default function MetricheEStatuto() {
         titleTestId="metriche-title"
         title="Metriche e statuto: la posizione da cui si negozia."
         lead="Un investitore arriva alla due diligence e trova quello che nessuno aveva ancora guardato: categorie di quote non previste, strumenti finanziari non disciplinati, tag along e drag along assenti. Da quel momento le condizioni le decide lui, non i founder che fino a un istante prima le stavano ancora impostando."
+        intro={
+          <FadeIn>
+            <figure className="mt-16 md:mt-20 border-l-2 border-navy pl-6 md:pl-8">
+              <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
+                Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
+              </blockquote>
+            </figure>
+          </FadeIn>
+        }
         sections={sections}
       />
     </>

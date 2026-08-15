@@ -141,6 +141,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova rotta /template-a-byline (TemplateEHome): mini-ritratto tondo (64px, B&N) accanto a nome + ruolo (firma d'autore) + enunciato tipografico grande in serif corsivo; poi bio + HomeSections.
 - Confronto completo 5 opzioni: /template-a-byline (1), /template-a-banda (2), /template-a-immersivo (3), /template-a-reveal (4), /template-a (5). In attesa scelta utente per migrazione su Home reale.
 
+## Pull-quote Home + metriche-e-statuto (15/08/2026)
+- Home: pull-quote grande aggiornata in "Il lavoro che conta si fa prima che un investitore, una banca o un socio facciano la prima domanda."
+- /metriche-e-statuto: aggiunta pull-quote (via prop `intro` di CriterioPage, stessa formattazione della Home) dopo il lead e prima della sezione 01; nella sezione 06 rimossa la frase iniziale ripetuta (il paragrafo ora parte da "Statuto pensato per i round che verranno...").
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

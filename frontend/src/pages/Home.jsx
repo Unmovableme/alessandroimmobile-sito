@@ -113,7 +113,7 @@ export default function Home() {
         <FadeIn>
           <figure className="mt-24 md:mt-32 border-l-2 border-navy pl-6 md:pl-8">
             <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
-              Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
+              Il lavoro che conta si fa prima che un investitore, una banca o un socio facciano la prima domanda.
             </blockquote>
           </figure>
         </FadeIn>
