@@ -128,6 +128,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova rotta /template-a-banda (TemplateBHome): intestazione testuale (eyebrow, H1, lead) + banda orizzontale full-bleed (img h-72/26rem object-cover object-[center_26%] grayscale) + bio + HomeSections.
 - Confronto disponibile: /template-a (opz.5 full-bleed) vs /template-a-banda (opz.2). In attesa scelta utente per migrazione su Home.
 
+## Variante prototipo C — hero immersivo overlay (opz.3) — 15/08/2026
+- Nuova rotta /template-a-immersivo (TemplateCHome): hero full-bleed con foto di sfondo (object-cover), overlay navy in gradiente (from #0d1526 via #1B2A4A/70 to #1B2A4A/25), eyebrow/H1/lead in bianco in basso a sinistra; poi bio + HomeSections.
+- Confronto completo: /template-a (opz.5), /template-a-banda (opz.2), /template-a-immersivo (opz.3). In attesa scelta utente per migrazione su Home reale.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
