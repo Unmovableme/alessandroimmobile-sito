@@ -38,6 +38,59 @@ const highlights = [
   { title: "Metriche e statuto: la posizione da cui si negozia.", text: "Un investitore chiede le metriche che dimostrano che il problema è reale, e uno statuto pronto a reggere la trattativa. Arrivare senza l'uno o l'altro significa negoziare da una posizione più debole.", to: "/metriche-e-statuto", id: "a-hl-metriche" },
 ];
 
+const HomeSections = () => (
+  <div className="mx-auto max-w-3xl px-6">
+    <SectionTitle>Le tre aree</SectionTitle>
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
+      {areas.map((a, i) => (
+        <FadeIn key={a.id} delay={i * 0.06}>
+          <Link
+            to={a.to}
+            data-testid={`${a.id}-link`}
+            className="group flex h-full flex-col rounded-lg border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-navy/40 hover:bg-[#F7F9FC] hover:shadow-[0_14px_34px_-20px_rgba(30,58,107,0.4)]"
+          >
+            <span className="font-serif text-5xl leading-none text-navy/20">{`0${i + 1}`}</span>
+            <h3 className="mt-6 font-serif text-2xl font-semibold tracking-tight text-gray-900">{a.title}</h3>
+            <p className="mt-3 text-base leading-relaxed text-gray-600">{a.desc}</p>
+            <span className="mt-6 inline-flex items-center gap-2 text-navy text-[15px]">
+              Scopri di più
+              <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </span>
+          </Link>
+        </FadeIn>
+      ))}
+    </div>
+
+    <FadeIn>
+      <figure className="mt-24 md:mt-28 border-l-2 border-navy pl-6 md:pl-8">
+        <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
+          Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
+        </blockquote>
+      </figure>
+    </FadeIn>
+
+    <div className="mt-24 md:mt-28 rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-8 md:p-12">
+      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">In evidenza</h2>
+      <div className="mt-10 space-y-12">
+        {highlights.map((h, i) => (
+          <FadeIn key={h.id} delay={i * 0.05}>
+            <article data-testid={h.id}>
+              <span className="font-serif text-3xl leading-none text-navy/25 tabular-nums">{`0${i + 1}`}</span>
+              <h3 className="mt-3 font-serif text-2xl md:text-[1.75rem] font-medium tracking-tight text-gray-900 leading-snug">
+                {h.title}
+              </h3>
+              <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
+              <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                Leggi
+              </ArrowLink>
+            </article>
+          </FadeIn>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
 export function TemplateAHome() {
   return (
     <>
@@ -93,60 +146,76 @@ export function TemplateAHome() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl px-6">
-          <SectionTitle>Le tre aree</SectionTitle>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
-            {areas.map((a, i) => (
-              <FadeIn key={a.id} delay={i * 0.06}>
-                <Link
-                  to={a.to}
-                  data-testid={`${a.id}-link`}
-                  className="group flex h-full flex-col rounded-lg border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-navy/40 hover:bg-[#F7F9FC] hover:shadow-[0_14px_34px_-20px_rgba(30,58,107,0.4)]"
-                >
-                  <span className="font-serif text-5xl leading-none text-navy/20">{`0${i + 1}`}</span>
-                  <h3 className="mt-6 font-serif text-2xl font-semibold tracking-tight text-gray-900">{a.title}</h3>
-                  <p className="mt-3 text-base leading-relaxed text-gray-600">{a.desc}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-navy text-[15px]">
-                    Scopri di più
-                    <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </span>
-                </Link>
-              </FadeIn>
-            ))}
-          </div>
-
-          <FadeIn>
-            <figure className="mt-24 md:mt-28 border-l-2 border-navy pl-6 md:pl-8">
-              <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
-                Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
-              </blockquote>
-            </figure>
-          </FadeIn>
-
-          <div className="mt-24 md:mt-28 rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-8 md:p-12">
-            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">In evidenza</h2>
-            <div className="mt-10 space-y-12">
-              {highlights.map((h, i) => (
-                <FadeIn key={h.id} delay={i * 0.05}>
-                  <article data-testid={h.id}>
-                    <span className="font-serif text-3xl leading-none text-navy/25 tabular-nums">{`0${i + 1}`}</span>
-                    <h3 className="mt-3 font-serif text-2xl md:text-[1.75rem] font-medium tracking-tight text-gray-900 leading-snug">
-                      {h.title}
-                    </h3>
-                    <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
-                    <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
-                      Leggi
-                    </ArrowLink>
-                  </article>
-                </FadeIn>
-              ))}
-            </div>
-          </div>
-        </div>
+        <HomeSections />
       </main>
     </>
   );
 }
+
+/* ---------- HOME — opzione 2: banda orizzontale a tutta larghezza ---------- */
+export function TemplateBHome() {
+  return (
+    <>
+      <Seo title="Template A — Banda (opz. 2)" description="Anteprima Home con hero a banda orizzontale a tutta larghezza." />
+      <main data-testid="template-b-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
+        <DemoBanner />
+
+        {/* Intestazione testuale */}
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-14">
+          <FadeIn>
+            <p className="mb-4 text-xs uppercase tracking-[0.22em] text-navy/70 font-medium">
+              Assetti societari · Processi · Finanza
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.04}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+              Alessandro Immobile
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.08}>
+            <p className="mt-6 font-serif text-2xl md:text-[1.7rem] italic leading-snug text-gray-800">
+              Struttura societaria, processi e finanza, per aziende e startup.
+            </p>
+          </FadeIn>
+        </div>
+
+        {/* Banda orizzontale full-bleed */}
+        <FadeIn delay={0.1}>
+          <div
+            data-testid="template-b-band"
+            className="mt-12 md:mt-16 w-full bg-[#EDF0F5] overflow-hidden"
+          >
+            <img
+              src="/portrait-hero.png"
+              alt="Ritratto di Alessandro Immobile"
+              loading="eager"
+              className="w-full h-72 md:h-[26rem] object-cover object-[center_26%] grayscale contrast-[1.03]"
+            />
+          </div>
+        </FadeIn>
+
+        {/* Bio */}
+        <div className="mx-auto max-w-3xl px-6 mt-14 md:mt-16">
+          <Body>
+            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+          </Body>
+          <Body>
+            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+            per i round di finanziamento.
+          </Body>
+          <Body>
+            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+          </Body>
+        </div>
+
+        <HomeSections />
+      </main>
+    </>
+  );
+}
+
 
 /* ---------- PAGINA DI CRITERIO — versione A pura ---------- */
 const two = (n) => String(n).padStart(2, "0");
