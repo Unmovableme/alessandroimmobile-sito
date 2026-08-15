@@ -1,4 +1,18 @@
-import { FadeIn } from "@/components/Editorial";
+import { FadeIn, ArrowLink } from "@/components/Editorial";
+
+// URL LinkedIn per nome (fonte unica condivisa da Referenze ed Evidenza).
+export const linkedinByName = {
+  "Marta Nappo": "https://www.linkedin.com/in/martanappo/",
+  "Massimiliano Bosaro": "https://www.linkedin.com/in/massimilianobosaro/",
+  "Fabrizio Gallante": "https://www.linkedin.com/in/gallante/",
+  "Matteo Fornaca": "https://www.linkedin.com/in/teofornaca/",
+  "Barbara Rizzi": "https://www.linkedin.com/in/barbara-rizzi-giurista/",
+  "Angelo Marra": "https://www.linkedin.com/in/angelomarra/",
+  "Claudio Grimoldi": "https://www.linkedin.com/in/claudio-grimoldi/",
+  "Federico Chigbuh Gasparini": "https://www.linkedin.com/in/federicochigbuhgasparini/",
+  "Matteo Moccia": "https://www.linkedin.com/in/matteomoccia/",
+  "Giuseppe Virzì": "https://www.linkedin.com/in/peppevirzi/",
+};
 
 // Referenze messe in evidenza (estratti verbatim dalle testimonianze).
 export const featured = [
@@ -8,16 +22,15 @@ export const featured = [
     excerpt: "Un professionista raro da trovare: competente e serio come davvero pochi.",
   },
   {
-    name: "Angelo Marra",
-    role: "Presidente Fondimpresa Calabria, Confindustria",
-    excerpt:
-      "Lo consiglio a chiunque abbia una startup e ha bisogno di un consulente esperto e sul pezzo.",
+    name: "Matteo Moccia",
+    role: "Commercialista",
+    excerpt: "Conosco Alessandro come un vero punto di riferimento nel mondo dell'innovazione.",
   },
   {
-    name: "Federico Chigbuh Gasparini",
-    role: "COO @MarshYellow, Business Designer, Startup Mentor",
+    name: "Marta Nappo",
+    role: "CMO, Chief Sales Officer, Business Development Executive",
     excerpt:
-      "Straordinariamente competente, con una vasta e profonda esperienza in tutto ciò che riguarda la raccolta fondi per le startup.",
+      "Fa dell'ascolto dei suoi collaboratori e clienti un'arma vincente per ottimizzare al meglio l'organizzazione e le soluzioni offerte.",
   },
 ];
 
@@ -64,6 +77,18 @@ export const Evidenza = ({ variant = "full", testId = "referenze-evidenza" }) =>
                 <p className={`mt-0.5 text-gray-500 ${compact ? "text-xs" : "text-sm"}`}>
                   {f.role}
                 </p>
+              )}
+              {linkedinByName[f.name] && (
+                <ArrowLink
+                  href={linkedinByName[f.name]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  testId={`${testId}-${i + 1}-linkedin`}
+                  className="mt-3"
+                  labelClassName={compact ? "text-xs" : "text-sm"}
+                >
+                  LinkedIn
+                </ArrowLink>
               )}
             </figcaption>
           </figure>

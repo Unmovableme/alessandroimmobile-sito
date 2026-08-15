@@ -1,6 +1,6 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, FadeIn } from "@/components/Editorial";
-import { Evidenza } from "@/components/Evidenza";
+import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
+import { Evidenza, linkedinByName } from "@/components/Evidenza";
 
 const referenze = [
   {
@@ -99,6 +99,18 @@ export default function Referenze() {
                 <blockquote className="mt-5 text-lg leading-relaxed text-gray-700">
                   {r.quote}
                 </blockquote>
+                {linkedinByName[r.name] && (
+                  <ArrowLink
+                    href={linkedinByName[r.name]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    testId={`referenza-${i + 1}-linkedin`}
+                    className="mt-4"
+                    labelClassName="text-sm"
+                  >
+                    LinkedIn
+                  </ArrowLink>
+                )}
               </figure>
             </FadeIn>
           ))}

@@ -80,6 +80,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Estratto il blocco "In evidenza" in componente condiviso `src/components/Evidenza.jsx` (array `featured` + componente `Evidenza` con variant "full"/"compact").
 - Referenze usa `Evidenza variant="full"`; Contatti mostra `Evidenza variant="compact"` (miniatura) vicino al form di prenotazione, con titolo "Cosa dicono di me" e link "Tutte le referenze" → /referenze.
 
+## IBAN reale + LinkedIn + evidenza aggiornata (15/08/2026)
+- IBAN reale impostato in PrenotaCall.jsx (IT73 D032 9601 6010 0006 4413 394).
+- Referenze in evidenza cambiate: Claudio Grimoldi, Matteo Moccia, Marta Nappo.
+- Aggiunti link LinkedIn ("LinkedIn →") sotto ogni referenza (elenco completo + schede evidenza, sia in Referenze sia nel blocco compatto in Contatti). URL centralizzati in `linkedinByName` (Evidenza.jsx), aperti in nuova scheda.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

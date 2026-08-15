@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FadeIn } from "@/components/Editorial";
 
 // IBAN da sostituire con quello reale prima della messa online
-const IBAN = "IT00 X000 0000 0000 0000 0000 000";
+const IBAN = "IT73 D032 9601 6010 0006 4413 394";
 
 const FORMATS = [
   {
