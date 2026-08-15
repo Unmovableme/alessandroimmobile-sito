@@ -64,56 +64,13 @@ const sections = [
     ),
   },
   {
-    id: "startup-valore",
-    title: "Una startup raccoglie capitale senza sapere cosa vale",
-    content: (
-      <>
-        <Body>
-          Arrivare davanti a un investitore senza una valutazione sostenuta da metriche, dati e
-          ipotesi verificabili trasforma rapidamente la trattativa in una discussione sul prezzo.
-        </Body>
-        <Body>
-          La domanda "quanto vale la startup" ha una risposta che parte da ciò che l'azienda ha già
-          dimostrato, da ciò che può realisticamente costruire, dal rischio che l'investitore sta
-          assumendo: non da un numero scelto in base all'obiettivo di raccolta. Traction, crescita,
-          marginalità, mercato, capitale necessario, milestone future e livello di diluizione
-          raccontano insieme una storia coerente, ed è quella storia a rendere il valore
-          comprensibile e difendibile.
-        </Body>
-      </>
-    ),
-  },
-  {
-    id: "capitale-consuma",
-    title: "Il capitale raccolto si consuma più in fretta di quanto si pensi",
-    content: (
-      <>
-        <Body>
-          Una startup che non tiene sotto controllo il proprio burn rate rischia di scoprire troppo
-          tardi quanto rapidamente sta consumando il capitale raccolto.
-        </Body>
-        <Body>
-          Il runway, cioè per quanto tempo la liquidità disponibile permette di operare, va letto
-          insieme alle milestone che l'azienda può raggiungere in quel tempo: crescita, prodotto,
-          clienti, ricavi. Se il runway si accorcia prima che quel salto sia avvenuto, la startup
-          torna sul mercato senza le condizioni per negoziare una valutazione migliore.
-        </Body>
-        <Body>
-          Il capitale raccolto finanzia le milestone che aumentano il valore dell'azienda, non
-          semplicemente il tempo che passa.
-        </Body>
-      </>
-    ),
-  },
-  {
     id: "dove-sta-il-lavoro",
     title: "Dove sta il valore",
     content: (
       <Body>
-        Il lavoro che conta si fa prima che la banca, l'investitore o il fornitore facciano la
-        domanda: contabilità e controllo di gestione che parlano ogni mese, non una volta l'anno,
-        tesoreria vista con anticipo, valutazione costruita su metriche verificabili, percorso di
-        raccolta dimensionato su quanto la startup consuma davvero.
+        Il lavoro che conta si fa prima che la banca o il fornitore facciano la domanda: contabilità
+        e controllo di gestione che parlano ogni mese, non una volta l'anno, tesoreria vista con
+        anticipo.
       </Body>
     ),
   },
@@ -123,8 +80,7 @@ const sections = [
     content: (
       <Body>
         Aziende che vogliono passare da una contabilità tenuta per gli adempimenti a uno strumento
-        che aiuta a decidere. Startup che affrontano una raccolta di capitale e vogliono arrivarci
-        con numeri che reggono alle domande.
+        che aiuta a decidere.
       </Body>
     ),
   },
@@ -135,9 +91,7 @@ const sections = [
       <Body>
         Ho costruito sistemi di reporting e controllo di gestione su gruppi con attività in più
         paesi, guidato ristrutturazioni con piani industriali e rinegoziazione del debito, ricoperto
-        ruoli di direzione finanziaria in società operative. Per le startup lavoro sulla stessa
-        logica applicata a una fase diversa: dimensionare la raccolta su ciò che la startup consuma
-        davvero, costruire una valutazione che regge al confronto con un investitore.
+        ruoli di direzione finanziaria in società operative.
       </Body>
     ),
   },
@@ -148,7 +102,7 @@ export default function PrimaCheManchiLaLiquidita() {
     <>
       <Seo
         title="La crisi finanziaria inizia prima che manchi la liquidità — Alessandro Immobile"
-        description="Controllo di gestione, budget come modello, tesoreria in anticipo, valutazione e runway: i segnali deboli si intercettano prima che diventino emergenze."
+        description="Controllo di gestione, budget come modello e tesoreria in anticipo: i segnali deboli si intercettano prima che diventino emergenze, quando c'è ancora tempo per decidere."
       />
       <CriterioPage
         testId="liquidita-page"

@@ -75,6 +75,9 @@ export default function AssettiSocietari() {
           Governance: chi decide cosa, con quali maggioranze, e cosa succede quando entra un
           investitore che vuole voce in capitolo.
         </Body>
+        <DeepLink to="/metriche-e-statuto" testId="assetti-deeplink-metriche">
+          Metriche e statuto: la posizione da cui si negozia
+        </DeepLink>
 
         <TintBand testId="assetti-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>

@@ -81,8 +81,8 @@ const sections = [
     title: "Con chi lavoro",
     content: (
       <Body>
-        Aziende che hanno già iniziative isolate di intelligenza artificiale, spontanee o
-        sperimentali, e vogliono capire dove generano valore reale prima di scalarle.
+        Startup che costruiscono i propri processi da zero, con l'occasione di incorporare
+        l'intelligenza artificiale fin dall'origine invece di innestarla dopo.
       </Body>
     ),
   },
@@ -91,29 +91,25 @@ const sections = [
     title: "Come lavoro",
     content: (
       <Body>
-        Sui processi ho una base industriale lunga, maturata in una primaria società di consulenza
-        internazionale su processi finance per grandi banche e corporate, poi mappatura,
-        reingegnerizzazione e riorganizzazione di funzioni in gruppi bancari e aziende di produzione
-        e logistica. Il lavoro più recente sull'AI applicata ai processi delle aziende nasce nel
-        percorso istituzionale con l'Osservatorio Intelligenza Artificiale e Trasformazione Digitale
-        dell'ODCEC di Torino.
+        Per le startup l'esperienza è diretta: sono founder e investitore in startup che nascono con
+        l'intelligenza artificiale integrata nel prodotto fin dal primo giorno.
       </Body>
     ),
   },
 ];
 
-export default function AiSenzaGovernance() {
+export default function FounderEAgenti() {
   return (
     <>
       <Seo
-        title="L'intelligenza artificiale è già in azienda. Nessuno la governa. — Alessandro Immobile"
-        description="L'adozione dell'AI anticipa la governance. Perché lo strumento non è il processo, il dato è il prerequisito, e dove sta il lavoro che conta."
+        title="Un founder, gli agenti come squadra — Alessandro Immobile"
+        description="Startup AI-native: un solo founder affiancato da agenti su sviluppo, marketing e operations. Il vantaggio è reale quando si mantiene il controllo del metodo."
       />
       <CriterioPage
-        testId="ai-page"
-        titleTestId="ai-title"
-        title="L'intelligenza artificiale è già in azienda. Nessuno la governa."
-        lead="In un team, qualcuno ha già usato uno strumento di intelligenza artificiale per scrivere più veloce, riassumere un documento, preparare una risposta. Nessuno gliel'ha vietato, nessuno l'ha organizzato: lo ha fatto e basta, con un account personale, senza che l'azienda lo sapesse."
+        testId="founder-page"
+        titleTestId="founder-title"
+        title="Un founder, gli agenti come squadra"
+        lead="Sempre più startup nascono già abilitate dall'intelligenza artificiale: sviluppo più veloce, costi iniziali più bassi, decine di landing page testate in parallelo per validare un'idea prima di costruirla per intero. Un solo founder può oggi farsi affiancare da agenti AI su funzioni che un tempo richiedevano un team, dallo sviluppo al marketing alle operations. Il vantaggio è reale, ma non è automatico: funziona quando chi guida la startup mantiene il controllo del metodo, non quando delega senza criterio."
         sections={sections}
       />
     </>

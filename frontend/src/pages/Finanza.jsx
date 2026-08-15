@@ -43,6 +43,9 @@ export default function Finanza() {
           scissione, un ingresso di soci cambiano il modo in cui l'impresa deve leggere e comunicare
           i propri numeri.
         </Body>
+        <DeepLink to="/prima-che-manchi-la-liquidita" testId="finanza-deeplink-liquidita">
+          La crisi finanziaria inizia prima che manchi la liquidità
+        </DeepLink>
 
         <SectionTitle>Startup</SectionTitle>
         <Descriptor>Capitale da raccogliere prima che il fatturato lo giustifichi.</Descriptor>
@@ -62,8 +65,8 @@ export default function Finanza() {
           Relazione con gli investitori: chi ha già messo capitale riceve aggiornamenti regolari,
           con la stessa cura riservata al round successivo.
         </Body>
-        <DeepLink to="/prima-che-manchi-la-liquidita" testId="finanza-deeplink-liquidita">
-          La crisi finanziaria inizia prima che manchi la liquidità
+        <DeepLink to="/quanto-vali-quanto-attrai" testId="finanza-deeplink-quantovali">
+          Prima del round: sapere quanto vali e quanto puoi attrarre
         </DeepLink>
 
         <TintBand testId="finanza-come-lavoro">

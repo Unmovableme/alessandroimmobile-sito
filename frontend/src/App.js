@@ -11,6 +11,8 @@ import QuandoIlProblemaArriva from "@/pages/QuandoIlProblemaArriva";
 import MetricheEStatuto from "@/pages/MetricheEStatuto";
 import AiSenzaGovernance from "@/pages/AiSenzaGovernance";
 import PrimaCheManchiLaLiquidita from "@/pages/PrimaCheManchiLaLiquidita";
+import FounderEAgenti from "@/pages/FounderEAgenti";
+import QuantoValiQuantoAttrai from "@/pages/QuantoValiQuantoAttrai";
 import NotFound from "@/pages/NotFound";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path="/metriche-e-statuto" element={<MetricheEStatuto />} />
           <Route path="/ai-senza-governance" element={<AiSenzaGovernance />} />
           <Route path="/prima-che-manchi-la-liquidita" element={<PrimaCheManchiLaLiquidita />} />
+          <Route path="/founder-e-agenti" element={<FounderEAgenti />} />
+          <Route path="/quanto-vali-quanto-attrai" element={<QuantoValiQuantoAttrai />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -71,6 +71,9 @@ export default function Processi() {
           Processi di attrazione e mantenimento dei talenti, con piani di incentivazione in equity e
           vesting.
         </Body>
+        <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder">
+          Un founder, gli agenti come squadra
+        </DeepLink>
 
         <TintBand testId="processi-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
