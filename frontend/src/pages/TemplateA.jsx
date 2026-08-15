@@ -44,26 +44,46 @@ export function TemplateAHome() {
       <Seo title="Template A — Anteprima" description="Anteprima del Template A (versione editoriale sobria) applicato alla Home." />
       <main data-testid="template-a-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
         <DemoBanner />
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
-          <FadeIn>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
-              Alessandro Immobile
-            </h1>
-          </FadeIn>
 
-          <Body>
-            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
-            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
-          </Body>
-          <Body>
-            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
-            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
-            per i round di finanziamento.
-          </Body>
-          <Body>
-            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
-          </Body>
+        {/* ---------- Hero a due colonne con ritratto ---------- */}
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-24">
+          <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
+            <div className="order-2 sm:order-1">
+              <FadeIn>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+                  Alessandro Immobile
+                </h1>
+              </FadeIn>
+              <Body>
+                Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+                gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+              </Body>
+              <Body>
+                Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+                statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+                per i round di finanziamento.
+              </Body>
+              <Body>
+                Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+              </Body>
+            </div>
 
+            <FadeIn delay={0.08} className="order-1 sm:order-2 sm:pt-3">
+              <figure data-testid="template-a-hero-portrait" className="relative max-w-[15rem]">
+                <div className="overflow-hidden rounded-2xl bg-[#EDF0F5] shadow-[0_20px_50px_-28px_rgba(30,58,107,0.45)]">
+                  <img
+                    src="/portrait-hero.png"
+                    alt="Ritratto di Alessandro Immobile"
+                    loading="eager"
+                    className="w-full h-auto object-cover grayscale contrast-[1.03]"
+                  />
+                </div>
+              </figure>
+            </FadeIn>
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-3xl px-6">
           <SectionTitle>Le tre aree</SectionTitle>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
             {areas.map((a, i) => (

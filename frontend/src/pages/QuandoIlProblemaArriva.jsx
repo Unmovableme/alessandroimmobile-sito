@@ -195,7 +195,7 @@ export default function QuandoIlProblemaArriva() {
     <>
       <Seo
         title="Quando il problema arriva, le opzioni sono già finite — Alessandro Immobile"
-        description="Cinque situazioni diverse, la stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva. Dove sta il lavoro, e quando conviene farlo."
+        description="Cinque situazioni diverse, la stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva. Dove sta il valore, e quando conviene intervenire."
       />
       <CriterioPage
         testId="quando-page"

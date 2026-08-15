@@ -91,7 +91,7 @@ export default function MetricheEStatuto() {
     <>
       <Seo
         title="Metriche e statuto: la posizione da cui si negozia — Alessandro Immobile"
-        description="Le metriche di validazione arrivano prima della raccolta, la cap table è governance, la valuation nasce da metriche verificabili. Dove sta il lavoro."
+        description="Le metriche di validazione arrivano prima della raccolta, la cap table è governance, la valuation nasce da metriche verificabili. Dove sta il valore."
       />
       <CriterioPage
         testId="metriche-page"

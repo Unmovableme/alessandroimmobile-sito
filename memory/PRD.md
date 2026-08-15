@@ -29,6 +29,13 @@ Tutto il testo è preso verbatim dal documento contenuti approvato. Footer crede
 ## SEO
 Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 
+## Prototipo /template-a (aggiornamenti 15/08/2026)
+- Hero della Home prototipo con ritratto (foto 2 scelta dall'utente), trattamento bianco e nero elegante (grayscale + contrasto lieve), angoli morbidi e ombra discreta.
+- Layout a due colonne allineato a max-w-3xl (testo a sinistra, ritratto compatto 15rem a destra), impilato su mobile — griglia rigorosa mantenuta.
+- File immagine: /app/frontend/public/portrait-hero.png.
+- SEO: allineate le meta-description delle pagine criterio ("Dove sta il lavoro" -> "Dove sta il valore") in MetricheEStatuto.jsx e QuandoIlProblemaArriva.jsx.
+- In attesa: approvazione utente sul prototipo; se ok, migrare hero+card sulla Home principale.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
