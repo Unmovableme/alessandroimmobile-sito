@@ -145,6 +145,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home: pull-quote grande aggiornata in "Il lavoro che conta si fa prima che un investitore, una banca o un socio facciano la prima domanda."
 - /metriche-e-statuto: aggiunta pull-quote (via prop `intro` di CriterioPage, stessa formattazione della Home) dopo il lead e prima della sezione 01; nella sezione 06 rimossa la frase iniziale ripetuta (il paragrafo ora parte da "Statuto pensato per i round che verranno...").
 
+## Rename slug quanto-vali (15/08/2026)
+- Slug pagina criterio Finanza/Startup: /quanto-vali-quanto-attrai -> /quanto-vali-quanto-raccogli (file rinominato QuantoValiQuantoRaccogli.jsx, componente e rotta aggiornati).
+- H1 e SEO title: "...quanto puoi raccogliere". Link su /finanza aggiornato (to + testo). Corpo (occorrenze "attrarre investimenti") invariato.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

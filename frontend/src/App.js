@@ -14,7 +14,7 @@ import MetricheEStatuto from "@/pages/MetricheEStatuto";
 import AiSenzaGovernance from "@/pages/AiSenzaGovernance";
 import PrimaCheManchiLaLiquidita from "@/pages/PrimaCheManchiLaLiquidita";
 import FounderEAgenti from "@/pages/FounderEAgenti";
-import QuantoValiQuantoAttrai from "@/pages/QuantoValiQuantoAttrai";
+import QuantoValiQuantoRaccogli from "@/pages/QuantoValiQuantoRaccogli";
 import { TemplateAHome, TemplateBHome, TemplateCHome, TemplateDHome, TemplateEHome, TemplateACriterio } from "@/pages/TemplateA";
 import NotFound from "@/pages/NotFound";
 
@@ -36,7 +36,7 @@ function App() {
           <Route path="/ai-senza-governance" element={<AiSenzaGovernance />} />
           <Route path="/prima-che-manchi-la-liquidita" element={<PrimaCheManchiLaLiquidita />} />
           <Route path="/founder-e-agenti" element={<FounderEAgenti />} />
-          <Route path="/quanto-vali-quanto-attrai" element={<QuantoValiQuantoAttrai />} />
+          <Route path="/quanto-vali-quanto-raccogli" element={<QuantoValiQuantoRaccogli />} />
           <Route path="/template-a" element={<TemplateAHome />} />
           <Route path="/template-a-banda" element={<TemplateBHome />} />
           <Route path="/template-a-immersivo" element={<TemplateCHome />} />

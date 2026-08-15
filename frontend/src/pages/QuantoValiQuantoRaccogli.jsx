@@ -92,17 +92,17 @@ const sections = [
   },
 ];
 
-export default function QuantoValiQuantoAttrai() {
+export default function QuantoValiQuantoRaccogli() {
   return (
     <>
       <Seo
-        title="Prima del round: sapere quanto vali e quanto puoi attrarre — Alessandro Immobile"
+        title="Prima del round: sapere quanto vali e quanto puoi raccogliere — Alessandro Immobile"
         description="Valutazione su metriche verificabili, Investment Readiness Level e runway: arrivare al round con numeri che reggono al confronto con un investitore."
       />
       <CriterioPage
         testId="quantovali-page"
         titleTestId="quantovali-title"
-        title="Prima del round: sapere quanto vali e quanto puoi attrarre"
+        title="Prima del round: sapere quanto vali e quanto puoi raccogliere"
         lead="Un investitore chiede tre cose, quasi sempre nello stesso ordine: quanto vale la startup, quanto è capace di attrarre investimenti, quanto tempo ha prima di doverne raccogliere altro. Le risposte costruite su dati verificabili cambiano il tono della trattativa fin dal primo incontro."
         sections={sections}
       />

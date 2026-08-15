@@ -65,8 +65,8 @@ export default function Finanza() {
           Relazione con gli investitori: chi ha già messo capitale riceve aggiornamenti regolari,
           con la stessa cura riservata al round successivo.
         </Body>
-        <DeepLink to="/quanto-vali-quanto-attrai" testId="finanza-deeplink-quantovali">
-          Prima del round: sapere quanto vali e quanto puoi attrarre
+        <DeepLink to="/quanto-vali-quanto-raccogli" testId="finanza-deeplink-quantovali">
+          Prima del round: sapere quanto vali e quanto puoi raccogliere
         </DeepLink>
 
         <TintBand testId="finanza-come-lavoro">
