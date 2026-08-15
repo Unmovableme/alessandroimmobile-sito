@@ -36,6 +36,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - SEO: allineate le meta-description delle pagine criterio ("Dove sta il lavoro" -> "Dove sta il valore") in MetricheEStatuto.jsx e QuandoIlProblemaArriva.jsx.
 - In attesa: approvazione utente sul prototipo; se ok, migrare hero+card sulla Home principale.
 
+## Migrazione Home + ritratto/firma (15/08/2026)
+- Home principale: hero a due colonne (testo + firma a sinistra, ritratto B&N 15rem a destra), allineata a max-w-3xl, impilata su mobile.
+- Contatti: aggiunto lo stesso ritratto B&N accanto a email/LinkedIn.
+- Firma visiva: font manoscritto "Caveat" (font-signature in Tailwind + Google Fonts), nome sotto il titolo, colore navy. Componente riutilizzabile `Signature` in Editorial.jsx.
+- Componente `Portrait` in Editorial.jsx con varianti: `bw` (bianco e nero, usata su Home/Contatti) e `navy` (duotone navy, usata sul prototipo /template-a per confronto colore).
+- Immagine: /app/frontend/public/portrait-hero.png.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

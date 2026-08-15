@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
+import { PageContainer, PageTitle, Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn, Portrait, Signature } from "@/components/Editorial";
 
 const areas = [
   {
@@ -45,26 +45,33 @@ export default function Home() {
         description="Assetti societari, processi e finanza per imprese e startup. Dal 1996 su bilanci, finanza e assetti societari; dal 2019 anche startup, dalla costituzione alla raccolta di capitale."
       />
       <PageContainer testId="home-page">
-        <PageTitle testId="home-title">Alessandro Immobile</PageTitle>
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
+          <div className="order-2 sm:order-1">
+            <PageTitle testId="home-title">Alessandro Immobile</PageTitle>
+            <Signature testId="home-signature" />
 
-        <Body>
-          Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
-          gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
-        </Body>
+            <Body>
+              Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+              gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+            </Body>
 
-        <Body>
-          Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
-          statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
-          per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli
-          di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures,
-          fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel
-          Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA
-          Higher Education Institution, a Malta.
-        </Body>
+            <Body>
+              Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+              statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+              per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli
+              di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures,
+              fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel
+              Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA
+              Higher Education Institution, a Malta.
+            </Body>
 
-        <Body>
-          Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
-        </Body>
+            <Body>
+              Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+            </Body>
+          </div>
+
+          <Portrait variant="bw" testId="home-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
+        </div>
 
         <SectionTitle>Le tre aree</SectionTitle>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0 md:divide-x md:divide-navy/15">

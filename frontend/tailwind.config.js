@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Source Serif 4"', 'Georgia', '"Times New Roman"', 'serif']
+        serif: ['"Source Serif 4"', 'Georgia', '"Times New Roman"', 'serif'],
+        signature: ['Caveat', 'cursive']
       },
       borderRadius: {
         lg: 'var(--radius)',

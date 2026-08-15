@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { Body, SectionTitle, FadeIn, ArrowLink } from "@/components/Editorial";
+import { Body, SectionTitle, FadeIn, ArrowLink, Portrait, Signature } from "@/components/Editorial";
 
 /* ---------- Banner di anteprima (solo per il prototipo) ---------- */
 const DemoBanner = () => (
@@ -54,6 +54,7 @@ export function TemplateAHome() {
                   Alessandro Immobile
                 </h1>
               </FadeIn>
+              <Signature testId="template-a-signature" />
               <Body>
                 Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
                 gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
@@ -69,16 +70,7 @@ export function TemplateAHome() {
             </div>
 
             <FadeIn delay={0.08} className="order-1 sm:order-2 sm:pt-3">
-              <figure data-testid="template-a-hero-portrait" className="relative max-w-[15rem]">
-                <div className="overflow-hidden rounded-2xl bg-[#EDF0F5] shadow-[0_20px_50px_-28px_rgba(30,58,107,0.45)]">
-                  <img
-                    src="/portrait-hero.png"
-                    alt="Ritratto di Alessandro Immobile"
-                    loading="eager"
-                    className="w-full h-auto object-cover grayscale contrast-[1.03]"
-                  />
-                </div>
-              </figure>
+              <Portrait variant="navy" testId="template-a-hero-portrait" className="max-w-[15rem]" />
             </FadeIn>
           </div>
         </div>

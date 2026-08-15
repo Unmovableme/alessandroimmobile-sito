@@ -138,3 +138,35 @@ export const PullQuote = ({ children, testId }) => (
     </p>
   </FadeIn>
 );
+
+// Ritratto editoriale: variante "bw" (bianco e nero) o "navy" (duotone navy)
+export const Portrait = ({ variant = "bw", className = "", testId = "portrait" }) => (
+  <figure data-testid={testId} className={`relative ${className}`}>
+    <div className="relative overflow-hidden rounded-2xl bg-[#EDF0F5] shadow-[0_20px_50px_-28px_rgba(30,58,107,0.45)]">
+      <img
+        src="/portrait-hero.png"
+        alt="Ritratto di Alessandro Immobile"
+        loading="eager"
+        className={`w-full h-auto object-cover ${variant === "navy" ? "grayscale contrast-[1.02] brightness-[1.02]" : "grayscale contrast-[1.03]"}`}
+      />
+      {variant === "navy" && (
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-navy/60 mix-blend-color"
+        />
+      )}
+    </div>
+  </figure>
+);
+
+// Firma discreta: nome in font manoscritto sotto il titolo
+export const Signature = ({ testId = "signature", className = "" }) => (
+  <FadeIn delay={0.04} className={`mt-6 ${className}`}>
+    <span
+      data-testid={testId}
+      className="font-signature text-navy text-4xl md:text-5xl leading-none select-none"
+    >
+      Alessandro Immobile
+    </span>
+  </FadeIn>
+);

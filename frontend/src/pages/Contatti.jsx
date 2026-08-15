@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink, Portrait } from "@/components/Editorial";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 
 export default function Contatti() {
@@ -10,39 +10,45 @@ export default function Contatti() {
         description="Scrivimi direttamente, senza moduli da compilare. Rispondo io. Email e LinkedIn di Alessandro Immobile."
       />
       <PageContainer testId="contatti-page">
-        <PageTitle testId="contatti-title">Contatti</PageTitle>
+        <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
+          <div className="order-2 sm:order-1">
+            <PageTitle testId="contatti-title">Contatti</PageTitle>
 
-        <Lead>Scrivimi direttamente, senza moduli da compilare. Rispondo io.</Lead>
+            <Lead>Scrivimi direttamente, senza moduli da compilare. Rispondo io.</Lead>
 
-        <FadeIn delay={0.1}>
-          <div className="mt-12">
-            <a
-              href={`mailto:${EMAIL}`}
-              data-testid="contatti-email-link"
-              className="group inline-block text-xl md:text-2xl font-medium text-navy"
-            >
-              <span className="relative inline-block pb-0.5 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100">
-                {EMAIL}
-              </span>
-            </a>
-            <p className="mt-3 text-sm italic text-gray-500">
-              (provvisoria, in attesa dell'email su dominio proprio)
-            </p>
+            <FadeIn delay={0.1}>
+              <div className="mt-12">
+                <a
+                  href={`mailto:${EMAIL}`}
+                  data-testid="contatti-email-link"
+                  className="group inline-block text-xl md:text-2xl font-medium text-navy"
+                >
+                  <span className="relative inline-block pb-0.5 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100">
+                    {EMAIL}
+                  </span>
+                </a>
+                <p className="mt-3 text-sm italic text-gray-500">
+                  (provvisoria, in attesa dell'email su dominio proprio)
+                </p>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.15}>
+              <ArrowLink
+                href={LINKEDIN}
+                target="_blank"
+                rel="noopener noreferrer"
+                testId="contatti-linkedin-link"
+                className="mt-10"
+                labelClassName="text-lg"
+              >
+                LinkedIn
+              </ArrowLink>
+            </FadeIn>
           </div>
-        </FadeIn>
 
-        <FadeIn delay={0.15}>
-          <ArrowLink
-            href={LINKEDIN}
-            target="_blank"
-            rel="noopener noreferrer"
-            testId="contatti-linkedin-link"
-            className="mt-10"
-            labelClassName="text-lg"
-          >
-            LinkedIn
-          </ArrowLink>
-        </FadeIn>
+          <Portrait variant="bw" testId="contatti-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
+        </div>
       </PageContainer>
     </>
   );
