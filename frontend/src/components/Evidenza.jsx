@@ -14,12 +14,53 @@ export const linkedinByName = {
   "Giuseppe Virzì": "https://www.linkedin.com/in/peppevirzi/",
 };
 
-// Referenze messe in evidenza (estratti verbatim dalle testimonianze).
-export const featured = [
+// Pool completo delle referenze utilizzabili in evidenza (estratti verbatim brevi).
+const evidenzaPool = [
+  {
+    name: "Marta Nappo",
+    role: "CMO, Chief Sales Officer, Business Development Executive",
+    excerpt:
+      "Fa dell'ascolto dei suoi collaboratori e clienti un'arma vincente per ottimizzare al meglio l'organizzazione e le soluzioni offerte.",
+  },
+  {
+    name: "Massimiliano Bosaro",
+    role: "Founder & CEO, CentraleRisk SpA",
+    excerpt: "Competente ed innovatore prima di tutto, ma anche disponibile e cordiale.",
+  },
+  {
+    name: "Fabrizio Gallante",
+    role: "Managing Partner di Enzima12, CEO di 12Venture",
+    excerpt:
+      "Alessandro si distingue per visione strategica, pragmatismo e un'evidente passione nel sostenere nuovi imprenditori.",
+  },
+  {
+    name: "Matteo Fornaca",
+    role: "Founder e CEO, The Spiritual Machine",
+    excerpt:
+      "Sempre disponibile, professionale, impeccabile e con gli occhi aperti su quanto di nuovo succede nel mondo.",
+  },
+  {
+    name: "Barbara Rizzi",
+    role: "Commercialista",
+    excerpt:
+      "La sua competenza nel campo del crowdfunding e della finanza alternativa è davvero notevole.",
+  },
+  {
+    name: "Angelo Marra",
+    role: "Presidente Fondimpresa Calabria, Confindustria",
+    excerpt:
+      "Lo consiglio a chiunque abbia una startup e ha bisogno di un consulente esperto e sul pezzo.",
+  },
   {
     name: "Claudio Grimoldi",
     role: "Turbo Crowd",
     excerpt: "Un professionista raro da trovare: competente e serio come davvero pochi.",
+  },
+  {
+    name: "Federico Chigbuh Gasparini",
+    role: "COO @MarshYellow, Business Designer, Startup Mentor",
+    excerpt:
+      "Straordinariamente competente, con una vasta e profonda esperienza in tutto ciò che riguarda la raccolta fondi per le startup.",
   },
   {
     name: "Matteo Moccia",
@@ -27,16 +68,24 @@ export const featured = [
     excerpt: "Conosco Alessandro come un vero punto di riferimento nel mondo dell'innovazione.",
   },
   {
-    name: "Marta Nappo",
-    role: "CMO, Chief Sales Officer, Business Development Executive",
+    name: "Giuseppe Virzì",
+    role: "Founder, Tuduu",
     excerpt:
-      "Fa dell'ascolto dei suoi collaboratori e clienti un'arma vincente per ottimizzare al meglio l'organizzazione e le soluzioni offerte.",
+      "È un punto di riferimento imprescindibile ogni qual volta c'è da strutturare non solo tecnicamente un'operazione straordinaria.",
   },
 ];
+
+// Rotazione nel tempo: ogni giorno mostra un trio diverso, ciclando su tutte e dieci.
+const getFeatured = (count = 3) => {
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  const start = (dayIndex * count) % evidenzaPool.length;
+  return Array.from({ length: count }, (_, k) => evidenzaPool[(start + k) % evidenzaPool.length]);
+};
 
 // variant: "full" (pagina Referenze) | "compact" (miniatura vicino al form)
 export const Evidenza = ({ variant = "full", testId = "referenze-evidenza" }) => {
   const compact = variant === "compact";
+  const featured = getFeatured(3);
   return (
     <div
       data-testid={testId}

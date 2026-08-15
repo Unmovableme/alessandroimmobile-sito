@@ -85,6 +85,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Referenze in evidenza cambiate: Claudio Grimoldi, Matteo Moccia, Marta Nappo.
 - Aggiunti link LinkedIn ("LinkedIn →") sotto ogni referenza (elenco completo + schede evidenza, sia in Referenze sia nel blocco compatto in Contatti). URL centralizzati in `linkedinByName` (Evidenza.jsx), aperti in nuova scheda.
 
+## Rotazione evidenza + footer aggiornato (15/08/2026)
+- Evidenza a rotazione: pool completo delle 10 referenze in Evidenza.jsx + funzione getFeatured() che, in base al giorno, mostra un trio diverso ciclando su tutte e dieci (stesso trio su Referenze e Contatti nello stesso giorno).
+- Footer (componente condiviso, aggiornato ovunque): "Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e founder come advisor, business angel e investor, dalla costituzione alla raccolta di capitali fino alla governance."
+- Notifica Netlify (form "prenota-call" → alessandro.immobile@gmail.com): passo MANUALE da impostare nel pannello Netlify al deploy (Forms > Settings > Form notifications > Email notification).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
