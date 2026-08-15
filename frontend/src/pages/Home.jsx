@@ -66,6 +66,12 @@ export default function Home() {
           Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
         </Body>
 
+        <FadeIn delay={0.05}>
+          <ArrowLink to="/referenze" testId="home-referenze-link" className="mt-8" labelClassName="text-[15px]">
+            Cosa dicono di me
+          </ArrowLink>
+        </FadeIn>
+
         <SectionTitle>Le tre aree</SectionTitle>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0 md:divide-x md:divide-navy/15">
           {areas.map((a, i) => (

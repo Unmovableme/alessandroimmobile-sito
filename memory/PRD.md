@@ -72,6 +72,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Finanza: aggiunto richiamo in fondo (DeepLink) a /percorso#pubblicazioni.
 - Percorso: sezione Pubblicazioni con id="pubblicazioni" + scroll all'hash (useEffect su location.hash) per l'ancora dalla pagina Finanza.
 
+## Aggiornamento qualifiche referenze + richiamo Home (15/08/2026)
+- Referenze: aggiunte/corrette le qualifiche di Fabrizio Gallante (Managing Partner Enzima12, CEO 12Venture), Matteo Fornaca (Founder e CEO, The Spiritual Machine), Barbara Rizzi (Commercialista); Federico Gasparini rinominato "Federico Chigbuh Gasparini" con ruolo COO @MarshYellow, Business Designer, Startup Mentor (aggiornato anche nella scheda In evidenza).
+- Home: aggiunta riga discreta "Cosa dicono di me →" verso /referenze, dopo la bio.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
