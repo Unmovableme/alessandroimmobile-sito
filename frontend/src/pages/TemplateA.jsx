@@ -1,0 +1,257 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Seo } from "@/components/Seo";
+import { Body, SectionTitle, FadeIn, ArrowLink } from "@/components/Editorial";
+
+/* ---------- Banner di anteprima (solo per il prototipo) ---------- */
+const DemoBanner = () => (
+  <div className="mx-auto max-w-3xl px-6">
+    <div
+      data-testid="template-a-banner"
+      className="flex flex-wrap items-center gap-x-5 gap-y-2 border border-gray-200 rounded-sm px-5 py-3 text-xs text-gray-500"
+    >
+      <span className="font-medium text-navy">Anteprima · Template A</span>
+      <span className="text-gray-300">/</span>
+      <Link to="/template-a" className="hover:text-navy transition-colors" data-testid="demo-link-home">
+        Home
+      </Link>
+      <Link to="/template-a-criterio" className="hover:text-navy transition-colors" data-testid="demo-link-criterio">
+        Pagina di criterio
+      </Link>
+      <span className="text-gray-300">/</span>
+      <Link to="/" className="hover:text-navy transition-colors" data-testid="demo-link-site">
+        ← Torna al sito
+      </Link>
+    </div>
+  </div>
+);
+
+/* ---------- HOME — versione A pura ---------- */
+const areas = [
+  { name: "Assetti societari.", text: " La forma giuridica dell'impresa, la struttura di gruppo, i soci, i patti e le regole della compagine sociale nel tempo.", to: "/assetti-societari", id: "a-area-assetti" },
+  { name: "Processi.", text: " Come funziona l'azienda, e cosa cambia quando entra l'intelligenza artificiale.", to: "/processi", id: "a-area-processi" },
+  { name: "Finanza.", text: " Come si misura l'impresa e come si sostiene, in azienda o in una raccolta di capitale.", to: "/finanza", id: "a-area-finanza" },
+];
+
+const highlights = [
+  { title: "Quando il problema arriva, le opzioni sono già finite.", text: "Cinque situazioni diverse, nate dalla stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva.", to: "/quando-il-problema-arriva", id: "a-hl-quando" },
+  { title: "Metriche e statuto: la posizione da cui si negozia.", text: "Un investitore chiede le metriche che dimostrano che il problema è reale, e uno statuto pronto a reggere la trattativa. Arrivare senza l'uno o l'altro significa negoziare da una posizione più debole.", to: "/metriche-e-statuto", id: "a-hl-metriche" },
+];
+
+export function TemplateAHome() {
+  return (
+    <>
+      <Seo title="Template A — Anteprima" description="Anteprima del Template A (versione editoriale sobria) applicato alla Home." />
+      <main data-testid="template-a-home" className="pt-28 pb-24 md:pt-32 md:pb-32">
+        <DemoBanner />
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <FadeIn>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+              Alessandro Immobile
+            </h1>
+          </FadeIn>
+
+          <Body>
+            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+          </Body>
+          <Body>
+            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+            per i round di finanziamento.
+          </Body>
+          <Body>
+            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+          </Body>
+
+          <SectionTitle>Le tre aree</SectionTitle>
+          <div className="mt-10 space-y-12">
+            {areas.map((a, i) => (
+              <FadeIn key={a.id} delay={i * 0.05}>
+                <div data-testid={a.id}>
+                  <p className="text-lg leading-relaxed text-gray-700">
+                    <strong className="font-semibold text-gray-900">{a.name}</strong>
+                    {a.text}
+                  </p>
+                  <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                    Scopri di più
+                  </ArrowLink>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <SectionTitle>In evidenza</SectionTitle>
+          <div className="mt-10 space-y-14">
+            {highlights.map((h, i) => (
+              <FadeIn key={h.id} delay={i * 0.05}>
+                <article data-testid={h.id}>
+                  <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900 leading-snug">
+                    {h.title}
+                  </h3>
+                  <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
+                  <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                    Leggi
+                  </ArrowLink>
+                </article>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+/* ---------- PAGINA DI CRITERIO — versione A pura ---------- */
+const two = (n) => String(n).padStart(2, "0");
+
+const critSections = [
+  { id: "a-metriche-validazione", title: "Le metriche di validazione arrivano prima della raccolta, non dopo", content: (
+    <Body>
+      Alcune startup aprono la raccolta prima di avere le metriche che dimostrano che il problema è
+      reale e che la soluzione lo risolve. Un investitore le chiede quasi subito: senza quei dati, la
+      trattativa si sposta dal valore dimostrato alla fiducia personale nei founder, un terreno più
+      lento e più fragile da percorrere.
+    </Body>
+  ) },
+  { id: "a-cap-table", title: "La cap table è governance, non un elenco di soci", content: (
+    <Body>
+      Cosa si distribuisce, chi decide e con quali meccanismi, quale contributo porta ciascun
+      investitore oltre al capitale: tre dimensioni che una cap table costruita raccogliendo le
+      opportunità via via che si presentano finisce per ignorare. Ignorarle costa quando serve
+      decidere in fretta: la struttura che ne risulta non regge la governance.
+    </Body>
+  ) },
+  { id: "a-valuation", title: "La valuation nasce da metriche verificabili", content: (
+    <Body>
+      Una cifra comunicata prima di avere le metriche di validazione, la trazione, la qualità degli
+      investitori e la struttura della raccolta che la sostengono resta un desiderio davanti a un
+      fondo che fa domande.
+    </Body>
+  ) },
+  { id: "a-investitori", title: "Molti investitori piccoli, poca governance pensata", content: (
+    <Body>
+      Ogni ingresso, anche di quota minima, porta diritti, comunicazione, documenti da gestire. Senza
+      categorie di quote, soglie di ingresso e regole statutarie pensate in anticipo, la complessità
+      cresce più in fretta del capitale raccolto.
+    </Body>
+  ) },
+  { id: "a-diritti", title: "Diritti uguali per contributi diversi", content: (
+    <Body>
+      Chi porta solo capitale e chi costruisce il progetto ricevono spesso le stesse quote, con gli
+      stessi diritti patrimoniali e amministrativi. Il controllo si sposta senza che nessuno l'abbia
+      deciso: basta differenziare le categorie di quote per far coincidere i diritti con il
+      contributo reale di ciascuno.
+    </Body>
+  ) },
+  { id: "a-dove-valore", title: "Dove sta il valore", content: (
+    <Body>
+      Il lavoro che conta si fa prima che l'investitore faccia la prima domanda: statuto pensato per
+      i round che verranno, cap table progettata come infrastruttura di governance, valuation
+      costruita su metriche verificabili, quote e diritti differenziati per il contributo reale di
+      chi entra.
+    </Body>
+  ) },
+  { id: "a-con-chi", title: "Con chi lavoro", content: (
+    <Body>
+      Startup italiane, dalla costituzione al primo round e ai successivi. Founder che hanno già
+      validato un'idea o un prodotto e che stanno per affrontare la parte che non hanno mai fatto
+      prima.
+    </Body>
+  ) },
+];
+
+export function TemplateACriterio() {
+  const [active, setActive] = useState(critSections[0].id);
+
+  useEffect(() => {
+    const els = critSections.map((s) => document.getElementById(s.id)).filter(Boolean);
+    if (!els.length) return;
+    const visible = new Set();
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) visible.add(e.target.id);
+          else visible.delete(e.target.id);
+        });
+        const topmost = critSections.find((s) => visible.has(s.id));
+        if (topmost) setActive(topmost.id);
+      },
+      { rootMargin: "-30% 0px -55% 0px", threshold: 0 }
+    );
+    els.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
+
+  const goTo = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 100, behavior: "smooth" });
+  };
+
+  return (
+    <>
+      <Seo title="Template A — Anteprima pagina di criterio" description="Anteprima del Template A applicato a una pagina di criterio: sobria, uniforme, senza numeri in filigrana né tint." />
+      <main data-testid="template-a-criterio" className="relative pt-28 pb-24 md:pt-32 md:pb-32">
+        <nav
+          aria-label="Indice della pagina"
+          data-testid="template-a-toc"
+          className="hidden xl:block fixed left-8 2xl:left-16 top-1/2 -translate-y-1/2 z-30 w-52"
+        >
+          <ul className="space-y-3.5 border-l border-gray-200 pl-4">
+            {critSections.map((s, i) => (
+              <li key={s.id}>
+                <button
+                  type="button"
+                  onClick={() => goTo(s.id)}
+                  aria-current={active === s.id ? "true" : undefined}
+                  className={`group flex gap-2.5 text-left text-xs leading-snug transition-colors duration-300 ${
+                    active === s.id ? "text-navy" : "text-gray-400 hover:text-gray-600"
+                  }`}
+                >
+                  <span className="tabular-nums pt-px shrink-0">{two(i + 1)}</span>
+                  <span className="line-clamp-2">{s.title}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <DemoBanner />
+
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <FadeIn>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]">
+              Metriche e statuto: la posizione da cui si negozia.
+            </h1>
+          </FadeIn>
+          <FadeIn delay={0.05}>
+            <p className="mt-10 text-xl md:text-2xl leading-relaxed text-gray-700">
+              Un investitore arriva alla due diligence e trova quello che nessuno aveva ancora
+              guardato: categorie di quote non previste, strumenti finanziari non disciplinati, tag
+              along e drag along assenti. Da quel momento le condizioni le decide lui, non i founder
+              che fino a un istante prima le stavano ancora impostando.
+            </p>
+          </FadeIn>
+        </div>
+
+        {critSections.map((s, i) => (
+          <section key={s.id} id={s.id} className="scroll-mt-28 mt-24 md:mt-28">
+            <div className="mx-auto max-w-3xl px-6">
+              <FadeIn>
+                <div className="mb-8">
+                  <span className="block text-sm font-medium tabular-nums text-navy mb-3">{two(i + 1)}</span>
+                  <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+                    {s.title}
+                  </h2>
+                </div>
+              </FadeIn>
+              {s.content}
+            </div>
+          </section>
+        ))}
+      </main>
+    </>
+  );
+}
