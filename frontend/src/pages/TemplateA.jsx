@@ -28,9 +28,9 @@ const DemoBanner = () => (
 
 /* ---------- HOME — versione A pura ---------- */
 const areas = [
-  { name: "Assetti societari.", text: " La forma giuridica dell'impresa, la struttura di gruppo, i soci, i patti e le regole della compagine sociale nel tempo.", to: "/assetti-societari", id: "a-area-assetti" },
-  { name: "Processi.", text: " Come funziona l'azienda, e cosa cambia quando entra l'intelligenza artificiale.", to: "/processi", id: "a-area-processi" },
-  { name: "Finanza.", text: " Come si misura l'impresa e come si sostiene, in azienda o in una raccolta di capitale.", to: "/finanza", id: "a-area-finanza" },
+  { title: "Assetti societari", desc: "La forma giuridica dell'impresa, la struttura di gruppo, i soci, i patti e le regole della compagine sociale nel tempo.", to: "/assetti-societari", id: "a-area-assetti" },
+  { title: "Processi", desc: "Come funziona l'azienda, e cosa cambia quando entra l'intelligenza artificiale.", to: "/processi", id: "a-area-processi" },
+  { title: "Finanza", desc: "Come si misura l'impresa e come si sostiene, in azienda o in una raccolta di capitale.", to: "/finanza", id: "a-area-finanza" },
 ];
 
 const highlights = [
@@ -65,37 +65,43 @@ export function TemplateAHome() {
           </Body>
 
           <SectionTitle>Le tre aree</SectionTitle>
-          <div className="mt-10 space-y-12">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5">
             {areas.map((a, i) => (
-              <FadeIn key={a.id} delay={i * 0.05}>
-                <div data-testid={a.id}>
-                  <p className="text-lg leading-relaxed text-gray-700">
-                    <strong className="font-semibold text-gray-900">{a.name}</strong>
-                    {a.text}
-                  </p>
-                  <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-5" labelClassName="text-[15px]">
+              <FadeIn key={a.id} delay={i * 0.06}>
+                <Link
+                  to={a.to}
+                  data-testid={`${a.id}-link`}
+                  className="group flex h-full flex-col rounded-lg border border-gray-200 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-navy/40 hover:bg-[#F7F9FC] hover:shadow-[0_14px_34px_-20px_rgba(30,58,107,0.4)]"
+                >
+                  <span className="font-serif text-5xl leading-none text-navy/20">{`0${i + 1}`}</span>
+                  <h3 className="mt-6 font-serif text-2xl font-semibold tracking-tight text-gray-900">{a.title}</h3>
+                  <p className="mt-3 text-base leading-relaxed text-gray-600">{a.desc}</p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-navy text-[15px]">
                     Scopri di più
-                  </ArrowLink>
-                </div>
+                    <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </span>
+                </Link>
               </FadeIn>
             ))}
           </div>
 
-          <SectionTitle>In evidenza</SectionTitle>
-          <div className="mt-10 space-y-14">
-            {highlights.map((h, i) => (
-              <FadeIn key={h.id} delay={i * 0.05}>
-                <article data-testid={h.id}>
-                  <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900 leading-snug">
-                    {h.title}
-                  </h3>
-                  <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
-                  <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
-                    Leggi
-                  </ArrowLink>
-                </article>
-              </FadeIn>
-            ))}
+          <div className="mt-24 md:mt-28 rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-8 md:p-12">
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">In evidenza</h2>
+            <div className="mt-10 space-y-12">
+              {highlights.map((h, i) => (
+                <FadeIn key={h.id} delay={i * 0.05}>
+                  <article data-testid={h.id}>
+                    <h3 className="font-serif text-2xl md:text-[1.75rem] font-medium tracking-tight text-gray-900 leading-snug">
+                      {h.title}
+                    </h3>
+                    <p className="mt-4 text-lg leading-relaxed text-gray-700">{h.text}</p>
+                    <ArrowLink to={h.to} testId={`${h.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                      Leggi
+                    </ArrowLink>
+                  </article>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </main>
