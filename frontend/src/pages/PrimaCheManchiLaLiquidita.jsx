@@ -107,7 +107,7 @@ const sections = [
   },
   {
     id: "dove-sta-il-lavoro",
-    title: "Dove sta il lavoro",
+    title: "Dove sta il valore",
     content: (
       <Body>
         Il lavoro che conta si fa prima che la banca, l'investitore o il fornitore facciano la

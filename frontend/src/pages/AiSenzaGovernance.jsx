@@ -65,7 +65,7 @@ const sections = [
   },
   {
     id: "dove-sta-il-lavoro",
-    title: "Dove sta il lavoro",
+    title: "Dove sta il valore",
     content: (
       <Body>
         Mappare come funziona oggi il processo, prima di introdurre qualsiasi strumento. Ridisegnare

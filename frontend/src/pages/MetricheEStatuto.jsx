@@ -63,7 +63,7 @@ const sections = [
   },
   {
     id: "dove-sta-il-lavoro",
-    title: "Dove sta il lavoro",
+    title: "Dove sta il valore",
     content: (
       <Body>
         Il lavoro che conta si fa prima che l'investitore faccia la prima domanda: statuto pensato

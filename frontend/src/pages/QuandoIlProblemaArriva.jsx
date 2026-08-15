@@ -49,7 +49,7 @@ const sections = [
   },
   {
     id: "dove-sta-il-lavoro",
-    title: "Dove sta il lavoro",
+    title: "Dove sta il valore",
     content: (
       <>
         <Body>Il lavoro che conta si fa quando l'operazione non è ancora necessaria.</Body>
