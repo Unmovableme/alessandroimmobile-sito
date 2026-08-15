@@ -64,6 +64,26 @@ const referenze = [
   },
 ];
 
+const featured = [
+  {
+    name: "Claudio Grimoldi",
+    role: "Turbo Crowd",
+    excerpt: "Un professionista raro da trovare: competente e serio come davvero pochi.",
+  },
+  {
+    name: "Angelo Marra",
+    role: "Presidente Fondimpresa Calabria, Confindustria",
+    excerpt:
+      "Lo consiglio a chiunque abbia una startup e ha bisogno di un consulente esperto e sul pezzo.",
+  },
+  {
+    name: "Federico Gasparini",
+    role: null,
+    excerpt:
+      "Straordinariamente competente, con una vasta e profonda esperienza in tutto ciò che riguarda la raccolta fondi per le startup.",
+  },
+];
+
 export default function Referenze() {
   return (
     <>
@@ -75,6 +95,34 @@ export default function Referenze() {
         <PageTitle testId="referenze-title">Referenze</PageTitle>
 
         <Lead>Quello che dicono di me le persone con cui ho lavorato.</Lead>
+
+        <div
+          data-testid="referenze-evidenza"
+          className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-5"
+        >
+          {featured.map((f, i) => (
+            <FadeIn key={f.name} delay={i * 0.06}>
+              <figure
+                data-testid={`referenza-evidenza-${i + 1}`}
+                className="relative h-full rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-7 pt-10"
+              >
+                <span
+                  aria-hidden
+                  className="absolute left-6 top-3 font-serif text-5xl leading-none text-navy/25 select-none"
+                >
+                  &ldquo;
+                </span>
+                <blockquote className="font-serif text-lg md:text-xl italic leading-snug text-navy">
+                  {f.excerpt}
+                </blockquote>
+                <figcaption className="mt-5">
+                  <p className="text-base font-semibold tracking-tight text-gray-900">{f.name}</p>
+                  {f.role && <p className="mt-0.5 text-sm text-gray-500">{f.role}</p>}
+                </figcaption>
+              </figure>
+            </FadeIn>
+          ))}
+        </div>
 
         <div className="mt-20 md:mt-24 divide-y divide-navy/15">
           {referenze.map((r, i) => (

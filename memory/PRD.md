@@ -66,6 +66,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - /contatti: aggiunta riga-richiamo sotto l'H1, prima del blocco Scrivimi, con link a /referenze. Nient'altro modificato.
 - /percorso: nuova sezione H2 "Pubblicazioni" dopo il blocco "Oggi", con testo capitolo Zanichelli e link esterno "Il volume".
 
+## Referenze nel menu + evidenza + richiamo Finanza (15/08/2026)
+- Header: aggiunta voce "Referenze" (desktop + mobile), tra Percorso e Contatti.
+- Referenze: nuovo blocco "In evidenza" in cima con 3 schede chiave (estratti verbatim, virgolette serif navy, corsivo, nome+ruolo) sopra l'elenco completo.
+- Finanza: aggiunto richiamo in fondo (DeepLink) a /percorso#pubblicazioni.
+- Percorso: sezione Pubblicazioni con id="pubblicazioni" + scroll all'hash (useEffect su location.hash) per l'ancora dalla pagina Finanza.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

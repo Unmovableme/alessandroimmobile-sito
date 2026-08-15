@@ -8,6 +8,7 @@ const NAV = [
   { to: "/processi", label: "Processi", id: "processi" },
   { to: "/finanza", label: "Finanza", id: "finanza" },
   { to: "/percorso", label: "Percorso", id: "percorso" },
+  { to: "/referenze", label: "Referenze", id: "referenze" },
   { to: "/contatti", label: "Contatti", id: "contatti" },
 ];
 

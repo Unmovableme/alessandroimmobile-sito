@@ -79,6 +79,10 @@ export default function Finanza() {
             rapporto con gli investitori.
           </Body>
         </TintBand>
+
+        <DeepLink to="/percorso#pubblicazioni" testId="finanza-deeplink-pubblicazioni">
+          Le pubblicazioni: la finanza alternativa, dalla startup alla quotazione
+        </DeepLink>
       </PageContainer>
     </>
   );

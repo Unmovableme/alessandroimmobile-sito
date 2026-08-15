@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Seo } from "@/components/Seo";
 import { PageContainer, PageTitle, Lead, Body, FadeIn, ArrowLink } from "@/components/Editorial";
 
@@ -50,6 +52,19 @@ const stages = [
 ];
 
 export default function Percorso() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#pubblicazioni") {
+      const el = document.getElementById("pubblicazioni");
+      if (el) {
+        setTimeout(() => {
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
+        }, 150);
+      }
+    }
+  }, [location.hash]);
+
   return (
     <>
       <Seo
@@ -82,7 +97,7 @@ export default function Percorso() {
           ))}
         </div>
 
-        <section data-testid="percorso-pubblicazioni" className="mt-24 md:mt-28">
+        <section data-testid="percorso-pubblicazioni" id="pubblicazioni" className="mt-24 md:mt-28 scroll-mt-24">
           <FadeIn>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
               Pubblicazioni
