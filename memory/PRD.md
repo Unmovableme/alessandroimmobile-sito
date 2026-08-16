@@ -149,6 +149,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Slug pagina criterio Finanza/Startup: /quanto-vali-quanto-attrai -> /quanto-vali-quanto-raccogli (file rinominato QuantoValiQuantoRaccogli.jsx, componente e rotta aggiornati).
 - H1 e SEO title: "...quanto puoi raccogliere". Link su /finanza aggiornato (to + testo). Corpo (occorrenze "attrarre investimenti") invariato.
 
+## Variante prototipo 3b — immersivo a colori (16/08/2026)
+- Nuova rotta /template-a-immersivo-colore (TemplateCColorHome): come opz.3 ma foto a colori naturali (no grayscale), overlay navy in gradiente più leggero (from #0d1526/90 via /35 to transparent) e drop-shadow sul testo bianco per leggibilità.
+- Confronto immersivo: /template-a-immersivo (B&N) vs /template-a-immersivo-colore (colori).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
