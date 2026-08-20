@@ -64,7 +64,7 @@ export default function Contatti() {
               data-testid="contatti-email-link"
               className="group mt-12 inline-flex items-center gap-2 rounded-full bg-navy px-7 py-3 text-base md:text-lg font-medium text-white transition-all duration-300 hover:bg-[#1B2A4A]"
             >
-              {EMAIL}
+              Scrivimi
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>

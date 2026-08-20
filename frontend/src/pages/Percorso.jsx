@@ -77,7 +77,7 @@ export default function Percorso() {
           eyebrow="Dal 1996 a oggi"
           title="Percorso"
           titleTestId="percorso-title"
-          lead="Il percorso comincia nel 1996, in uno studio a Napoli, con la contabilità ordinaria e i bilanci delle prime imprese clienti."
+          lead="Il percorso comincia nel 1996, in uno studio di commercialisti, con la contabilità ordinaria e i bilanci delle prime imprese clienti."
           testId="percorso-hero"
           objectPosition="center 22%"
         />
