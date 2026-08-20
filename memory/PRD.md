@@ -161,6 +161,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova rotta /template-a-immersivo-medio (TemplateCMedHome): overlay navy intermedio tra opz.3 e 3a (from #0d1526/88 via #1B2A4A/50 to #1B2A4A/12) + drop-shadow testo.
 - Set immersivo completo: /template-a-immersivo (std), /template-a-immersivo-medio (intermedio), /template-a-immersivo-chiaro (chiaro), /template-a-immersivo-colore (colori).
 
+## Applicata 3b immersivo colori alla Home reale (16/08/2026)
+- Home.jsx ristrutturata: rimosso PageContainer, hero full-bleed immersivo a colori naturali (img object-cover object-[center_20%] + gradiente navy from #0d1526/90 via /35 to transparent), eyebrow/H1/lead bianchi con drop-shadow. Contenuti sotto (bio, link Referenze, Le tre aree, pull-quote, In evidenza) in wrapper max-w-3xl. Rimossi import inutilizzati (PageContainer, PageTitle, Portrait).
+- Prototipi /template-a* restano disponibili per riferimento.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
