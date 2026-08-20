@@ -18,7 +18,7 @@
 `Home · Assetti societari · Processi · Finanza · Percorso · Referenze · Contatti` (hamburger su mobile).
 
 **Footer** (identico ovunque):
-> Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e founder come advisor, business angel e investor, su raccolta di capitali, assetti statutari e governance.
+> Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco i founder come advisor, business angel e investor, su nascita, raccolta di capitali e governance delle startup.
 
 + link **Scrivimi** (mailto). Email attuale (provvisoria): `alessandro.immobile@gmail.com`. LinkedIn: `linkedin.com/in/alessandroimmobile/`.
 
@@ -104,7 +104,7 @@ Temi: percorso di raccolta per fasi; strumenti convertibili/aumenti di capitale;
 1. **Studio e prime esperienze** — praticantato in studio commercialista, laurea, master in finanza; primi incarichi su processi finanziari per una società di servizi finanziari a Torino.
 2. **Consulenza per gruppi bancari e imprese industriali** — dal 2000, consulenza internazionale poi studio a Torino: adeguamento a principi contabili internazionali, riorganizzazione processi creditizi, bilancio consolidato di gruppo multi-paese, ristrutturazione con piano industriale e rinegoziazione del debito.
 3. **Ruoli esecutivi e di governo** — dal 2015: consulenza di direzione ambito bancario; presidenza Polo GGB (Genomica, Genetica e Biologia); presidenza e direzione finanziaria di Netgenomics S.r.l. (startup innovativa scienze della vita); direzione finanziaria di Guanxi S.r.l. (digital transformation, oggi advisor).
-4. **Oggi** — fondatore e AD di Imment S.r.l.; partner di P3 Ventures (pre-seed AI-native); co-fondatore, vicepresidente e tesoriere di Business Angel Club; due gruppi di lavoro ODCEC Torino (startup innovative e AI); docente di finanziamento aziendale alla GIOYA HEI, Malta.
+4. **Oggi** — fondatore e CEO di Imment S.r.l.; partner di P3 Ventures (pre-seed AI-native); co-fondatore, vicepresidente e tesoriere di Business Angel Club; due gruppi di lavoro ODCEC Torino (startup innovative e AI); docente di finanziamento aziendale alla GIOYA HEI, Malta.
 
 **Pubblicazioni** (`#pubblicazioni`): capitolo «La finanza alternativa, dalla startup alla quotazione» in «Diritto dell'innovazione e P.M.I.» (a cura di Oreste Cagnasso e Angelo Mambriani, Zanichelli). Firmato Alessandro Immobile Molaro. + link al volume Zanichelli.
 
@@ -113,7 +113,7 @@ Temi: percorso di raccolta per fasi; strumenti convertibili/aumenti di capitale;
 ## 6. REFERENZE (`/referenze`)
 **Hero** — occhiello: `Founder · Manager · Professionisti`; H1: **Referenze**; lead: *"Quello che dicono di me le persone con cui ho lavorato."*
 
-**"In evidenza"** (`Evidenza`): 3 referenze a rotazione con estratto breve + ruolo + link LinkedIn. Rotazione deterministica per giorno: trio diverso ogni giorno, cicla tutte e 10 in 10 giorni (non cambia a ogni refresh).
+**"In evidenza"** (`Evidenza`): 3 referenze a rotazione con estratto breve + ruolo + link LinkedIn. Selezione CASUALE (shuffle) ad ogni caricamento della pagina: trio diverso a ogni refresh, senza ripetizioni interne (stabile durante la navigazione della stessa pagina via useMemo).
 
 **Elenco completo (10 referenze verbatim):**
 1. **Marta Nappo** — CMO, Chief Sales Officer, Business Development Executive.
@@ -134,12 +134,11 @@ Ciascuna con citazione integrale e link al profilo LinkedIn (mappa `linkedinByNa
 ## 7. CONTATTI (`/contatti`)
 **Hero** — occhiello: `Un confronto diretto`; H1: **Contatti**; lead: *"Scrivimi direttamente, senza moduli da compilare. Rispondo io."*
 - Riga: *Prima di scrivere, leggi cosa dicono di me le persone con cui ho lavorato.* (→ `/referenze`)
-- Email cliccabile (mailto) + nota *(provvisoria, in attesa dell'email su dominio proprio)* + link LinkedIn.
+- Email mostrata come **bottone pill navy cliccabile** (mailto). Email definitiva `alessandro.immobile@gmail.com`. + link LinkedIn.
 
 **Sezione "Prenota una call":**
 - 3 formati: **Intro & Focus Call** (10 min, gratuita) · **Executive Advisory** (30 min, 300 €) · **Corporate Strategic Sprint** (3×60 min in ~3 settimane, 900 €).
 - Testi: il confronto può toccare organizzazione, innovazione e AI oltre alle tre aree; compilare il modulo prima della call; per i formati a pagamento compaiono IBAN e causale dopo la prenotazione, bonifico prima della call, conferma via email.
-- Blocco "Cosa dicono di me" (Evidenza compact, 3 referenze) + link "Tutte le referenze".
 - **Form Netlify** (`prenota-call`, honeypot `bot-field`). Campi: Nome azienda, Ruolo, Tema, Descrizione problema (max 500), Risultato desiderato, Urgenza (Entro un mese / Entro tre mesi / Non urgente), Categoria (Finance, Amministrazione-Finanza-Controllo, Organizzazione, AI, Innovation, Startup, Open Innovation, Governance, Fundraising, Altro), Email, selezione Formato. Se formato a pagamento → box IBAN + causale ("[Nome azienda] — Executive Advisory / Corporate Strategic Sprint"). Invio → redirect `/grazie`.
 - NOTA TECNICA: l'IBAN nel codice è un placeholder da sostituire prima del go-live.
 
@@ -200,7 +199,7 @@ H1 "Pagina non trovata" + testo + link home. Le vecchie rotte prototipo (`/templ
 ---
 
 ## 12. Note aperte / backlog
-- Email `alessandro.immobile@gmail.com` è provvisoria (in attesa di dominio proprio).
+- Email `alessandro.immobile@gmail.com` è definitiva.
 - L'IBAN nel form è un placeholder, da sostituire prima del go-live.
 - La sezione "Alcuni esempi" esiste solo su `/quando-il-problema-arriva`; sulle altre aree è ancora da aggiungere (materiale autorizzato mancante).
 - Deploy previsto su Netlify (notifiche form via dashboard); dominio `alessandroimmobile.com` in configurazione.

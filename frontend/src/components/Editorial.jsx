@@ -51,7 +51,7 @@ export const Body = ({ children, className = "" }) => (
 
 export const SectionTitle = ({ children }) => (
   <FadeIn>
-    <h2 className="mt-28 md:mt-40 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+    <h2 className="mt-16 md:mt-24 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
       {children}
     </h2>
   </FadeIn>

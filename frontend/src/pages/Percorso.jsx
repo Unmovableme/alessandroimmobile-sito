@@ -42,7 +42,7 @@ const stages = [
     title: "Oggi",
     body: (
       <>
-        Fondatore e amministratore delegato di Imment S.r.l. Partner di P3 Ventures, fondo pre-seed
+        Fondatore e CEO di Imment S.r.l. Partner di P3 Ventures, fondo pre-seed
         su società AI-native. Co-fondatore, vicepresidente e tesoriere di Business Angel Club.
         Componente di due gruppi di lavoro dell'Ordine dei Dottori Commercialisti di Torino, su
         startup innovative e su intelligenza artificiale. Docente di finanziamento aziendale alla

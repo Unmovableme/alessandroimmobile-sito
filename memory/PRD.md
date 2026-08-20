@@ -186,6 +186,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 ## Rotazione casuale referenze in evidenza (17/07/2026)
 - Evidenza.jsx: sostituita la rotazione deterministica per-giorno con estrazione CASUALE (Fisher-Yates shuffle su tutto il pool, useMemo per montaggio). Ad ogni caricamento della pagina compare un trio diverso, senza ripetizioni interne. Verificato: trio cambia ad ogni refresh.
 
+## Correzioni multiple (17/07/2026)
+- Editorial.jsx SectionTitle: spaziatura ridotta da mt-28/md:mt-40 a mt-16/md:mt-24 (impatta Home "Le tre aree" e sezioni "Aziende"/"Startup" di Assetti/Processi/Finanza).
+- Percorso "Oggi": "amministratore delegato" → "CEO" di Imment S.r.l. (uniformato a Home/footer).
+- Footer: nuovo testo "...Dal 2019 affianco i founder come advisor, business angel e investor, su nascita, raccolta di capitali e governance delle startup."
+- Contatti: email resa DEFINITIVA (rimossa nota "provvisoria"), mostrata come bottone pill navy cliccabile (mailto); rimosso interamente il blocco "Cosa dicono di me" (Evidenza compact) sotto "Prenota una call" e relativo import. Resta il link in cima alla pagina verso /referenze.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

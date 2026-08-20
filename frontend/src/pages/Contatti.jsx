@@ -4,7 +4,6 @@ import { FadeIn, ArrowLink } from "@/components/Editorial";
 import { ImmersiveHero } from "@/components/ImmersiveHero";
 import { EMAIL, LINKEDIN } from "@/components/Footer";
 import PrenotaCall from "@/components/PrenotaCall";
-import { Evidenza } from "@/components/Evidenza";
 
 const summary = [
   { name: "Intro & Focus Call", meta: "10 minuti", price: "gratuita" },
@@ -60,20 +59,16 @@ export default function Contatti() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <div className="mt-12">
-              <a
-                href={`mailto:${EMAIL}`}
-                data-testid="contatti-email-link"
-                className="group inline-block text-xl md:text-2xl font-medium text-navy"
-              >
-                <span className="relative inline-block pb-0.5 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100">
-                  {EMAIL}
-                </span>
-              </a>
-              <p className="mt-3 text-sm italic text-gray-500">
-                (provvisoria, in attesa dell'email su dominio proprio)
-              </p>
-            </div>
+            <a
+              href={`mailto:${EMAIL}`}
+              data-testid="contatti-email-link"
+              className="group mt-12 inline-flex items-center gap-2 rounded-full bg-navy px-7 py-3 text-base md:text-lg font-medium text-white transition-all duration-300 hover:bg-[#1B2A4A]"
+            >
+              {EMAIL}
+              <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
+                →
+              </span>
+            </a>
           </FadeIn>
 
           <FadeIn delay={0.15}>
@@ -149,22 +144,6 @@ export default function Contatti() {
               l'appuntamento via email.
             </p>
           </FadeIn>
-
-          <div className="mt-16 md:mt-20">
-            <FadeIn>
-              <div className="flex items-baseline justify-between gap-4">
-                <h3 className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-navy">
-                  Cosa dicono di me
-                </h3>
-                <ArrowLink to="/referenze" testId="contatti-evidenza-link" labelClassName="text-sm">
-                  Tutte le referenze
-                </ArrowLink>
-              </div>
-            </FadeIn>
-            <div className="mt-6">
-              <Evidenza variant="compact" testId="contatti-evidenza" />
-            </div>
-          </div>
 
           <PrenotaCall />
           </section>
