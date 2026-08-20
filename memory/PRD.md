@@ -180,6 +180,9 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Contatti.jsx e Percorso.jsx ristrutturate: rimosso PageContainer/PageTitle/Lead/Portrait a due colonne, sostituiti con ImmersiveHero; contenuti sotto in wrapper max-w-3xl. objectPosition="center 22%" (miglior inquadratura volto). Testid preservati (contatti-title, percorso-title).
 - Estetica immersiva Contatti/Percorso: COMPLETATA.
 
+## Hero immersivo Referenze (17/07/2026)
+- Referenze.jsx: applicato ImmersiveHero (eyebrow "Founder · Manager · Professionisti", title "Referenze", lead esistente, objectPosition center 20%). Rimosso PageContainer/PageTitle/Lead; Evidenza + elenco completo ora in wrapper max-w-3xl. Testid referenze-title preservato. Tutte e 4 le pagine principali (Home, Contatti, Percorso, Referenze) hanno ora lo stesso hero immersivo.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

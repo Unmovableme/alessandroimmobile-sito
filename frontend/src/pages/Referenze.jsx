@@ -1,5 +1,6 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, FadeIn, ArrowLink } from "@/components/Editorial";
+import { FadeIn, ArrowLink } from "@/components/Editorial";
+import { ImmersiveHero } from "@/components/ImmersiveHero";
 import { Evidenza, linkedinByName } from "@/components/Evidenza";
 
 const referenze = [
@@ -72,16 +73,20 @@ export default function Referenze() {
         title="Referenze — Alessandro Immobile"
         description="Quello che dicono di me le persone con cui ho lavorato: founder, manager e professionisti su assetti societari, finanza e raccolta di capitale."
       />
-      <PageContainer testId="referenze-page">
-        <PageTitle testId="referenze-title">Referenze</PageTitle>
+      <main data-testid="referenze-page" className="pb-24 md:pb-32">
+        <ImmersiveHero
+          eyebrow="Founder · Manager · Professionisti"
+          title="Referenze"
+          titleTestId="referenze-title"
+          lead="Quello che dicono di me le persone con cui ho lavorato."
+          testId="referenze-hero"
+          objectPosition="center 20%"
+        />
 
-        <Lead>Quello che dicono di me le persone con cui ho lavorato.</Lead>
-
-        <div className="mt-16 md:mt-20">
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
           <Evidenza variant="full" testId="referenze-evidenza" />
-        </div>
 
-        <div className="mt-20 md:mt-24 divide-y divide-navy/15">
+          <div className="mt-20 md:mt-24 divide-y divide-navy/15">
           {referenze.map((r, i) => (
             <FadeIn key={r.name} delay={Math.min(i, 5) * 0.04}>
               <figure
@@ -114,8 +119,9 @@ export default function Referenze() {
               </figure>
             </FadeIn>
           ))}
+          </div>
         </div>
-      </PageContainer>
+      </main>
     </>
   );
 }
