@@ -153,6 +153,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Nuova rotta /template-a-immersivo-colore (TemplateCColorHome): come opz.3 ma foto a colori naturali (no grayscale), overlay navy in gradiente più leggero (from #0d1526/90 via /35 to transparent) e drop-shadow sul testo bianco per leggibilità.
 - Confronto immersivo: /template-a-immersivo (B&N) vs /template-a-immersivo-colore (colori).
 
+## Variante prototipo 3a — immersivo velo chiaro (16/08/2026)
+- Nuova rotta /template-a-immersivo-chiaro (TemplateCLightHome): come opz.3 B&N ma overlay navy piu' leggero (from #0d1526/75 via #1B2A4A/30 to transparent) + drop-shadow sul testo per leggibilita'.
+- Confronto immersivo: /template-a-immersivo (velo std B&N), /template-a-immersivo-chiaro (velo chiaro B&N), /template-a-immersivo-colore (colori).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
