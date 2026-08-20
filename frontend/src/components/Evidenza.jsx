@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { FadeIn, ArrowLink } from "@/components/Editorial";
 
 // URL LinkedIn per nome (fonte unica condivisa da Referenze ed Evidenza).
@@ -75,17 +76,23 @@ const evidenzaPool = [
   },
 ];
 
-// Rotazione nel tempo: ogni giorno mostra un trio diverso, ciclando su tutte e dieci.
+// Rotazione casuale: a ogni caricamento della pagina viene mostrato un trio
+// diverso, estratto in modo aleatorio dal pool completo (senza ripetizioni).
 const getFeatured = (count = 3) => {
-  const dayIndex = Math.floor(Date.now() / 86400000);
-  const start = (dayIndex * count) % evidenzaPool.length;
-  return Array.from({ length: count }, (_, k) => evidenzaPool[(start + k) % evidenzaPool.length]);
+  const pool = [...evidenzaPool];
+  // Fisher-Yates shuffle
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  return pool.slice(0, count);
 };
 
 // variant: "full" (pagina Referenze) | "compact" (miniatura vicino al form)
 export const Evidenza = ({ variant = "full", testId = "referenze-evidenza" }) => {
   const compact = variant === "compact";
-  const featured = getFeatured(3);
+  // Estrazione casuale calcolata una sola volta per montaggio del componente.
+  const featured = useMemo(() => getFeatured(3), []);
   return (
     <div
       data-testid={testId}

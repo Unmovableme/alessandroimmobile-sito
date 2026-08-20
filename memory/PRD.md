@@ -183,6 +183,9 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 ## Hero immersivo Referenze (17/07/2026)
 - Referenze.jsx: applicato ImmersiveHero (eyebrow "Founder · Manager · Professionisti", title "Referenze", lead esistente, objectPosition center 20%). Rimosso PageContainer/PageTitle/Lead; Evidenza + elenco completo ora in wrapper max-w-3xl. Testid referenze-title preservato. Tutte e 4 le pagine principali (Home, Contatti, Percorso, Referenze) hanno ora lo stesso hero immersivo.
 
+## Rotazione casuale referenze in evidenza (17/07/2026)
+- Evidenza.jsx: sostituita la rotazione deterministica per-giorno con estrazione CASUALE (Fisher-Yates shuffle su tutto il pool, useMemo per montaggio). Ad ogni caricamento della pagina compare un trio diverso, senza ripetizioni interne. Verificato: trio cambia ad ogni refresh.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
