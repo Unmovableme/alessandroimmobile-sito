@@ -536,6 +536,69 @@ export function TemplateCLightHome() {
 }
 
 
+/* ---------- HOME — opzione 3m: hero immersivo B&N, velo navy intermedio ---------- */
+export function TemplateCMedHome() {
+  return (
+    <>
+      <Seo title="Template A — Immersivo velo intermedio (opz. 3m)" description="Anteprima Home con hero immersivo e overlay navy intermedio." />
+      <main data-testid="template-cm-home" className="pb-24 md:pb-32">
+        <section
+          data-testid="template-cm-hero"
+          className="relative w-full min-h-[88vh] flex items-end overflow-hidden"
+        >
+          <img
+            src="/portrait-hero.png"
+            alt="Ritratto di Alessandro Immobile"
+            loading="eager"
+            className="absolute inset-0 h-full w-full object-cover object-[center_20%] grayscale"
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-t from-[#0d1526]/88 via-[#1B2A4A]/50 to-[#1B2A4A]/12"
+          />
+          <div className="relative z-10 w-full">
+            <div className="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+              <FadeIn>
+                <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/80 font-medium drop-shadow-[0_1px_10px_rgba(0,0,0,0.4)]">
+                  Assetti societari · Processi · Finanza
+                </p>
+              </FadeIn>
+              <FadeIn delay={0.04}>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.02] drop-shadow-[0_2px_18px_rgba(0,0,0,0.4)]">
+                  Alessandro Immobile
+                </h1>
+              </FadeIn>
+              <FadeIn delay={0.08}>
+                <p className="mt-6 max-w-2xl font-serif text-2xl md:text-[1.7rem] italic leading-snug text-white/90 drop-shadow-[0_1px_12px_rgba(0,0,0,0.4)]">
+                  Struttura societaria, processi e finanza, per aziende e startup.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <Body>
+            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+          </Body>
+          <Body>
+            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
+            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
+            per i round di finanziamento.
+          </Body>
+          <Body>
+            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+          </Body>
+        </div>
+
+        <HomeSections />
+      </main>
+    </>
+  );
+}
+
+
 /* ---------- PAGINA DI CRITERIO — versione A pura ---------- */
 const two = (n) => String(n).padStart(2, "0");
 
