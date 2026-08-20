@@ -192,6 +192,14 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Footer: nuovo testo "...Dal 2019 affianco i founder come advisor, business angel e investor, su nascita, raccolta di capitali e governance delle startup."
 - Contatti: email resa DEFINITIVA (rimossa nota "provvisoria"), mostrata come bottone pill navy cliccabile (mailto); rimosso interamente il blocco "Cosa dicono di me" (Evidenza compact) sotto "Prenota una call" e relativo import. Resta il link in cima alla pagina verso /referenze.
 
+## Hero navy pieno su pagine interne (17/07/2026)
+- ImmersiveHero.jsx: rimossi foto ritratto + gradiente; sfondo navy pieno #1B2A4A (tinta unita) su Contatti, Percorso, Referenze. Testo bianco/off-white, stessa gerarchia e altezza (~58vh). La foto resta solo sulla Home (hero inline, non usa ImmersiveHero).
+
+## Correzioni testuali (17/07/2026)
+- Home hero sottotitolo: "Dal 1996 affianco aziende e startup su struttura, processi e capitale."
+- Percorso lead: "...in uno studio di commercialisti..." (era "a Napoli").
+- Contatti: bottone email etichetta "Scrivimi" (mailto invariato verso alessandro.immobile@gmail.com).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
