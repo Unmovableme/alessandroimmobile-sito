@@ -203,6 +203,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 ## Hero interne: allineamento in alto (17/07/2026)
 - ImmersiveHero.jsx: blocco testo da bottom-aligned a top-aligned (items-start + pt-28 md:pt-36), offset fisso identico su Contatti/Percorso/Referenze indipendentemente dalla lunghezza del sottotitolo. Occhiello sempre allo stesso punto di partenza.
 
+## Uniformata pull quote di pagina su Assetti/Processi/Finanza (17/07/2026)
+- Struttura allineata ad Assetti: intro → pull quote di pagina → Aziende → Startup.
+- Processi: spostata la pull quote "Il layer informativo si progetta a valle dei processi..." da metà pagina (tra Aziende e Startup) a subito dopo l'intro.
+- Finanza: aggiunta pull quote di pagina "Va misurata prima che manchi." dopo l'intro (+ import PullQuote).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

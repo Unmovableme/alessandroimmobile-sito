@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote } from "@/components/Editorial";
 
 export default function Finanza() {
   return (
@@ -16,6 +16,8 @@ export default function Finanza() {
           cosa è successo, cosa sta succedendo, se domani si riesce a pagare. In molte imprese le
           tre risposte arrivano dalla stessa persona, con lo stesso gestionale, e spesso in ritardo.
         </Lead>
+
+        <PullQuote testId="finanza-pullquote">Va misurata prima che manchi.</PullQuote>
 
         <SectionTitle>Aziende</SectionTitle>
         <Descriptor>Contabilità che arriva quando l'anno è già chiuso.</Descriptor>

@@ -25,6 +25,11 @@ export default function Processi() {
           persona sola.
         </Body>
 
+        <PullQuote testId="processi-pullquote">
+          Il layer informativo si progetta a valle dei processi. Chi salta l'analisi ottiene un
+          archivio ordinato che non cambia come l'impresa lavora.
+        </PullQuote>
+
         <SectionTitle>Aziende</SectionTitle>
         <Descriptor>Processi cresciuti per sedimentazione, mai ridisegnati.</Descriptor>
         <Body>
@@ -53,10 +58,6 @@ export default function Processi() {
           quale frequenza, e un collegamento agli strumenti operativi già in uso.
         </Body>
         <Body>Riorganizzazione: ruoli e responsabilità ridisegnati insieme al processo.</Body>
-        <PullQuote testId="processi-pullquote">
-          Il layer informativo si progetta a valle dei processi. Chi salta l'analisi ottiene un
-          archivio ordinato che non cambia come l'impresa lavora.
-        </PullQuote>
         <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai">
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
