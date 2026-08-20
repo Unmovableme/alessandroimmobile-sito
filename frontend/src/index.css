@@ -87,6 +87,46 @@ h2 {
     }
 }
 
+/* Indicatore "scorri": segmento luminoso che scende lungo una linea verticale sottile */
+@keyframes scroll-line {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(240%);
+        opacity: 0;
+    }
+}
+
+.scroll-line-track {
+    position: relative;
+    width: 1px;
+    height: 56px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.scroll-line-track::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: scroll-line 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-line-track::after {
+        animation: none;
+        opacity: 0.7;
+    }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;

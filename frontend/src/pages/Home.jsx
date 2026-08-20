@@ -82,6 +82,15 @@ export default function Home() {
               </FadeIn>
             </div>
           </div>
+
+          {/* Indicatore "scorri": linea verticale sottile animata */}
+          <div
+            aria-hidden
+            data-testid="home-hero-scroll"
+            className="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 md:block"
+          >
+            <div className="scroll-line-track" />
+          </div>
         </section>
 
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">

@@ -1,0 +1,38 @@
+{
+  "summary": "Frontend-only verification of (a) new animated vertical-line scroll indicator on Home hero, (b) Evidenza rotating testimonials on /referenze and compact variant on /contatti, (c) rotation logic correctness, and (d) nav smoke test across all 7 routes. Desktop (1920x1080) and mobile (390x844). Rotation logic was verified by replicating getFeatured() in Node across 12 day indices. No backend exists; no API testing done.",
+  "backend_issues": { "critical": [], "minor": [] },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {
+        "screen": "Home hero - mobile (390x844)",
+        "issues": [
+          "The scroll indicator (data-testid='home-hero-scroll', bottom-6 left-1/2, 1x56px) vertically overlaps the italic byline: indicator box y=662.7-718.7 vs byline y=612.7-678.7, and it is horizontally inside the byline's width - the white animated line visibly crosses through the words 'aziende e finanza'. Suggest increasing hero bottom padding on small screens or hiding the indicator below md, or reducing indicator height/offset."
+        ]
+      },
+      {
+        "screen": "Referenze - Evidenza cards (mobile & desktop)",
+        "issues": [
+          "Cards are stretched to equal height (h-full) so shorter quotes leave a large empty gap under the LinkedIn link (e.g. card 1 at 1920px). Cosmetic only; consider items-start or content-centering."
+        ]
+      }
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Fix mobile overlap of the hero scroll indicator with the hero byline text (Home.jsx hero bottom padding / indicator offset or hide < md)."
+  ],
+  "critical_code_review_comments": [
+    "getFeatured() in Evidenza.jsx is correct: with count=3 and pool length 10 (coprime), start=(dayIndex*3)%10 walks 0,3,6,9,2,5,8,1,4,7 so all 10 testimonials are featured across a 10-day cycle, 10 distinct trios, no duplicates within a trio. Verified numerically for day indices 0-11; today's index 20685 -> start 5 -> Angelo Marra / Claudio Grimoldi / Federico Chigbuh Gasparini, matching the rendered DOM exactly.",
+    "Minor: day boundary uses UTC (Date.now()/86400000), so the trio changes at 00:00 UTC (02:00 Italian summer time). Acceptable but worth noting since the site is Italian.",
+    "Minor: rotation only changes on page load / per day - there is no in-session rotation. Matches the stated design intent, not a bug."
+  ],
+  "updated_files": [],
+  "success_rate": { "backend": "N/A (no backend)", "frontend": "100% functional (1 mobile layout defect)" },
+  "seed_data_creation": "None - static site",
+  "should_call_test_agent_after_fix": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Verified: home-hero + portrait-hero.png loads (1122x1402, no 404); home-title 'Alessandro Immobile'; home-hero-scroll present, perfectly centered (offset 0.0px) with 24px gap from hero bottom on desktop; .scroll-line-track computed 1x56px, bg rgba(255,255,255,0.22), ::after animation-name 'scroll-line', duration 2.4s, and transform advances over 600ms (animation actually running); prefers-reduced-motion fallback present in index.css. referenze-evidenza renders exactly 3 figures with unique names, role, non-empty excerpt and valid linkedin.com hrefs with target=_blank for testids -1/-2/-3 (+ -linkedin). contatti-evidenza compact renders the same 3. All routes (/, /assetti-societari, /processi, /finanza, /percorso, /referenze, /contatti) return 200 with correct h1 and ZERO console errors / pageerrors. Netlify booking form intentionally not submitted. Only open item: mobile hero indicator/text overlap.",
+  "rca_of_the_issue": "Mobile overlap RCA: the hero uses min-h-[88vh] with pb-16 (64px) on mobile while the scroll indicator is absolutely positioned at bottom-6 (24px) with 56px height, so its top edge (24+56=80px from bottom) sits above the 64px content padding and intersects the last line of the byline block, which spans the full content width."
+}

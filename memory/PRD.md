@@ -169,6 +169,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Rimosso il file pages/TemplateA.jsx, l'import in App.js e tutte le rotte /template-a* (banda, immersivo/-colore/-chiaro/-medio, reveal, byline, criterio, home). Le vecchie URL ora mostrano NotFound. Home reale confermata con hero immersivo 3b.
 - NOTA deploy Netlify: impostare notifica email del form "prenota-call" verso alessandro.immobile@gmail.com nel pannello (Forms > Settings > Form notifications > Email notification).
 
+## Indicatore "scorri" + verifica rotazione Evidenza (17/07/2026)
+- Home.jsx: aggiunto indicatore "scorri" all'hero immersivo = linea verticale sottile animata (data-testid="home-hero-scroll", .scroll-line-track in index.css con @keyframes scroll-line, segmento luminoso che scende, 2.4s loop, fallback prefers-reduced-motion). Nascosto sotto md (hidden md:block) per evitare sovrapposizione col sottotitolo su mobile.
+- Verificata la logica di rotazione in Evidenza.jsx (getFeatured): start=(dayIndex*3)%10 su pool di 10 → trio deterministico per giorno, cicla tutte e 10 le referenze in 10 giorni, nessun duplicato nel trio. Confermata corretta dal testing agent (iteration_9.json).
+- Estetica immersiva su Contatti/Percorso: RIMANDATA su richiesta utente (per ora solo Home).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
