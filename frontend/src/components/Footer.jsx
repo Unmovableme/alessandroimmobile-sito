@@ -10,10 +10,10 @@ export const Footer = () => (
   >
     <div className="mx-auto max-w-3xl px-6 py-14">
       <p className="text-sm leading-relaxed text-gray-500 max-w-2xl">
-        Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal
-        1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e
-        founder come advisor, business angel e investor, dalla costituzione alla raccolta
-        di capitali fino alla governance.
+        Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996
+        lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e founder
+        come advisor, business angel e investor, su raccolta di capitali, assetti statutari e
+        governance.
       </p>
       <ArrowLink href={`mailto:${EMAIL}`} testId="footer-scrivimi-link" className="mt-6" labelClassName="text-sm">
         Scrivimi

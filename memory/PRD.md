@@ -174,6 +174,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Verificata la logica di rotazione in Evidenza.jsx (getFeatured): start=(dayIndex*3)%10 su pool di 10 → trio deterministico per giorno, cicla tutte e 10 le referenze in 10 giorni, nessun duplicato nel trio. Confermata corretta dal testing agent (iteration_9.json).
 - Estetica immersiva su Contatti/Percorso: RIMANDATA su richiesta utente (per ora solo Home).
 
+## Footer + hero immersivo Contatti/Percorso (17/07/2026)
+- Footer.jsx: testo aggiornato → "Dottore commercialista e revisore legale, iscritto all'Ordine di Torino. Dal 1996 lavoro su bilanci, finanza e assetti societari. Dal 2019 affianco startup e founder come advisor, business angel e investor, su raccolta di capitali, assetti statutari e governance." (condiviso su tutte le pagine via Layout).
+- Nuovo componente condiviso components/ImmersiveHero.jsx (occhiello + titolo + lead su ritratto full-bleed con velo navy, banner ridotto min-h ~58vh, objectPosition configurabile, titleTestId prop).
+- Contatti.jsx e Percorso.jsx ristrutturate: rimosso PageContainer/PageTitle/Lead/Portrait a due colonne, sostituiti con ImmersiveHero; contenuti sotto in wrapper max-w-3xl. objectPosition="center 22%" (miglior inquadratura volto). Testid preservati (contatti-title, percorso-title).
+- Estetica immersiva Contatti/Percorso: COMPLETATA.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

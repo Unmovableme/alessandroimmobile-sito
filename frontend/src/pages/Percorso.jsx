@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, FadeIn, ArrowLink, Portrait } from "@/components/Editorial";
+import { FadeIn, ArrowLink } from "@/components/Editorial";
+import { ImmersiveHero } from "@/components/ImmersiveHero";
 
 const stages = [
   {
@@ -71,21 +72,18 @@ export default function Percorso() {
         title="Percorso — Alessandro Immobile"
         description="Dal 1996 a oggi: studio e prime esperienze, consulenza per gruppi bancari e imprese industriali, ruoli esecutivi e di governo, startup e venture."
       />
-      <PageContainer testId="percorso-page">
-        <div className="grid grid-cols-1 sm:grid-cols-[1fr_15rem] gap-8 sm:gap-12 items-start">
-          <div className="order-2 sm:order-1">
-            <PageTitle testId="percorso-title">Percorso</PageTitle>
+      <main data-testid="percorso-page" className="pb-24 md:pb-32">
+        <ImmersiveHero
+          eyebrow="Dal 1996 a oggi"
+          title="Percorso"
+          titleTestId="percorso-title"
+          lead="Il percorso comincia nel 1996, in uno studio a Napoli, con la contabilità ordinaria e i bilanci delle prime imprese clienti."
+          testId="percorso-hero"
+          objectPosition="center 22%"
+        />
 
-            <Lead>
-              Il percorso comincia nel 1996, in uno studio a Napoli, con la contabilità ordinaria e i
-              bilanci delle prime imprese clienti.
-            </Lead>
-          </div>
-
-          <Portrait variant="bw" testId="percorso-portrait" className="order-1 sm:order-2 max-w-[15rem] sm:pt-3" />
-        </div>
-
-        <div className="mt-20 md:mt-24 border-l border-navy/25 pl-8" data-testid="percorso-timeline">
+        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <div className="border-l border-navy/25 pl-8" data-testid="percorso-timeline">
           {stages.map((s, i) => (
             <FadeIn key={s.title} delay={i * 0.04} className={i < stages.length - 1 ? "pb-16" : ""}>
               <div className="relative" data-testid={`timeline-stage-${i + 1}`}>
@@ -129,7 +127,8 @@ export default function Percorso() {
             </ArrowLink>
           </FadeIn>
         </section>
-      </PageContainer>
+        </div>
+      </main>
     </>
   );
 }
