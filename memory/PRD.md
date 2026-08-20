@@ -200,6 +200,9 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Percorso lead: "...in uno studio di commercialisti..." (era "a Napoli").
 - Contatti: bottone email etichetta "Scrivimi" (mailto invariato verso alessandro.immobile@gmail.com).
 
+## Hero interne: allineamento in alto (17/07/2026)
+- ImmersiveHero.jsx: blocco testo da bottom-aligned a top-aligned (items-start + pt-28 md:pt-36), offset fisso identico su Contatti/Percorso/Referenze indipendentemente dalla lunghezza del sottotitolo. Occhiello sempre allo stesso punto di partenza.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

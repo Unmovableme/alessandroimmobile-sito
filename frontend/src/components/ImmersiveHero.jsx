@@ -13,10 +13,10 @@ export const ImmersiveHero = ({
 }) => (
   <section
     data-testid={testId}
-    className={`relative w-full flex items-end overflow-hidden bg-[#1B2A4A] ${className}`}
+    className={`relative w-full flex items-start overflow-hidden bg-[#1B2A4A] ${className}`}
   >
     <div className="relative z-10 w-full">
-      <div className="mx-auto max-w-6xl px-6 pb-14 md:pb-20">
+      <div className="mx-auto max-w-6xl px-6 pt-28 md:pt-36">
         {eyebrow && (
           <FadeIn>
             <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/70 font-medium">
