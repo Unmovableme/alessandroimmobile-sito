@@ -77,7 +77,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.08}>
                 <p className="mt-6 max-w-2xl font-serif text-2xl md:text-[1.7rem] italic leading-snug text-white/90 drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)]">
-                  Struttura societaria, processi e finanza, per aziende e startup.
+                  Dal 1996 affianco aziende e startup su struttura, processi e capitale.
                 </p>
               </FadeIn>
             </div>
