@@ -165,6 +165,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home.jsx ristrutturata: rimosso PageContainer, hero full-bleed immersivo a colori naturali (img object-cover object-[center_20%] + gradiente navy from #0d1526/90 via /35 to transparent), eyebrow/H1/lead bianchi con drop-shadow. Contenuti sotto (bio, link Referenze, Le tre aree, pull-quote, In evidenza) in wrapper max-w-3xl. Rimossi import inutilizzati (PageContainer, PageTitle, Portrait).
 - Prototipi /template-a* restano disponibili per riferimento.
 
+## Pulizia prototipi (16/08/2026)
+- Rimosso il file pages/TemplateA.jsx, l'import in App.js e tutte le rotte /template-a* (banda, immersivo/-colore/-chiaro/-medio, reveal, byline, criterio, home). Le vecchie URL ora mostrano NotFound. Home reale confermata con hero immersivo 3b.
+- NOTA deploy Netlify: impostare notifica email del form "prenota-call" verso alessandro.immobile@gmail.com nel pannello (Forms > Settings > Form notifications > Email notification).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
