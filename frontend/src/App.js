@@ -15,6 +15,7 @@ import AiSenzaGovernance from "@/pages/AiSenzaGovernance";
 import PrimaCheManchiLaLiquidita from "@/pages/PrimaCheManchiLaLiquidita";
 import FounderEAgenti from "@/pages/FounderEAgenti";
 import QuantoValiQuantoRaccogli from "@/pages/QuantoValiQuantoRaccogli";
+import CaseStudy from "@/pages/CaseStudy";
 import NotFound from "@/pages/NotFound";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/prima-che-manchi-la-liquidita" element={<PrimaCheManchiLaLiquidita />} />
           <Route path="/founder-e-agenti" element={<FounderEAgenti />} />
           <Route path="/quanto-vali-quanto-raccogli" element={<QuantoValiQuantoRaccogli />} />
+          <Route path="/case-study" element={<CaseStudy />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

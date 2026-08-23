@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function AssettiSocietari() {
   return (
@@ -50,6 +50,11 @@ export default function AssettiSocietari() {
         <DeepLink to="/quando-il-problema-arriva" testId="assetti-deeplink-quando">
           Quando il problema arriva, le opzioni sono già finite
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-01" testId="assetti-casestudy-aziende" labelClassName="text-lg">
+            Riorganizzazione di un gruppo industriale
+          </ArrowLink>
+        </FadeIn>
 
         <SectionTitle>Startup</SectionTitle>
         <Descriptor>
@@ -78,6 +83,11 @@ export default function AssettiSocietari() {
         <DeepLink to="/metriche-e-statuto" testId="assetti-deeplink-metriche">
           Metriche e statuto: la posizione da cui si negozia
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-02" testId="assetti-casestudy-startup" labelClassName="text-lg">
+            Un round chiuso senza perdere il controllo
+          </ArrowLink>
+        </FadeIn>
 
         <TintBand testId="assetti-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>

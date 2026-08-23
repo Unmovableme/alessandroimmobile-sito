@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function Processi() {
   return (
@@ -61,6 +61,11 @@ export default function Processi() {
         <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai">
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-03" testId="processi-casestudy-aziende" labelClassName="text-lg">
+            Chiusura mensile più veloce in un gruppo bancario
+          </ArrowLink>
+        </FadeIn>
 
         <SectionTitle>Startup</SectionTitle>
         <Descriptor>Processi da disegnare e costruire prima che sia tardi.</Descriptor>
@@ -83,6 +88,11 @@ export default function Processi() {
         <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder">
           Un founder, gli agenti come squadra
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-04" testId="processi-casestudy-startup" labelClassName="text-lg">
+            Un'unica architettura per investitori, incentivi, governance
+          </ArrowLink>
+        </FadeIn>
 
         <TintBand testId="processi-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>

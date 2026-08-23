@@ -208,6 +208,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Processi: spostata la pull quote "Il layer informativo si progetta a valle dei processi..." da metà pagina (tra Aziende e Startup) a subito dopo l'intro.
 - Finanza: aggiunta pull quote di pagina "Va misurata prima che manchi." dopo l'intro (+ import PullQuote).
 
+## Nuova pagina /case-study (17/07/2026)
+- CaseStudy.jsx: pagina fuori menu con hero navy pieno (occhiello "Assetti societari · Processi · Finanza", H1 "Case study", lead "Sei situazioni reali, per le tre aree in cui lavoro."). Tre gruppi (Assetti/Processi/Finanza), ciascuno con H2 + 2 casi (Aziende/Startup).
+- Ogni caso è un accordion (titolo + teaser in vista d'insieme; espanso mostra Situazione/Intervento/Risultato). Ancore #caso-01..#caso-06: aprendo da altra pagina il caso si apre espanso con scroll (gestito in useEffect su location.hash). Toggle multiplo (Set di openIds), icona Plus/Minus (lucide-react).
+- Rotta aggiunta in App.js: /case-study.
+- Deep link aggiunti su Assetti/Processi/Finanza sotto i DeepLink esistenti (fine blocchi Aziende/Startup) verso #caso-01..#caso-06. testId: {pagina}-casestudy-{aziende|startup}. Import ArrowLink/FadeIn aggiunti alle tre pagine.
+- Verificato: accordion apre/chiude, ancora apre+scrolla, deep link con href corretti.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

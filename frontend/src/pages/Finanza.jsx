@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function Finanza() {
   return (
@@ -48,6 +48,11 @@ export default function Finanza() {
         <DeepLink to="/prima-che-manchi-la-liquidita" testId="finanza-deeplink-liquidita">
           La crisi finanziaria inizia prima che manchi la liquidità
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-05" testId="finanza-casestudy-aziende" labelClassName="text-lg">
+            Il primo budget strutturato dell'azienda
+          </ArrowLink>
+        </FadeIn>
 
         <SectionTitle>Startup</SectionTitle>
         <Descriptor>Capitale da raccogliere prima che il fatturato lo giustifichi.</Descriptor>
@@ -70,6 +75,11 @@ export default function Finanza() {
         <DeepLink to="/quanto-vali-quanto-raccogli" testId="finanza-deeplink-quantovali">
           Prima del round: sapere quanto vali e quanto puoi raccogliere
         </DeepLink>
+        <FadeIn className="mt-4">
+          <ArrowLink to="/case-study#caso-06" testId="finanza-casestudy-startup" labelClassName="text-lg">
+            Validazione prima ancora di costituire la società
+          </ArrowLink>
+        </FadeIn>
 
         <TintBand testId="finanza-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
