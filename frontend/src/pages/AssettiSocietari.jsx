@@ -51,6 +51,7 @@ export default function AssettiSocietari() {
           Quando il problema arriva, le opzioni sono già finite
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-01" testId="assetti-casestudy-aziende" labelClassName="text-lg">
             Riorganizzazione di un gruppo industriale
           </ArrowLink>
@@ -84,6 +85,7 @@ export default function AssettiSocietari() {
           Metriche e statuto: la posizione da cui si negozia
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-02" testId="assetti-casestudy-startup" labelClassName="text-lg">
             Un round chiuso senza perdere il controllo
           </ArrowLink>

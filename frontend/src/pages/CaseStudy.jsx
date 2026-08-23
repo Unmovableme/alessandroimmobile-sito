@@ -160,6 +160,10 @@ const CaseItem = ({ data, open, onToggle }) => (
 export default function CaseStudy() {
   const location = useLocation();
   const [openIds, setOpenIds] = useState(() => new Set());
+  const [revealAll, setRevealAll] = useState(false);
+
+  const hashId = location.hash.replace("#", "");
+  const focusedGroup = groups.find((g) => g.cases.some((c) => c.id === hashId));
 
   const toggle = (id) =>
     setOpenIds((prev) => {
@@ -173,6 +177,7 @@ export default function CaseStudy() {
     const id = location.hash.replace("#", "");
     if (id && allIds.includes(id)) {
       setOpenIds((prev) => new Set(prev).add(id));
+      setRevealAll(false);
       setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
@@ -184,6 +189,13 @@ export default function CaseStudy() {
       }, 250);
     }
   }, [location.hash]);
+
+  // Filtro per area: se si arriva su un caso specifico, mostra solo il suo gruppo
+  // finché l'utente non chiede di vedere anche gli altri.
+  let visibleGroups;
+  if (focusedGroup && !revealAll) visibleGroups = [focusedGroup];
+  else if (focusedGroup) visibleGroups = [focusedGroup, ...groups.filter((g) => g !== focusedGroup)];
+  else visibleGroups = groups;
 
   return (
     <>
@@ -201,7 +213,7 @@ export default function CaseStudy() {
         />
 
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20 space-y-16 md:space-y-20">
-          {groups.map((g) => (
+          {visibleGroups.map((g) => (
             <section key={g.id} data-testid={g.id}>
               <FadeIn>
                 <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
@@ -221,6 +233,24 @@ export default function CaseStudy() {
             </section>
           ))}
         </div>
+
+        {focusedGroup && !revealAll && (
+          <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+            <button
+              type="button"
+              onClick={() => setRevealAll(true)}
+              data-testid="case-study-reveal-all"
+              className="group inline-flex items-baseline gap-2 text-navy"
+            >
+              <span className="relative inline-block pb-0.5 text-base after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-navy after:transition-transform after:duration-300 after:ease-out group-hover:after:scale-x-100">
+                Vedi anche gli altri case study
+              </span>
+              <span aria-hidden className="transition-transform duration-300 ease-out group-hover:translate-x-1">
+                →
+              </span>
+            </button>
+          </div>
+        )}
       </main>
     </>
   );

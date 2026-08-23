@@ -62,6 +62,7 @@ export default function Processi() {
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-03" testId="processi-casestudy-aziende" labelClassName="text-lg">
             Chiusura mensile più veloce in un gruppo bancario
           </ArrowLink>
@@ -89,6 +90,7 @@ export default function Processi() {
           Un founder, gli agenti come squadra
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-04" testId="processi-casestudy-startup" labelClassName="text-lg">
             Un'unica architettura per investitori, incentivi, governance
           </ArrowLink>

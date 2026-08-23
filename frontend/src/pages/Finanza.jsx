@@ -49,6 +49,7 @@ export default function Finanza() {
           La crisi finanziaria inizia prima che manchi la liquidità
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-05" testId="finanza-casestudy-aziende" labelClassName="text-lg">
             Il primo budget strutturato dell'azienda
           </ArrowLink>
@@ -76,6 +77,7 @@ export default function Finanza() {
           Prima del round: sapere quanto vali e quanto puoi raccogliere
         </DeepLink>
         <FadeIn className="mt-4">
+          <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">Case study</p>
           <ArrowLink to="/case-study#caso-06" testId="finanza-casestudy-startup" labelClassName="text-lg">
             Validazione prima ancora di costituire la società
           </ArrowLink>

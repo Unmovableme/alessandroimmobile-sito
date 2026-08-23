@@ -215,6 +215,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Deep link aggiunti su Assetti/Processi/Finanza sotto i DeepLink esistenti (fine blocchi Aziende/Startup) verso #caso-01..#caso-06. testId: {pagina}-casestudy-{aziende|startup}. Import ArrowLink/FadeIn aggiunti alle tre pagine.
 - Verificato: accordion apre/chiude, ancora apre+scrolla, deep link con href corretti.
 
+## Case study: etichetta link + filtro per area (17/07/2026)
+- Pagine competenza: aggiunta etichetta "CASE STUDY" (uppercase, text-gray-400, tracking) sopra il solo link verso il case study (6 link). Il link di criterio soprastante resta senza etichetta.
+- CaseStudy.jsx: filtro per area. Arrivando via #caso-0N si mostra SOLO il gruppo dell'area di quel caso (altri gruppi non renderizzati), col caso già aperto e scroll. Link "Vedi anche gli altri case study" (testId case-study-reveal-all) in fondo che rivela gli altri gruppi (casi collassati, gruppo focalizzato in cima). Senza hash: tutti e 3 i gruppi, nessun link reveal. Verificato.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
