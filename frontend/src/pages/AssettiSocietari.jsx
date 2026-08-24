@@ -47,7 +47,7 @@ export default function AssettiSocietari() {
           Cessioni e acquisizioni: preparazione dell'operazione, valutazione, struttura,
           negoziazione, coordinamento fino all'atto.
         </Body>
-        <DeepLink to="/quando-il-problema-arriva" testId="assetti-deeplink-quando">
+        <DeepLink to="/quando-il-problema-arriva" testId="assetti-deeplink-quando" label="Approfondimento">
           Quando il problema arriva, le opzioni sono già finite
         </DeepLink>
         <FadeIn className="mt-4">
@@ -81,7 +81,7 @@ export default function AssettiSocietari() {
           Governance: chi decide cosa, con quali maggioranze, e cosa succede quando entra un
           investitore che vuole voce in capitolo.
         </Body>
-        <DeepLink to="/metriche-e-statuto" testId="assetti-deeplink-metriche">
+        <DeepLink to="/metriche-e-statuto" testId="assetti-deeplink-metriche" label="Approfondimento">
           Metriche e statuto: la posizione da cui si negozia
         </DeepLink>
         <FadeIn className="mt-4">

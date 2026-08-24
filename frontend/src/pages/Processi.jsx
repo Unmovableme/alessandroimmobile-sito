@@ -58,7 +58,7 @@ export default function Processi() {
           quale frequenza, e un collegamento agli strumenti operativi già in uso.
         </Body>
         <Body>Riorganizzazione: ruoli e responsabilità ridisegnati insieme al processo.</Body>
-        <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai">
+        <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai" label="Approfondimento">
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
         <FadeIn className="mt-4">
@@ -86,7 +86,7 @@ export default function Processi() {
           diluizione governata nel tempo. Attrarre e trattenere i talenti, con piani di
           incentivazione in equity e vesting.
         </Body>
-        <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder">
+        <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder" label="Approfondimento">
           Un founder, gli agenti come squadra
         </DeepLink>
         <FadeIn className="mt-4">

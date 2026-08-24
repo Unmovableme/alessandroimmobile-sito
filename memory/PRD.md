@@ -219,6 +219,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Pagine competenza: aggiunta etichetta "CASE STUDY" (uppercase, text-gray-400, tracking) sopra il solo link verso il case study (6 link). Il link di criterio soprastante resta senza etichetta.
 - CaseStudy.jsx: filtro per area. Arrivando via #caso-0N si mostra SOLO il gruppo dell'area di quel caso (altri gruppi non renderizzati), col caso già aperto e scroll. Link "Vedi anche gli altri case study" (testId case-study-reveal-all) in fondo che rivela gli altri gruppi (casi collassati, gruppo focalizzato in cima). Senza hash: tutti e 3 i gruppi, nessun link reveal. Verificato.
 
+## Etichetta APPROFONDIMENTO + inquadratura Home (17/07/2026)
+- Editorial.jsx DeepLink: aggiunto prop opzionale `label` (stessa resa di CASE STUDY: uppercase text-gray-400 tracking). Applicato label="Approfondimento" ai 6 link di criterio su Assetti/Processi/Finanza (non al link pubblicazioni). Ora ogni blocco mostra APPROFONDIMENTO+link criterio e CASE STUDY+link case study.
+- Home.jsx: hero object-position da center 20% a center 8% per mostrare la testa intera (fronte non più tagliata). Contenitore/altezza invariati.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

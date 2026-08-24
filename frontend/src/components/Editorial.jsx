@@ -103,8 +103,11 @@ export const ArrowLink = ({ to, href, children, testId, className = "", labelCla
   );
 };
 
-export const DeepLink = ({ to, children, testId }) => (
+export const DeepLink = ({ to, children, testId, label }) => (
   <FadeIn className="mt-12">
+    {label && (
+      <p className="mb-1.5 text-xs uppercase tracking-[0.2em] font-medium text-gray-400">{label}</p>
+    )}
     <ArrowLink to={to} testId={testId} labelClassName="text-lg">
       {children}
     </ArrowLink>

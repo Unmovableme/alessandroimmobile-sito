@@ -54,7 +54,7 @@ export default function Home() {
             src="/portrait-hero.png"
             alt="Ritratto di Alessandro Immobile"
             loading="eager"
-            className="absolute inset-0 h-full w-full object-cover object-[center_20%]"
+          className="absolute inset-0 h-full w-full object-cover object-[center_8%]"
           />
           <div
             aria-hidden

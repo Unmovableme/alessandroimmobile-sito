@@ -45,7 +45,7 @@ export default function Finanza() {
           scissione, un ingresso di soci cambiano il modo in cui l'impresa deve leggere e comunicare
           i propri numeri.
         </Body>
-        <DeepLink to="/prima-che-manchi-la-liquidita" testId="finanza-deeplink-liquidita">
+        <DeepLink to="/prima-che-manchi-la-liquidita" testId="finanza-deeplink-liquidita" label="Approfondimento">
           La crisi finanziaria inizia prima che manchi la liquidità
         </DeepLink>
         <FadeIn className="mt-4">
@@ -73,7 +73,7 @@ export default function Finanza() {
           Relazione con gli investitori: chi ha già messo capitale riceve aggiornamenti regolari,
           con la stessa cura riservata al round successivo.
         </Body>
-        <DeepLink to="/quanto-vali-quanto-raccogli" testId="finanza-deeplink-quantovali">
+        <DeepLink to="/quanto-vali-quanto-raccogli" testId="finanza-deeplink-quantovali" label="Approfondimento">
           Prima del round: sapere quanto vali e quanto puoi raccogliere
         </DeepLink>
         <FadeIn className="mt-4">
