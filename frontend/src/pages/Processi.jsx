@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function Processi() {
   return (
@@ -18,12 +18,14 @@ export default function Processi() {
           sapere come lavora davvero, non come dovrebbe lavorare secondo l'organigramma.
         </Lead>
 
-        <PullQuote testId="processi-pullquote">
+        <PullQuote testId="processi-pullquote" tight>
           Il layer informativo si progetta a valle dei processi. Chi salta l'analisi ottiene un
           archivio ordinato che non cambia come l'impresa lavora.
         </PullQuote>
 
-        <SectionTitle>Aziende</SectionTitle>
+        <SectionJump />
+
+        <SectionTitle id="aziende" tight>Aziende</SectionTitle>
         <Descriptor>Processi cresciuti per sedimentazione, mai ridisegnati.</Descriptor>
         <Body>
           Mappatura AS IS: come funziona oggi il processo, chi fa cosa, dove sono i colli di
@@ -61,7 +63,7 @@ export default function Processi() {
           </ArrowLink>
         </FadeIn>
 
-        <SectionTitle>Startup</SectionTitle>
+        <SectionTitle id="startup">Startup</SectionTitle>
         <Descriptor>Processi da disegnare e costruire prima che sia tardi.</Descriptor>
         <Body>
           Una startup che cresce ha quasi sempre già dei processi: nati in fretta, con l'orizzonte

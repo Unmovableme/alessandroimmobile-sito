@@ -49,13 +49,51 @@ export const Body = ({ children, className = "" }) => (
   </FadeIn>
 );
 
-export const SectionTitle = ({ children }) => (
+export const SectionTitle = ({ children, id, tight }) => (
   <FadeIn>
-    <h2 className="mt-16 md:mt-24 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+    <h2
+      id={id}
+      className={`scroll-mt-24 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight ${
+        tight ? "mt-8 md:mt-10" : "mt-16 md:mt-24"
+      }`}
+    >
       {children}
     </h2>
   </FadeIn>
 );
+
+export const SectionJump = ({ testIdPrefix = "" }) => {
+  const go = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" });
+    }
+  };
+  return (
+    <FadeIn className="mt-2">
+      <p className="text-xs uppercase tracking-[0.2em] font-medium text-gray-400">
+        <a
+          href="#aziende"
+          onClick={go("aziende")}
+          data-testid={`${testIdPrefix}jump-aziende`}
+          className="transition-colors duration-200 hover:text-navy"
+        >
+          Aziende
+        </a>
+        <span className="mx-2 text-gray-300">·</span>
+        <a
+          href="#startup"
+          onClick={go("startup")}
+          data-testid={`${testIdPrefix}jump-startup`}
+          className="transition-colors duration-200 hover:text-navy"
+        >
+          Startup
+        </a>
+      </p>
+    </FadeIn>
+  );
+};
 
 export const SubTitle = ({ children }) => (
   <FadeIn>
@@ -131,11 +169,13 @@ export const BandTitle = ({ children }) => (
   </FadeIn>
 );
 
-export const PullQuote = ({ children, testId }) => (
+export const PullQuote = ({ children, testId, tight }) => (
   <FadeIn>
     <p
       data-testid={testId}
-      className="font-serif italic text-navy text-[1.75rem] md:text-[2rem] leading-snug my-16 md:my-24"
+      className={`font-serif italic text-navy text-[1.75rem] md:text-[2rem] leading-snug ${
+        tight ? "mt-8 md:mt-10 mb-4 md:mb-5" : "my-16 md:my-24"
+      }`}
     >
       {children}
     </p>

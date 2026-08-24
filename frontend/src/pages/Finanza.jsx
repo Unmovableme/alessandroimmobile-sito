@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function Finanza() {
   return (
@@ -17,9 +17,11 @@ export default function Finanza() {
           tre risposte arrivano dalla stessa persona, con lo stesso gestionale, e spesso in ritardo.
         </Lead>
 
-        <PullQuote testId="finanza-pullquote">Va misurata prima che manchi.</PullQuote>
+        <PullQuote testId="finanza-pullquote" tight>Va misurata prima che manchi.</PullQuote>
 
-        <SectionTitle>Aziende</SectionTitle>
+        <SectionJump />
+
+        <SectionTitle id="aziende" tight>Aziende</SectionTitle>
         <Descriptor>Contabilità che arriva quando l'anno è già chiuso.</Descriptor>
         <Body>
           In molte PMI la contabilità resta fuori, presso il commercialista, aggiornata in vista
@@ -55,7 +57,7 @@ export default function Finanza() {
           </ArrowLink>
         </FadeIn>
 
-        <SectionTitle>Startup</SectionTitle>
+        <SectionTitle id="startup">Startup</SectionTitle>
         <Descriptor>Capitale da raccogliere prima che il fatturato lo giustifichi.</Descriptor>
         <Body>
           Il percorso di raccolta si disegna per fasi, con obiettivi e strumenti diversi da una fase

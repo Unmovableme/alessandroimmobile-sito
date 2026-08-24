@@ -62,7 +62,7 @@ export default function Contatti() {
             <a
               href={`mailto:${EMAIL}`}
               data-testid="contatti-email-link"
-              className="group mt-12 inline-flex items-center gap-2 rounded-full bg-navy px-7 py-3 text-base md:text-lg font-medium text-white transition-all duration-300 hover:bg-[#1B2A4A]"
+              className="group mt-12 inline-flex items-center gap-2 rounded-md bg-[#1B2A4A] px-7 py-3 text-base md:text-lg font-medium text-white transition-colors duration-300 hover:bg-[#22345a]"
             >
               Scrivimi
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
@@ -77,7 +77,7 @@ export default function Contatti() {
               target="_blank"
               rel="noopener noreferrer"
               testId="contatti-linkedin-link"
-              className="mt-10"
+              className="mt-6"
               labelClassName="text-lg"
             >
               LinkedIn
@@ -85,7 +85,7 @@ export default function Contatti() {
           </FadeIn>
 
           {/* ---------- Prenota una call ---------- */}
-          <section data-testid="prenota-call-section" className="mt-24 md:mt-32 border-t border-gray-200 pt-16 md:pt-20">
+          <section data-testid="prenota-call-section" className="mt-16 md:mt-20 border-t border-navy/15 pt-12 md:pt-16">
           <FadeIn>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
               Prenota una call

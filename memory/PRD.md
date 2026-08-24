@@ -226,6 +226,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 ## Aggiornamento Caso 06 (24/08/2026)
 - CaseStudy.jsx caso-06 (Toothfy): rimosso nome founder nella Situazione (regola sito: no nomi persona nei case study); Investment Readiness Level corretto da 5 a 3 nel Risultato. Verificato.
 
+## Coerenza pagine interne + ritmo apertura (24/08/2026)
+- Processi: rimosso il paragrafo intermedio in apertura (Titolo → Descrizione → Affermazione, come Assetti/Finanza).
+- Editorial.jsx: PullQuote e SectionTitle con prop `tight` (spaziatura ridotta); SectionTitle con prop `id` (+scroll-mt). Nuovo componente SectionJump ("Aziende · Startup", link di salto con scroll smooth agli id aziende/startup).
+- Assetti/Processi/Finanza: pull quote di pagina resa tight + SectionJump sotto; SectionTitle Aziende id="aziende" tight, Startup id="startup". Spazio apertura molto più compatto, con segnale che "Startup" esiste.
+- Contatti: pulsante "Scrivimi" ora rounded-md, bg #1B2A4A esatto, niente ombra, transition-colors; link LinkedIn con freccia e spaziatura regolare (mt-6); sezione "Prenota una call" con separatore border-navy/15 e spazio sopra ridotto (mt-16/pt-12).
+- ImmersiveHero: da sfondo navy pieno a SFONDO BIANCO (occhiello grigio tenue, H1 navy serif, lead corsivo navy), allineato in alto. Applicato a Contatti/Percorso/Referenze. Home invariata (unica con foto + velo navy).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

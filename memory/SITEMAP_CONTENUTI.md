@@ -22,7 +22,7 @@
 
 + link **Scrivimi** (mailto). Email attuale (provvisoria): `alessandro.immobile@gmail.com`. LinkedIn: `linkedin.com/in/alessandroimmobile/`.
 
-**Hero delle pagine interne** (`ImmersiveHero`, usato da Contatti, Percorso, Referenze): **sfondo navy pieno #1B2A4A** (tinta unita, senza foto/gradiente/velo), occhiello + titolo + sottotitolo in bianco/off-white, banner ridotto (~58vh). La **foto ritratto** (`/portrait-hero.png`) è **esclusiva della Home**, che mantiene hero full-bleed a piena altezza (88vh) con velo navy e indicatore "scorri" (linea verticale animata).
+**Hero delle pagine interne** (`ImmersiveHero`, usato da Contatti, Percorso, Referenze): **sfondo bianco** coerente con le pagine di competenza. Occhiello maiuscolo grigio tenue, H1 navy serif, lead in corsivo navy, allineato in alto (pt-28 md:pt-40). La **foto ritratto** (`/portrait-hero.png`) è **esclusiva della Home**, che mantiene hero full-bleed a piena altezza (88vh) con velo navy e indicatore "scorri" (Opzione A: linea che si disegna dall'alto verso il basso).
 
 ---
 

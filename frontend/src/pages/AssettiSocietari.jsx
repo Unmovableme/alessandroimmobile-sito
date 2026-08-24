@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
 
 export default function AssettiSocietari() {
   return (
@@ -17,9 +17,11 @@ export default function AssettiSocietari() {
           può entrare e a quali condizioni.
         </Lead>
 
-        <PullQuote testId="assetti-pullquote">Va progettata prima che serva.</PullQuote>
+        <PullQuote testId="assetti-pullquote" tight>Va progettata prima che serva.</PullQuote>
 
-        <SectionTitle>Aziende</SectionTitle>
+        <SectionJump />
+
+        <SectionTitle id="aziende" tight>Aziende</SectionTitle>
         <Descriptor>
           Strutture scelte anni fa, per un'impresa che nel frattempo è diventata un'altra cosa.
         </Descriptor>
@@ -57,7 +59,7 @@ export default function AssettiSocietari() {
           </ArrowLink>
         </FadeIn>
 
-        <SectionTitle>Startup</SectionTitle>
+        <SectionTitle id="startup">Startup</SectionTitle>
         <Descriptor>
           Strutture da costruire adesso, per un'impresa che dovrà reggere quello che ancora non è
           successo.
