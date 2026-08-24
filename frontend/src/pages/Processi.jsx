@@ -18,13 +18,6 @@ export default function Processi() {
           sapere come lavora davvero, non come dovrebbe lavorare secondo l'organigramma.
         </Lead>
 
-        <Body>
-          Un processo fatto bene toglie valore alla componente individuale e lo sposta nel metodo.
-          Il risultato smette di dipendere da chi lo esegue, perché la conoscenza è già scritta
-          dentro il processo stesso, verificabile e ripetibile, non custodita nella testa di una
-          persona sola.
-        </Body>
-
         <PullQuote testId="processi-pullquote">
           Il layer informativo si progetta a valle dei processi. Chi salta l'analisi ottiene un
           archivio ordinato che non cambia come l'impresa lavora.
