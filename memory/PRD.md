@@ -223,6 +223,9 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Editorial.jsx DeepLink: aggiunto prop opzionale `label` (stessa resa di CASE STUDY: uppercase text-gray-400 tracking). Applicato label="Approfondimento" ai 6 link di criterio su Assetti/Processi/Finanza (non al link pubblicazioni). Ora ogni blocco mostra APPROFONDIMENTO+link criterio e CASE STUDY+link case study.
 - Home.jsx: hero object-position da center 20% a center 8% per mostrare la testa intera (fronte non più tagliata). Contenitore/altezza invariati.
 
+## Aggiornamento Caso 06 (24/08/2026)
+- CaseStudy.jsx caso-06 (Toothfy): rimosso nome founder nella Situazione (regola sito: no nomi persona nei case study); Investment Readiness Level corretto da 5 a 3 nel Risultato. Verificato.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
