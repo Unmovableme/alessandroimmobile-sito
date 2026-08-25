@@ -28,7 +28,7 @@ jobs:
 
       - name: Installa le dipendenze
         working-directory: frontend
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Costruisce il sito (build)
         working-directory: frontend
