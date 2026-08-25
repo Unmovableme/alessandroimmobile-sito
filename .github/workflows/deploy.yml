@@ -28,11 +28,11 @@ jobs:
 
       - name: Installa le dipendenze
         working-directory: frontend
-        run: npm install --legacy-peer-deps
+        run: yarn install
 
       - name: Costruisce il sito (build)
         working-directory: frontend
-        run: npm run build
+        run: yarn build
         env:
           CI: false
 
