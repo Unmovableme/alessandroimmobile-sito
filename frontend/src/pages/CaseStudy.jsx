@@ -212,11 +212,11 @@ export default function CaseStudy() {
           testId="case-study-hero"
         />
 
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20 space-y-16 md:space-y-20">
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20 space-y-12 md:space-y-20">
           {visibleGroups.map((g) => (
             <section key={g.id} data-testid={g.id}>
               <FadeIn>
-                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
                   {g.area}
                 </h2>
               </FadeIn>

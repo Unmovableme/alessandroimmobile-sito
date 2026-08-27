@@ -82,7 +82,7 @@ export default function Percorso() {
           objectPosition="center 22%"
         />
 
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20">
           <div className="border-l border-navy/25 pl-8" data-testid="percorso-timeline">
           {stages.map((s, i) => (
             <FadeIn key={s.title} delay={i * 0.04} className={i < stages.length - 1 ? "pb-16" : ""}>

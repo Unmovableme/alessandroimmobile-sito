@@ -43,7 +43,7 @@ export default function Contatti() {
           objectPosition="center 22%"
         />
 
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20">
           <FadeIn delay={0.05}>
             <p className="text-base leading-relaxed text-gray-600" data-testid="contatti-referenze-hint">
               Prima di scrivere,{" "}
@@ -87,7 +87,7 @@ export default function Contatti() {
           {/* ---------- Prenota una call ---------- */}
           <section data-testid="prenota-call-section" className="mt-16 md:mt-20 border-t border-navy/15 pt-12 md:pt-16">
           <FadeIn>
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
               Prenota una call
             </h2>
           </FadeIn>

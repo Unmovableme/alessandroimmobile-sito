@@ -233,6 +233,16 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Contatti: pulsante "Scrivimi" ora rounded-md, bg #1B2A4A esatto, niente ombra, transition-colors; link LinkedIn con freccia e spaziatura regolare (mt-6); sezione "Prenota una call" con separatore border-navy/15 e spazio sopra ridotto (mt-16/pt-12).
 - ImmersiveHero: da sfondo navy pieno a SFONDO BIANCO (occhiello grigio tenue, H1 navy serif, lead corsivo navy), allineato in alto. Applicato a Contatti/Percorso/Referenze. Home invariata (unica con foto + velo navy).
 
+## Ottimizzazione mobile 1+2+3 (26/08/2026)
+- (1) Ridotto padding-top mobile: PageContainer pt-28→pt-20, ImmersiveHero pt-28→pt-20 (md invariati). Titoli pagine interne più in alto.
+- (2) Titoli scalati su mobile: PageTitle e ImmersiveHero H1 text-5xl→text-4xl (sm+ invariati); Home H1 text-5xl→text-4xl (ora sta su una riga); SectionTitle/BandTitle e i due h2 one-off (CaseStudy gruppi, Contatti "Prenota una call") text-3xl→text-2xl sm:text-3xl md:text-4xl.
+- (3) Home hero mobile: sottotitolo text-2xl→text-xl; velo navy rinforzato su mobile (from-90/via-55) mantenendo desktop invariato (md:from-90/via-35).
+
+## Ottimizzazione mobile 4+5+6 (27/08/2026)
+- (4) Ritmo verticale mobile: PullQuote non-tight my-16→my-12, SectionTitle non-tight mt-16→mt-12, TintBand mt-20→mt-14 e py-16→py-12, Rule mt-20→mt-14, stacco hero→contenuto mt-16→mt-10 (Contatti/Percorso/Referenze/CaseStudy). md invariati.
+- (5) Aree di tocco: ArrowLink +py-1; link SectionJump (Aziende/Startup) inline-block +py-1.5.
+- (6) Menu hamburger: nuovo mobileLinkClass (block py-3 text-lg), nav con divide-y divide-gray-100, voci più grandi/tappabili e separatori sottili.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

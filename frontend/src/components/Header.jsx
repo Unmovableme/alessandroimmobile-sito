@@ -17,6 +17,11 @@ const linkClass = ({ isActive }) =>
     isActive ? "text-navy" : "text-gray-500 hover:text-navy"
   }`;
 
+const mobileLinkClass = ({ isActive }) =>
+  `block py-3 text-lg transition-colors duration-200 ${
+    isActive ? "text-navy font-medium" : "text-gray-600 hover:text-navy"
+  }`;
+
 export const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -62,7 +67,7 @@ export const Header = () => {
 
       {open && (
         <nav
-          className="md:hidden border-t border-gray-200 bg-white px-6 py-6 flex flex-col gap-5"
+          className="md:hidden border-t border-gray-200 bg-white px-6 py-2 flex flex-col divide-y divide-gray-100"
           data-testid="mobile-nav"
         >
           {NAV.map((item) => (
@@ -71,7 +76,7 @@ export const Header = () => {
               to={item.to}
               end={item.to === "/"}
               onClick={() => setOpen(false)}
-              className={linkClass}
+              className={mobileLinkClass}
               data-testid={`mobile-nav-${item.id}-link`}
             >
               {item.label}
