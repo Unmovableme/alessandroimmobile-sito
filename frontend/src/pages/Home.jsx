@@ -58,7 +58,7 @@ export default function Home() {
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-t from-[#0d1526]/90 via-[#0d1526]/35 to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-[#0d1526]/95 via-[#0d1526]/55 to-transparent md:from-[#0d1526]/90 md:via-[#0d1526]/35"
           />
           <div className="relative z-10 w-full">
             <div className="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
@@ -70,13 +70,13 @@ export default function Home() {
               <FadeIn delay={0.04}>
                 <h1
                   data-testid="home-title"
-                  className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.02] drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)]"
+                  className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-white leading-[1.02] drop-shadow-[0_2px_18px_rgba(0,0,0,0.35)]"
                 >
                   Alessandro Immobile
                 </h1>
               </FadeIn>
               <FadeIn delay={0.08}>
-                <p className="mt-6 max-w-2xl font-serif text-2xl md:text-[1.7rem] italic leading-snug text-white/90 drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)]">
+                <p className="mt-6 max-w-2xl font-serif text-xl md:text-[1.7rem] italic leading-snug text-white/90 drop-shadow-[0_1px_12px_rgba(0,0,0,0.35)]">
                   Financial advisor per le aziende. Business angel per le startup. Lo stesso metodo, applicato a modelli di crescita diversi.
                 </p>
               </FadeIn>

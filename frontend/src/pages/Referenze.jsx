@@ -83,7 +83,7 @@ export default function Referenze() {
           objectPosition="center 20%"
         />
 
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20">
           <Evidenza variant="full" testId="referenze-evidenza" />
 
           <div className="mt-20 md:mt-24 divide-y divide-navy/15">

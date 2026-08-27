@@ -21,7 +21,7 @@ export const FadeIn = ({ children, delay = 0, className = "", as = "div", y = 18
 };
 
 export const PageContainer = ({ children, testId }) => (
-  <main data-testid={testId} className="mx-auto max-w-3xl px-6 pt-28 pb-24 md:pt-40 md:pb-32">
+  <main data-testid={testId} className="mx-auto max-w-3xl px-6 pt-20 pb-24 md:pt-40 md:pb-32">
     {children}
   </main>
 );
@@ -30,7 +30,7 @@ export const PageTitle = ({ children, testId }) => (
   <FadeIn>
     <h1
       data-testid={testId}
-      className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]"
+      className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]"
     >
       {children}
     </h1>
@@ -53,8 +53,8 @@ export const SectionTitle = ({ children, id, tight }) => (
   <FadeIn>
     <h2
       id={id}
-      className={`scroll-mt-24 mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight ${
-        tight ? "mt-8 md:mt-10" : "mt-16 md:mt-24"
+      className={`scroll-mt-24 mb-8 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight ${
+        tight ? "mt-8 md:mt-10" : "mt-12 md:mt-24"
       }`}
     >
       {children}
@@ -77,7 +77,7 @@ export const SectionJump = ({ testIdPrefix = "" }) => {
           href="#aziende"
           onClick={go("aziende")}
           data-testid={`${testIdPrefix}jump-aziende`}
-          className="transition-colors duration-200 hover:text-navy"
+          className="inline-block py-1.5 transition-colors duration-200 hover:text-navy"
         >
           Aziende
         </a>
@@ -86,7 +86,7 @@ export const SectionJump = ({ testIdPrefix = "" }) => {
           href="#startup"
           onClick={go("startup")}
           data-testid={`${testIdPrefix}jump-startup`}
-          className="transition-colors duration-200 hover:text-navy"
+          className="inline-block py-1.5 transition-colors duration-200 hover:text-navy"
         >
           Startup
         </a>
@@ -111,10 +111,10 @@ export const Descriptor = ({ children }) => (
   </FadeIn>
 );
 
-export const Rule = () => <div className="mt-20 border-t border-gray-200" />;
+export const Rule = () => <div className="mt-14 md:mt-20 border-t border-gray-200" />;
 
 export const ArrowLink = ({ to, href, children, testId, className = "", labelClassName = "", target, rel }) => {
-  const cls = `group inline-flex items-baseline gap-2 text-navy ${className}`;
+  const cls = `group inline-flex items-baseline gap-2 py-1 text-navy ${className}`;
   const inner = (
     <>
       <span
@@ -155,15 +155,15 @@ export const DeepLink = ({ to, children, testId, label }) => (
 export const TintBand = ({ children, testId }) => (
   <div
     data-testid={testId}
-    className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-20 md:mt-28 mb-0"
+    className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-14 md:mt-28 mb-0"
   >
-    <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">{children}</div>
+    <div className="mx-auto max-w-3xl px-6 py-12 md:py-24">{children}</div>
   </div>
 );
 
 export const BandTitle = ({ children }) => (
   <FadeIn>
-    <h2 className="mb-8 text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
+    <h2 className="mb-8 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight">
       {children}
     </h2>
   </FadeIn>
@@ -174,7 +174,7 @@ export const PullQuote = ({ children, testId, tight }) => (
     <p
       data-testid={testId}
       className={`font-serif italic text-navy text-[1.75rem] md:text-[2rem] leading-snug ${
-        tight ? "mt-8 md:mt-10 mb-4 md:mb-5" : "my-16 md:my-24"
+        tight ? "mt-8 md:mt-10 mb-4 md:mb-5" : "my-12 md:my-24"
       }`}
     >
       {children}

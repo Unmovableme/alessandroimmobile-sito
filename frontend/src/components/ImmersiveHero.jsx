@@ -4,7 +4,7 @@ import { FadeIn } from "@/components/Editorial";
 // coerente con le pagine di competenza. Occhiello grigio tenue, H1 navy serif,
 // lead in corsivo navy. Blocco allineato in alto (non centrato).
 export const ImmersiveHero = ({ eyebrow, title, lead, testId = "immersive-hero", titleTestId }) => (
-  <section data-testid={testId} className="mx-auto max-w-3xl px-6 pt-28 md:pt-40">
+  <section data-testid={testId} className="mx-auto max-w-3xl px-6 pt-20 md:pt-40">
     {eyebrow && (
       <FadeIn>
         <p className="mb-4 text-xs uppercase tracking-[0.24em] font-medium text-gray-400">{eyebrow}</p>
@@ -13,7 +13,7 @@ export const ImmersiveHero = ({ eyebrow, title, lead, testId = "immersive-hero",
     <FadeIn delay={0.04}>
       <h1
         data-testid={titleTestId || `${testId}-title`}
-        className="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]"
+        className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-navy leading-[1.02]"
       >
         {title}
       </h1>
