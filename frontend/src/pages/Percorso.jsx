@@ -33,7 +33,18 @@ const stages = [
         Dal 2015: consulenza di direzione ambito bancario; presidenza Polo GGB (Genomica, Genetica
         e Biologia); presidenza e direzione finanziaria di Netgenomics S.r.l. (startup innovativa
         scienze della vita); direzione finanziaria di Guanxi S.r.l. (digital transformation, oggi
-        advisor); operazioni di cessione e acquisizione come advisor indipendente.
+        advisor); fractional CFO e temporary management, in passaggi generazionali e a supporto
+        della direzione generale e del CEO, per diverse aziende.
+      </>
+    ),
+  },
+  {
+    title: "Operazioni di M&A",
+    body: (
+      <>
+        Dal 2015 affianco imprenditori e gruppi nelle operazioni di cessione e acquisizione, come
+        advisor indipendente: valutazione dell'azienda, negoziazione con la controparte,
+        coordinamento fino alla chiusura, sia sell side, sia buy side.
       </>
     ),
   },

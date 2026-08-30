@@ -71,7 +71,7 @@ export default function Referenze() {
     <>
       <Seo
         title="Referenze — Alessandro Immobile"
-        description="Quello che dicono di me le persone con cui ho lavorato: founder, manager e professionisti su assetti societari, finanza e raccolta di capitale."
+        description="Quello che dicono di me le persone con cui ho lavorato: founder, manager e professionisti su assetti societari, finanza, M&A e raccolta di capitale."
       />
       <main data-testid="referenze-page" className="pb-24 md:pb-32">
         <ImmersiveHero

@@ -138,11 +138,6 @@ const sections = [
           un'operazione e chi ne attesta i valori dovrebbero essere due persone diverse ogni volta
           che è possibile.
         </Body>
-        <Body>
-          Se l'obiettivo è già deciso e serve soltanto trovare la controparte e chiudere, esistono
-          boutique M&A che fanno quel mestiere e lo fanno bene. Il mio lavoro comincia prima, quando
-          la struttura da cui l'operazione dovrà passare non è ancora pronta a reggerla.
-        </Body>
       </>
     ),
   },

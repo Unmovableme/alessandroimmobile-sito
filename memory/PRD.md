@@ -266,6 +266,15 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Verificato con screenshot: Home 4 aree 2×2, /case-study#caso-07 si apre espanso con filtro gruppo Finanza, link visibile su /finanza, menu con M&A.
 - Decisione utente: il box M&A in "In evidenza" resta OLTRE alla card nella griglia aree (doppio trattamento voluto).
 
+## Consolidato 6 punti (30/08/2026)
+- Percorso.jsx: tappa 3 "Ruoli esecutivi e di governo" arricchita ("fractional CFO e temporary management, in passaggi generazionali e a supporto della direzione generale e del CEO, per diverse aziende"; rimossa la clausola cessioni/acquisizioni); NUOVA tappa 4 "Operazioni di M&A" ("Dal 2015 affianco imprenditori e gruppi… sia sell side, sia buy side.") → timeline ora 5 tappe.
+- QuandoIlProblemaArriva.jsx: rimosso il paragrafo sulle "boutique M&A" (in contraddizione con M&A come attività propria).
+- SEO: Home description → "Assetti societari, processi, finanza e M&A…"; Referenze description → "…assetti societari, finanza, M&A e raccolta di capitale."
+- Home bio par.1: "…e su operazioni di acquisizione e cessione." → "…e su operazioni di M&A."
+- Home griglia "Le quattro aree": divisore orizzontale tra le due righe (border-t border-navy/15 sulle celle della 2ª riga, gap-y azzerato su md), celle flex-col h-full con link "Scopri di più" ancorato in basso (mt-auto pt-5) → CTA allineate per riga.
+- Home pull-quote: "…un investitore, una banca, un socio o una controparte facciano la prima domanda."
+- File modificati: Percorso.jsx, QuandoIlProblemaArriva.jsx, Referenze.jsx, Home.jsx.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
