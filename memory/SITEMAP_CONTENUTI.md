@@ -30,8 +30,10 @@
 **Hero** — occhiello: `Assetti societari · Processi · Finanza`; H1: **Alessandro Immobile**; sottotitolo (serif corsivo): *"Struttura societaria, processi e finanza, per aziende e startup."*
 
 **Bio (3 paragrafi):**
-1. Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
-2. Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures, fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
+1. Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società, e su operazioni di acquisizione e cessione.
+2. Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures, fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel Club, associazione di business angel.
+3. Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
+4. Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
 3. Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
 
 + link **Cosa dicono di me** → `/referenze`.
@@ -57,7 +59,7 @@ Schema comune: Titolo → Lead → sezione "Aziende" → sezione "Startup" (Desc
 **Pull-quote:** Va progettata prima che serva.
 
 **Aziende** — descriptor: *Strutture scelte anni fa, per un'impresa che nel frattempo è diventata un'altra cosa.*
-Temi: trasformazione da società di persone/ditta a società di capitali; separazione rami (scissione/conferimento: operativo vs immobiliare); costituzione holding e riordino di gruppo; ingresso/uscita soci (quote, aumenti riservati, clausole statutarie, patti parasociali, categorie di quote con diritti differenziati); passaggio generazionale; cessioni e acquisizioni (preparazione, valutazione, struttura, negoziazione, coordinamento fino all'atto).
+Temi: trasformazione da società di persone/ditta a società di capitali; separazione rami (scissione/conferimento: operativo vs immobiliare); costituzione holding e riordino di gruppo; ingresso/uscita soci (quote, aumenti riservati, clausole statutarie, patti parasociali, categorie di quote con diritti differenziati); passaggio generazionale; cessioni e acquisizioni (preparazione, valutazione, struttura, negoziazione, coordinamento fino all'atto, sell side e buy side).
 → DeepLink: **Quando il problema arriva, le opzioni sono già finite** (`/quando-il-problema-arriva`).
 
 **Startup** — descriptor: *Strutture da costruire adesso, per un'impresa che dovrà reggere quello che ancora non è successo.*

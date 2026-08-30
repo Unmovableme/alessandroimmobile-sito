@@ -47,7 +47,7 @@ export default function AssettiSocietari() {
         </Body>
         <Body>
           Cessioni e acquisizioni: preparazione dell'operazione, valutazione, struttura,
-          negoziazione, coordinamento fino all'atto.
+          negoziazione, coordinamento fino all'atto, sell side e buy side.
         </Body>
         <DeepLink to="/quando-il-problema-arriva" testId="assetti-deeplink-quando" label="Approfondimento">
           Quando il problema arriva, le opzioni sono già finite

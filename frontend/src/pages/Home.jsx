@@ -102,7 +102,8 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
           <Body>
             Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
-            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società,
+            e su operazioni di acquisizione e cessione.
           </Body>
 
           <Body>
@@ -111,8 +112,11 @@ export default function Home() {
             per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli
             di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures,
             fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel
-            Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA
-            Higher Education Institution, a Malta.
+            Club, associazione di business angel.
+          </Body>
+
+          <Body>
+            Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
           </Body>
 
           <Body>

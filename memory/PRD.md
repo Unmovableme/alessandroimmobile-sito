@@ -250,6 +250,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Assetti "Come lavoro" e Finanza "Come lavoro": testo compattato + accenno a cessioni/acquisizioni (testi esatti da prompt MA).
 - Percorso tappa 3 "Ruoli esecutivi e di governo": testo aggiornato con "operazioni di cessione e acquisizione come advisor indipendente".
 
+## Addendum M&A (30/08/2026)
+- Home bio par.1: aggiunto "...in società, e su operazioni di acquisizione e cessione."
+- Home bio par.2: rimossa la frase GIOYA dalla coda; ora chiude con "associazione di business angel."
+- Home bio: nuova riga autonoma "Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta." (tra par.2019 e riga dottore commercialista). Nessuna riga inline M&A nella bio.
+- Assetti "Aziende": voce cessioni/acquisizioni ora termina con "...coordinamento fino all'atto, sell side e buy side."
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
