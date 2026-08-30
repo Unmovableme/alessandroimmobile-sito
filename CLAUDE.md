@@ -57,6 +57,7 @@ src/
     ├── AssettiSocietari.jsx, Processi.jsx, Finanza.jsx   # pagine di competenza
     ├── Percorso.jsx, Referenze.jsx, Contatti.jsx, Grazie.jsx
     ├── CaseStudy.jsx                                     # /case-study (accordion + filtro area)
+    ├── MeA.jsx                                           # /m-a (CriterioPage: Sell side / Buy side / Con chi lavoro)
     ├── QuandoIlProblemaArriva.jsx, MetricheEStatuto.jsx  # criterio (Assetti)
     ├── AiSenzaGovernance.jsx, FounderEAgenti.jsx         # criterio (Processi)
     ├── PrimaCheManchiLaLiquidita.jsx, QuantoValiQuantoRaccogli.jsx  # criterio (Finanza)
@@ -71,7 +72,7 @@ Tutte le rotte sono figlie di `<Layout/>`.
 `/` Home · `/assetti-societari` · `/processi` · `/finanza` · `/percorso` · `/referenze` · `/contatti`
 
 **Fuori menu (raggiunte solo da link interni):**
-`/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/grazie`, e `*` → NotFound.
+`/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/m-a`, `/grazie`, e `*` → NotFound.
 
 **Grafo dei link interni:**
 - Home → `/referenze`; Home "In evidenza" → `/quando-il-problema-arriva`, `/metriche-e-statuto`.
@@ -185,6 +186,9 @@ Ognuna ha `title`, `lead`, `intro` opzionale e `sections[]` (leggere il file per
 
 ### NotFound — `pages/NotFound.jsx`
 404 con link alla Home.
+
+### M&A — `pages/MeA.jsx` (`/m-a`, fuori menu)
+Template `CriterioPage`. H1 "M&A: due lati dello stesso tavolo"; lead sui due lati (chi vende / chi compra) con la stessa base di lavoro; intro. Sezioni: **Sell side** e **Buy side** (ciascuna con sotto-blocchi `SubTitle` Obiettivo / Come lavoro / Cosa serve / Dove sta il valore + `Body`), **Con chi lavoro**. Raggiunta dalla banda "In evidenza" della Home (terzo articolo "M&A: acquisire, vendere, valutare." → `/m-a`). Tema M&A citato anche nel footer e nella tappa 3 del Percorso.
 
 ## 9. Modelli dati / contenuti strutturati
 ### Referenze (`components/Evidenza.jsx`)

@@ -243,6 +243,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - (5) Aree di tocco: ArrowLink +py-1; link SectionJump (Aziende/Startup) inline-block +py-1.5.
 - (6) Menu hamburger: nuovo mobileLinkClass (block py-3 text-lg), nav con divide-y divide-gray-100, voci più grandi/tappabili e separatori sottili.
 
+## Introduzione sezione M&A (30/08/2026)
+- Nuova pagina fuori menu `/m-a` (MeA.jsx) su template CriterioPage: sezioni Sell side, Buy side, Con chi lavoro (sotto-blocchi Obiettivo/Come lavoro/Cosa serve/Dove sta il valore via SubTitle+Body). Rotta aggiunta in App.js.
+- Home "In evidenza": terzo articolo "M&A: acquisire, vendere, valutare." → /m-a (highlights[]).
+- Footer: aggiunto "e operazioni di M&A" alla riga del 1996.
+- Assetti "Come lavoro" e Finanza "Come lavoro": testo compattato + accenno a cessioni/acquisizioni (testi esatti da prompt MA).
+- Percorso tappa 3 "Ruoli esecutivi e di governo": testo aggiornato con "operazioni di cessione e acquisizione come advisor indipendente".
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

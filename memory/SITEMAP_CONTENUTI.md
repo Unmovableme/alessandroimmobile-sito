@@ -193,7 +193,8 @@ H1 "Pagina non trovata" + testo + link home. Le vecchie rotte prototipo (`/templ
 
 ## 11. MAPPA ROTTE E LINK INTERNI
 - **Nel menu**: `/` · `/assetti-societari` · `/processi` · `/finanza` · `/percorso` · `/referenze` · `/contatti`
-- **Fuori menu** (raggiunte dai DeepLink): `/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/grazie`.
+- **Fuori menu** (raggiunte dai DeepLink): `/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/m-a`, `/grazie`.
+- **M&A** (`/m-a`, fuori menu): template CriterioPage. Titolo "M&A: due lati dello stesso tavolo". Sezioni: Sell side, Buy side (con sotto-blocchi Obiettivo/Come lavoro/Cosa serve/Dove sta il valore), Con chi lavoro. Raggiunta dalla banda "In evidenza" della Home (terzo articolo "M&A: acquisire, vendere, valutare.").
 - **Case study** (`/case-study`, fuori menu): hero navy, 3 gruppi (Assetti/Processi/Finanza) × 2 casi accordion (Aziende/Startup). Ancore #caso-01..#caso-06 (apertura espansa + scroll). Raggiunta dai deep link in coda ai blocchi Aziende/Startup delle 3 pagine di competenza (secondo link sotto quello verso la pagina di criterio).
 - Collegamenti chiave: Home→Referenze; Assetti→(quando / metriche); Processi→(ai-senza-governance / founder-e-agenti); Finanza→(prima-che-manchi-la-liquidita / quanto-vali-quanto-raccogli / percorso#pubblicazioni); Contatti↔Referenze; form→Grazie.
 

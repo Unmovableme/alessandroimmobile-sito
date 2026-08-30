@@ -35,6 +35,12 @@ const highlights = [
     to: "/metriche-e-statuto",
     id: "highlight-metriche",
   },
+  {
+    title: "M&A: acquisire, vendere, valutare.",
+    text: "Operazioni di cessione e acquisizione come advisor indipendente, dalla valutazione alla chiusura della trattativa.",
+    to: "/m-a",
+    id: "highlight-ma",
+  },
 ];
 
 export default function Home() {
