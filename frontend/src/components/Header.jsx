@@ -7,6 +7,7 @@ const NAV = [
   { to: "/assetti-societari", label: "Assetti societari", id: "assetti-societari" },
   { to: "/processi", label: "Processi", id: "processi" },
   { to: "/finanza", label: "Finanza", id: "finanza" },
+  { to: "/m-a", label: "M&A", id: "m-a" },
   { to: "/percorso", label: "Percorso", id: "percorso" },
   { to: "/referenze", label: "Referenze", id: "referenze" },
   { to: "/contatti", label: "Contatti", id: "contatti" },

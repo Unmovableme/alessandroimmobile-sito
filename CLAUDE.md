@@ -21,7 +21,7 @@ Queste regole non sono deducibili dal codice: rispettarle sempre.
 1. **Nessuna foto stock, nessuna illustrazione.** Unica immagine ammessa: il ritratto `/portrait-hero.png` (usato SOLO nella Home).
 2. **Nessun nome di persona nei case study** (scelta del 24/08/2026). Si citano i nomi di progetto/azienda (es. Toothfy, Awentia, Lài Srl) ma non i founder.
 3. **Niente nomi di prodotti di terzi** nei case study (es. rimossi XDENT, OrisLine) e **niente nomi di prodotto interni** non autorizzati.
-4. **Tre aree tematiche** attorno a cui ruota tutto: **Assetti societari · Processi · Finanza**. Ogni area distingue due pubblici: **Aziende** e **Startup**.
+4. **Quattro aree tematiche** (dal 30/08/2026) attorno a cui ruota tutto: **Assetti societari · Processi · Finanza · M&A**. Le prime tre distinguono due pubblici: **Aziende** e **Startup**; M&A ha struttura propria (Sell side / Buy side / Con chi lavoro).
 5. **Struttura fissa delle pagine di competenza:** Titolo (H1) → Descrizione (UN paragrafo) → Affermazione in corsivo (pull quote di pagina) → blocco "Aziende" → blocco "Startup" → banda "Come lavoro". Mantenere questa struttura a tre elementi in apertura, identica su Assetti/Processi/Finanza.
 6. **Ogni blocco Aziende/Startup** finisce con due link etichettati: `APPROFONDIMENTO` → pagina di criterio; `CASE STUDY` → caso in `/case-study#caso-0N`.
 7. **Referenze:** testi verbatim dei testimonial, con link al profilo LinkedIn. Non inventare/parafrasare citazioni.
@@ -57,6 +57,7 @@ src/
     ├── AssettiSocietari.jsx, Processi.jsx, Finanza.jsx   # pagine di competenza
     ├── Percorso.jsx, Referenze.jsx, Contatti.jsx, Grazie.jsx
     ├── CaseStudy.jsx                                     # /case-study (accordion + filtro area)
+    ├── MeA.jsx                                           # /m-a (CriterioPage: Sell side / Buy side / Con chi lavoro)
     ├── QuandoIlProblemaArriva.jsx, MetricheEStatuto.jsx  # criterio (Assetti)
     ├── AiSenzaGovernance.jsx, FounderEAgenti.jsx         # criterio (Processi)
     ├── PrimaCheManchiLaLiquidita.jsx, QuantoValiQuantoRaccogli.jsx  # criterio (Finanza)
@@ -71,13 +72,13 @@ Tutte le rotte sono figlie di `<Layout/>`.
 `/` Home · `/assetti-societari` · `/processi` · `/finanza` · `/percorso` · `/referenze` · `/contatti`
 
 **Fuori menu (raggiunte solo da link interni):**
-`/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/grazie`, e `*` → NotFound.
+`/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/m-a`, `/grazie`, e `*` → NotFound.
 
 **Grafo dei link interni:**
 - Home → `/referenze`; Home "In evidenza" → `/quando-il-problema-arriva`, `/metriche-e-statuto`.
 - Assetti → APPROFONDIMENTO `/quando-il-problema-arriva` (Aziende), `/metriche-e-statuto` (Startup); CASE STUDY `/case-study#caso-01` (Aziende), `#caso-02` (Startup).
 - Processi → APPROF. `/ai-senza-governance` (Aziende), `/founder-e-agenti` (Startup); CASE STUDY `#caso-03` (Aziende), `#caso-04` (Startup).
-- Finanza → APPROF. `/prima-che-manchi-la-liquidita` (Aziende), `/quanto-vali-quanto-raccogli` (Startup); CASE STUDY `#caso-05` (Aziende), `#caso-06` (Startup); inoltre link a `/percorso#pubblicazioni`.
+- Finanza → APPROF. `/prima-che-manchi-la-liquidita` (Aziende), `/quanto-vali-quanto-raccogli` (Startup); CASE STUDY `#caso-05` e `#caso-07` (Aziende), `#caso-06` (Startup); inoltre link a `/percorso#pubblicazioni`.
 - Contatti → `/referenze`; form → `/grazie`.
 
 ## 6. Design system
@@ -144,7 +145,8 @@ Tutte le rotte sono figlie di `<Layout/>`.
 
 ### Home — `pages/Home.jsx`
 Hero immersivo (unico con foto): eyebrow "Assetti societari · Processi · Finanza"; H1 "Alessandro Immobile"; sottotitolo corsivo: *"Financial advisor per le aziende. Business angel per le startup. Lo stesso metodo, applicato a modelli di crescita diversi."* + indicatore "scorri".
-Poi: bio in 3 paragrafi; link "Cosa dicono di me" → /referenze; blocco "Le tre aree" (3 card → /assetti-societari, /processi, /finanza); pull-quote; banda "In evidenza" con 2 articoli (→ /quando-il-problema-arriva, /metriche-e-statuto).
+Poi: bio in 4 paragrafi; link "Cosa dicono di me" → /referenze; blocco "Le quattro aree" (4 card in griglia 2×2 → /assetti-societari, /processi, /finanza, /m-a); pull-quote; banda "In evidenza" con 3 articoli (→ /quando-il-problema-arriva, /metriche-e-statuto, /m-a).
+Eyebrow hero: "Assetti societari · Processi · Finanza · M&A".
 
 ### Assetti societari — `pages/AssettiSocietari.jsx`
 Lead sulla struttura societaria; pull quote **"Va progettata prima che serva."**; blocco Aziende (descriptor: *"Strutture scelte anni fa, per un'impresa che nel frattempo è diventata un'altra cosa."*) + Startup (descriptor: *"Strutture da costruire adesso…"*); banda "Come lavoro".
@@ -165,11 +167,11 @@ Hero bianco: eyebrow "Founder · Manager · Professionisti"; H1 "Referenze"; lea
 Hero bianco: eyebrow "Un confronto diretto"; H1 "Contatti"; lead *"Scrivimi direttamente, senza moduli da compilare. Rispondo io."* Riga → /referenze. **Pulsante "Scrivimi →"** (mailto, `rounded-md bg-[#1B2A4A]`, no ombra). Link **"LinkedIn →"**. Poi sezione **"Prenota una call"** (separata da linea `border-navy/15`): riepilogo 3 formati, testi, `<PrenotaCall/>`.
 
 ### Case study — `pages/CaseStudy.jsx`
-Hero bianco: eyebrow "Assetti societari · Processi · Finanza"; H1 "Case study"; lead *"Sei situazioni reali, per le tre aree in cui lavoro."*
-- 3 gruppi (Assetti/Processi/Finanza) × 2 casi (Aziende/Startup) = 6 casi, in accordion (titolo + teaser → apre Situazione/Intervento/Risultato).
-- **Ancore** `#caso-01`…`#caso-06`: arrivando da un altro link il caso si apre già espanso con scroll.
+Hero bianco: eyebrow "Assetti societari · Processi · Finanza · M&A"; H1 "Case study"; lead *"Sette situazioni reali, per le quattro aree in cui lavoro."*
+- 3 gruppi (Assetti/Processi/Finanza), 7 casi totali in accordion (titolo + teaser → apre Situazione/Intervento/Risultato).
+- **Ancore** `#caso-01`…`#caso-07`: arrivando da un altro link il caso si apre già espanso con scroll.
 - **Filtro per area:** con hash mostra SOLO il gruppo di quel caso; link "Vedi anche gli altri case study" (`case-study-reveal-all`) rivela gli altri. Senza hash mostra tutti e 3 i gruppi.
-- Dati dei 6 casi (Situazione/Intervento/Risultato) nell'array `groups` dentro il file. Casi: 01 Riorganizzazione gruppo industriale; 02 Round senza perdere il controllo; 03 Chiusura mensile gruppo bancario; 04 Un'unica architettura (Awentia); 05 Primo budget strutturato (Lài Srl); 06 Validazione pre-costituzione (Toothfy, IRL 3).
+- Dati dei 7 casi (Situazione/Intervento/Risultato) nell'array `groups` dentro il file. Casi: 01 Riorganizzazione gruppo industriale; 02 Round senza perdere il controllo; 03 Chiusura mensile gruppo bancario; 04 Un'unica architettura (Awentia); 05 Primo budget strutturato (Lài Srl); 06 Validazione pre-costituzione (Toothfy, IRL 3); 07 Valutazione come base della trattativa (M&A sell+buy side, anonimo permanente, gruppo Finanza/Aziende).
 
 ### Grazie — `pages/Grazie.jsx`
 Conferma post-form: H1 "Grazie" + messaggio; se formato a pagamento, promemoria bonifico. Legge lo `state` passato dalla navigazione (`paid`, `formato`).
@@ -186,6 +188,9 @@ Ognuna ha `title`, `lead`, `intro` opzionale e `sections[]` (leggere il file per
 ### NotFound — `pages/NotFound.jsx`
 404 con link alla Home.
 
+### M&A — `pages/MeA.jsx` (`/m-a`, nel menu, quarta area)
+Template `CriterioPage`. H1 "M&A: due lati dello stesso tavolo"; lead sui due lati (chi vende / chi compra) con la stessa base di lavoro; intro. Sezioni: **Sell side** e **Buy side** (ciascuna con sotto-blocchi `SubTitle` Obiettivo / Come lavoro / Cosa serve / Dove sta il valore + `Body`), **Con chi lavoro**. Nel menu principale (`Header.jsx` NAV) e quarta card di "Le quattro aree" in Home; anche terzo articolo della banda "In evidenza" ("M&A: acquisire, vendere, valutare." → `/m-a`). Tema M&A citato anche nel footer e nella tappa 3 del Percorso.
+
 ## 9. Modelli dati / contenuti strutturati
 ### Referenze (`components/Evidenza.jsx`)
 - `linkedinByName`: mappa nome → URL LinkedIn.
@@ -194,7 +199,7 @@ Ognuna ha `title`, `lead`, `intro` opzionale e `sections[]` (leggere il file per
 - **Per aggiungere una referenza:** aggiungere l'estratto in `evidenzaPool` + l'URL in `linkedinByName` (Evidenza.jsx) e la citazione completa nell'elenco in `Referenze.jsx`.
 
 ### Case study (`pages/CaseStudy.jsx`)
-- `groups[]` → `{area, id, cases[]}`; ogni `case = {id: "caso-0N", kind: "Aziende"|"Startup", title, teaser, situazione, intervento, risultato}`.
+- `groups[]` → `{area, id, cases[]}`; ogni `case = {id: "caso-0N", kind: "Aziende"|"Startup", title, teaser, situazione, intervento, risultato}`. `situazione`/`intervento`/`risultato` possono essere stringa singola o array di paragrafi (es. caso-07).
 - **Per aggiungere un caso:** nuovo oggetto nel gruppo giusto con `id` progressivo; poi aggiungere il DeepLink CASE STUDY nella relativa pagina di competenza (→ `/case-study#caso-0N`).
 
 ### Prenotazione call (`components/PrenotaCall.jsx`)

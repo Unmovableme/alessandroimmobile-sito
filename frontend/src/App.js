@@ -16,6 +16,7 @@ import PrimaCheManchiLaLiquidita from "@/pages/PrimaCheManchiLaLiquidita";
 import FounderEAgenti from "@/pages/FounderEAgenti";
 import QuantoValiQuantoRaccogli from "@/pages/QuantoValiQuantoRaccogli";
 import CaseStudy from "@/pages/CaseStudy";
+import MeA from "@/pages/MeA";
 import NotFound from "@/pages/NotFound";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/founder-e-agenti" element={<FounderEAgenti />} />
           <Route path="/quanto-vali-quanto-raccogli" element={<QuantoValiQuantoRaccogli />} />
           <Route path="/case-study" element={<CaseStudy />} />
+          <Route path="/m-a" element={<MeA />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

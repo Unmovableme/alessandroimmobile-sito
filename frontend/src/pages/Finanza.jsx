@@ -55,6 +55,9 @@ export default function Finanza() {
           <ArrowLink to="/case-study#caso-05" testId="finanza-casestudy-aziende" labelClassName="text-lg">
             Il primo budget strutturato dell'azienda
           </ArrowLink>
+          <ArrowLink to="/case-study#caso-07" testId="finanza-casestudy-ma" className="mt-4" labelClassName="text-lg">
+            Valutazione come base della trattativa
+          </ArrowLink>
         </FadeIn>
 
         <SectionTitle id="startup">Startup</SectionTitle>
@@ -88,11 +91,10 @@ export default function Finanza() {
         <TintBand testId="finanza-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            Ho costruito sistemi di reporting e di controllo su gruppi con attività in più paesi,
-            guidato ristrutturazioni con piani industriali e rinegoziazione del debito, ricoperto
-            ruoli di direzione finanziaria in società operative. Su startup e PMI innovative affianco
-            chi guida l'impresa sulla struttura della raccolta, sulla scelta degli strumenti e sul
-            rapporto con gli investitori.
+            Sistemi di reporting/controllo su gruppi multi-paese, ristrutturazioni con piani
+            industriali e rinegoziazione debito, direzione finanziaria in società operative;
+            affiancamento startup/PMI su struttura raccolta, strumenti, investitori; nelle cessioni
+            e acquisizioni, valutazione d'azienda e struttura finanziaria dell'operazione.
           </Body>
         </TintBand>
 

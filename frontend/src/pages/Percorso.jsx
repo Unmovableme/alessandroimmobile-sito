@@ -30,11 +30,10 @@ const stages = [
     title: "Ruoli esecutivi e di governo",
     body: (
       <>
-        Dal 2015, dentro le imprese: consulenza di direzione per progetti in ambito bancario, la
-        presidenza del Polo GGB, Polo di Innovazione in Genomica, Genetica e Biologia, la presidenza
-        e la direzione finanziaria di Netgenomics S.r.l., startup innovativa nelle scienze della
-        vita, la direzione finanziaria di Guanxi S.r.l., società di digital transformation, di cui
-        oggi sono advisor.
+        Dal 2015: consulenza di direzione ambito bancario; presidenza Polo GGB (Genomica, Genetica
+        e Biologia); presidenza e direzione finanziaria di Netgenomics S.r.l. (startup innovativa
+        scienze della vita); direzione finanziaria di Guanxi S.r.l. (digital transformation, oggi
+        advisor); operazioni di cessione e acquisizione come advisor indipendente.
       </>
     ),
   },

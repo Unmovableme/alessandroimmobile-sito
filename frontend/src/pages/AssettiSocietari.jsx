@@ -47,7 +47,7 @@ export default function AssettiSocietari() {
         </Body>
         <Body>
           Cessioni e acquisizioni: preparazione dell'operazione, valutazione, struttura,
-          negoziazione, coordinamento fino all'atto.
+          negoziazione, coordinamento fino all'atto, sell side e buy side.
         </Body>
         <DeepLink to="/quando-il-problema-arriva" testId="assetti-deeplink-quando" label="Approfondimento">
           Quando il problema arriva, le opzioni sono già finite
@@ -96,21 +96,11 @@ export default function AssettiSocietari() {
         <TintBand testId="assetti-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            In un'operazione societaria intervengono figure diverse, ciascuna competente sul proprio
-            pezzo: il notaio sull'atto, l'avvocato sui contratti e sulle garanzie, il fiscalista sugli
-            effetti tributari, l'esperto sulla stima, il consulente del lavoro sul personale. Il
-            mandato di ciascuna si ferma al proprio perimetro, e il disegno complessivo resta senza un
-            titolare.
-          </Body>
-          <Body>
-            È il ruolo che ricopro. Definisco l'obiettivo con chi decide, scelgo la struttura fra le
-            alternative possibili, coordino i professionisti coinvolti e verifico che ogni pezzo resti
-            coerente con il resto fino all'atto.
-          </Body>
-          <Body>
-            La perizia di stima la affido di regola a un terzo indipendente: chi struttura
-            un'operazione e chi ne attesta i valori dovrebbero essere due persone diverse ogni volta
-            che è possibile.
+            Ruolo di regia sopra i professionisti (notaio, avvocato, fiscalista, esperto,
+            consulente del lavoro); definisce l'obiettivo con chi decide, sceglie la struttura,
+            coordina, verifica coerenza fino all'atto; perizia di stima affidata ad advisor
+            indipendente; nelle cessioni e acquisizioni, negoziazione diretta con la controparte
+            esterna.
           </Body>
         </TintBand>
       </PageContainer>

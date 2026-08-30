@@ -27,44 +27,47 @@
 ---
 
 ## 3. HOMEPAGE (`/`)
-**Hero** — occhiello: `Assetti societari · Processi · Finanza`; H1: **Alessandro Immobile**; sottotitolo (serif corsivo): *"Struttura societaria, processi e finanza, per aziende e startup."*
+**Hero** — occhiello: `Assetti societari · Processi · Finanza · M&A`; H1: **Alessandro Immobile**; sottotitolo (serif corsivo): *"Financial advisor per le aziende. Business angel per le startup. Lo stesso metodo, applicato a modelli di crescita diversi."* + indicatore "scorri" animato.
 
-**Bio (3 paragrafi):**
-1. Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
-2. Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures, fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
-3. Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
+**Bio (4 paragrafi):**
+1. Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società, e su operazioni di acquisizione e cessione.
+2. Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures, fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel Club, associazione di business angel.
+3. Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
+4. Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
 
 + link **Cosa dicono di me** → `/referenze`.
 
-**"Le tre aree":**
+**"Le quattro aree"** (griglia 2×2 su desktop):
 - **Assetti societari.** La forma giuridica dell'impresa, la struttura di gruppo, i soci, i patti e le regole della compagine sociale nel tempo. → `/assetti-societari`
 - **Processi.** Come funziona l'azienda, e cosa cambia quando entra l'intelligenza artificiale. → `/processi`
 - **Finanza.** Come si misura l'impresa e come si sostiene, in azienda o in una raccolta di capitale. → `/finanza`
+- **M&A.** Cessione e acquisizione di aziende: valutazione, negoziazione, closing dell'operazione. → `/m-a`
 
 **Pull-quote:** *"Il lavoro che conta si fa prima che un investitore, una banca o un socio facciano la prima domanda."*
 
 **"In evidenza":**
 - **Quando il problema arriva, le opzioni sono già finite.** Cinque situazioni diverse, nate dalla stessa causa: una struttura societaria rimasta ferma mentre l'azienda si muoveva. → `/quando-il-problema-arriva`
 - **Metriche e statuto: la posizione da cui si negozia.** Un investitore chiede le metriche che dimostrano che il problema è reale, e uno statuto pronto a reggere la trattativa. Arrivare senza l'uno o l'altro significa negoziare da una posizione più debole. → `/metriche-e-statuto`
+- **M&A: acquisire, vendere, valutare.** Operazioni di cessione e acquisizione come advisor indipendente, dalla valutazione alla chiusura della trattativa. → `/m-a`
 
 ---
 
-## 4. LE TRE AREE
-Schema comune: Titolo → Lead → sezione "Aziende" → sezione "Startup" (Descriptor corsivo + paragrafi + DeepLink) → banda "Come lavoro".
+## 4. LE QUATTRO AREE
+Schema comune delle prime tre: Titolo → Lead → sezione "Aziende" → sezione "Startup" (Descriptor corsivo + paragrafi + DeepLink) → banda "Come lavoro". La quarta area, M&A (`/m-a`), usa il template CriterioPage con sezioni Sell side / Buy side / Con chi lavoro (vedi §11).
 
 ### 4a. ASSETTI SOCIETARI (`/assetti-societari`)
 **Lead:** La struttura di un'impresa è una decisione che si prende una volta e condiziona tutto quello che viene dopo: chi comanda, chi rischia, chi guadagna, cosa si può vendere, chi può entrare e a quali condizioni.
 **Pull-quote:** Va progettata prima che serva.
 
 **Aziende** — descriptor: *Strutture scelte anni fa, per un'impresa che nel frattempo è diventata un'altra cosa.*
-Temi: trasformazione da società di persone/ditta a società di capitali; separazione rami (scissione/conferimento: operativo vs immobiliare); costituzione holding e riordino di gruppo; ingresso/uscita soci (quote, aumenti riservati, clausole statutarie, patti parasociali, categorie di quote con diritti differenziati); passaggio generazionale; cessioni e acquisizioni (preparazione, valutazione, struttura, negoziazione, coordinamento fino all'atto).
+Temi: trasformazione da società di persone/ditta a società di capitali; separazione rami (scissione/conferimento: operativo vs immobiliare); costituzione holding e riordino di gruppo; ingresso/uscita soci (quote, aumenti riservati, clausole statutarie, patti parasociali, categorie di quote con diritti differenziati); passaggio generazionale; cessioni e acquisizioni (preparazione, valutazione, struttura, negoziazione, coordinamento fino all'atto, sell side e buy side).
 → DeepLink: **Quando il problema arriva, le opzioni sono già finite** (`/quando-il-problema-arriva`).
 
 **Startup** — descriptor: *Strutture da costruire adesso, per un'impresa che dovrà reggere quello che ancora non è successo.*
 Temi: costituzione + sezione speciale Registro Imprese; statuto/patti per i round futuri (categorie di quote, diritti amministrativi/patrimoniali, lock-up, drag/tag along, anti-diluizione); cap table (oggi/dopo aumenti e conversioni/controllo finale); piani di incentivazione in equity (soci d'opera, key people, advisor); governance.
 → DeepLink: **Metriche e statuto: la posizione da cui si negozia** (`/metriche-e-statuto`).
 
-**Come lavoro:** ruolo di regia sopra i professionisti (notaio, avvocato, fiscalista, esperto, consulente del lavoro); definisce l'obiettivo con chi decide, sceglie la struttura, coordina, verifica coerenza fino all'atto; perizia di stima affidata a terzo indipendente.
+**Come lavoro:** ruolo di regia sopra i professionisti (notaio, avvocato, fiscalista, esperto, consulente del lavoro); definisce l'obiettivo con chi decide, sceglie la struttura, coordina, verifica coerenza fino all'atto; perizia di stima affidata ad advisor indipendente; nelle cessioni e acquisizioni, negoziazione diretta con la controparte esterna.
 
 ### 4b. PROCESSI (`/processi`)
 **Lead:** Molte aziende hanno strumenti informatici stratificati negli anni: un gestionale per la contabilità, un CRM per le vendite, fogli excel per il resto, nessuno che li fa parlare tra loro. Prima di introdurre l'intelligenza artificiale in un processo così, bisogna sapere come lavora davvero, non come dovrebbe lavorare secondo l'organigramma.
@@ -138,7 +141,7 @@ Ciascuna con citazione integrale e link al profilo LinkedIn (mappa `linkedinByNa
 
 **Sezione "Prenota una call":**
 - 3 formati: **Intro & Focus Call** (10 min, gratuita) · **Executive Advisory** (30 min, 300 €) · **Corporate Strategic Sprint** (3×60 min in ~3 settimane, 900 €).
-- Testi: il confronto può toccare organizzazione, innovazione e AI oltre alle tre aree; compilare il modulo prima della call; per i formati a pagamento compaiono IBAN e causale dopo la prenotazione, bonifico prima della call, conferma via email.
+- Testi: il confronto può toccare organizzazione, innovazione e AI oltre alle quattro aree; compilare il modulo prima della call; per i formati a pagamento compaiono IBAN e causale dopo la prenotazione, bonifico prima della call, conferma via email.
 - **Form Netlify** (`prenota-call`, honeypot `bot-field`). Campi: Nome azienda, Ruolo, Tema, Descrizione problema (max 500), Risultato desiderato, Urgenza (Entro un mese / Entro tre mesi / Non urgente), Categoria (Finance, Amministrazione-Finanza-Controllo, Organizzazione, AI, Innovation, Startup, Open Innovation, Governance, Fundraising, Altro), Email, selezione Formato. Se formato a pagamento → box IBAN + causale ("[Nome azienda] — Executive Advisory / Corporate Strategic Sprint"). Invio → redirect `/grazie`.
 - NOTA TECNICA: l'IBAN nel codice è un placeholder da sostituire prima del go-live.
 
@@ -192,9 +195,10 @@ H1 "Pagina non trovata" + testo + link home. Le vecchie rotte prototipo (`/templ
 ---
 
 ## 11. MAPPA ROTTE E LINK INTERNI
-- **Nel menu**: `/` · `/assetti-societari` · `/processi` · `/finanza` · `/percorso` · `/referenze` · `/contatti`
+- **Nel menu**: `/` · `/assetti-societari` · `/processi` · `/finanza` · `/m-a` · `/percorso` · `/referenze` · `/contatti`
 - **Fuori menu** (raggiunte dai DeepLink): `/quando-il-problema-arriva`, `/metriche-e-statuto`, `/ai-senza-governance`, `/founder-e-agenti`, `/prima-che-manchi-la-liquidita`, `/quanto-vali-quanto-raccogli`, `/case-study`, `/grazie`.
-- **Case study** (`/case-study`, fuori menu): hero navy, 3 gruppi (Assetti/Processi/Finanza) × 2 casi accordion (Aziende/Startup). Ancore #caso-01..#caso-06 (apertura espansa + scroll). Raggiunta dai deep link in coda ai blocchi Aziende/Startup delle 3 pagine di competenza (secondo link sotto quello verso la pagina di criterio).
+- **M&A** (`/m-a`, nel menu, quarta area dal 30/08/2026): template CriterioPage. Titolo "M&A: due lati dello stesso tavolo". Sezioni: Sell side, Buy side (con sotto-blocchi Obiettivo/Come lavoro/Cosa serve/Dove sta il valore), Con chi lavoro. Raggiunta dal menu, dalla quarta card di "Le quattro aree" e dalla banda "In evidenza" della Home (terzo articolo "M&A: acquisire, vendere, valutare.").
+- **Case study** (`/case-study`, fuori menu): hero bianco, eyebrow a 4 voci (…· M&A), 3 gruppi (Assetti/Processi/Finanza), 7 casi accordion (Aziende/Startup). Ancore #caso-01..#caso-07 (apertura espansa + scroll). Raggiunta dai deep link in coda ai blocchi Aziende/Startup delle pagine di competenza. Caso 07 (Finanza/Aziende): "Valutazione come base della trattativa", due mandati M&A (sell side + buy side), anonimo permanente.
 - Collegamenti chiave: Home→Referenze; Assetti→(quando / metriche); Processi→(ai-senza-governance / founder-e-agenti); Finanza→(prima-che-manchi-la-liquidita / quanto-vali-quanto-raccogli / percorso#pubblicazioni); Contatti↔Referenze; form→Grazie.
 
 ---

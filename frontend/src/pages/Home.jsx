@@ -20,6 +20,12 @@ const areas = [
     to: "/finanza",
     id: "area-finanza",
   },
+  {
+    name: "M&A.",
+    text: " Cessione e acquisizione di aziende: valutazione, negoziazione, closing dell'operazione.",
+    to: "/m-a",
+    id: "area-ma",
+  },
 ];
 
 const highlights = [
@@ -34,6 +40,12 @@ const highlights = [
     text: "Un investitore chiede le metriche che dimostrano che il problema è reale, e uno statuto pronto a reggere la trattativa. Arrivare senza l'uno o l'altro significa negoziare da una posizione più debole.",
     to: "/metriche-e-statuto",
     id: "highlight-metriche",
+  },
+  {
+    title: "M&A: acquisire, vendere, valutare.",
+    text: "Operazioni di cessione e acquisizione come advisor indipendente, dalla valutazione alla chiusura della trattativa.",
+    to: "/m-a",
+    id: "highlight-ma",
   },
 ];
 
@@ -64,7 +76,7 @@ export default function Home() {
             <div className="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
               <FadeIn>
                 <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/75 font-medium">
-                  Assetti societari · Processi · Finanza
+                  Assetti societari · Processi · Finanza · M&A
                 </p>
               </FadeIn>
               <FadeIn delay={0.04}>
@@ -96,7 +108,8 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
           <Body>
             Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
-            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società.
+            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società,
+            e su operazioni di acquisizione e cessione.
           </Body>
 
           <Body>
@@ -105,8 +118,11 @@ export default function Home() {
             per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli
             di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures,
             fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel
-            Club, associazione di business angel, e docente di finanziamento aziendale alla GIOYA
-            Higher Education Institution, a Malta.
+            Club, associazione di business angel.
+          </Body>
+
+          <Body>
+            Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
           </Body>
 
           <Body>
@@ -119,13 +135,13 @@ export default function Home() {
             </ArrowLink>
           </FadeIn>
 
-          <SectionTitle>Le tre aree</SectionTitle>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0 md:divide-x md:divide-navy/15">
+          <SectionTitle>Le quattro aree</SectionTitle>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16">
             {areas.map((a, i) => (
               <FadeIn
                 key={a.id}
                 delay={i * 0.05}
-                className={i === 0 ? "md:pr-12" : i === areas.length - 1 ? "md:pl-12" : "md:px-6"}
+                className={i % 2 === 0 ? "md:pr-12" : "md:border-l md:border-navy/15 md:pl-12"}
               >
                 <div data-testid={a.id}>
                   <p className="text-base leading-relaxed text-gray-700">

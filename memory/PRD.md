@@ -243,7 +243,32 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - (5) Aree di tocco: ArrowLink +py-1; link SectionJump (Aziende/Startup) inline-block +py-1.5.
 - (6) Menu hamburger: nuovo mobileLinkClass (block py-3 text-lg), nav con divide-y divide-gray-100, voci più grandi/tappabili e separatori sottili.
 
+## Introduzione sezione M&A (30/08/2026)
+- Nuova pagina fuori menu `/m-a` (MeA.jsx) su template CriterioPage: sezioni Sell side, Buy side, Con chi lavoro (sotto-blocchi Obiettivo/Come lavoro/Cosa serve/Dove sta il valore via SubTitle+Body). Rotta aggiunta in App.js.
+- Home "In evidenza": terzo articolo "M&A: acquisire, vendere, valutare." → /m-a (highlights[]).
+- Footer: aggiunto "e operazioni di M&A" alla riga del 1996.
+- Assetti "Come lavoro" e Finanza "Come lavoro": testo compattato + accenno a cessioni/acquisizioni (testi esatti da prompt MA).
+- Percorso tappa 3 "Ruoli esecutivi e di governo": testo aggiornato con "operazioni di cessione e acquisizione come advisor indipendente".
+
+## Addendum M&A (30/08/2026)
+- Home bio par.1: aggiunto "...in società, e su operazioni di acquisizione e cessione."
+- Home bio par.2: rimossa la frase GIOYA dalla coda; ora chiude con "associazione di business angel."
+- Home bio: nuova riga autonoma "Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta." (tra par.2019 e riga dottore commercialista). Nessuna riga inline M&A nella bio.
+- Assetti "Aziende": voce cessioni/acquisizioni ora termina con "...coordinamento fino all'atto, sell side e buy side."
+
+## M&A quarta area + Caso 07 (30/08/2026)
+- Home: "Le tre aree" → "Le quattro aree", griglia da md:grid-cols-3 a md:grid-cols-2 (2×2, divisore verticale sulla colonna destra); quarta card M&A → /m-a. Eyebrow hero già con "· M&A".
+- Header NAV: voce "M&A" → /m-a presente (desktop + mobile). /m-a passa da fuori menu a nel menu.
+- CaseStudy.jsx: aggiunto caso-07 "Valutazione come base della trattativa" (gruppo Finanza, kind Aziende, anonimo permanente, due mandati sell+buy side). Componente Part ora accetta array di paragrafi. Eyebrow → "…· M&A", lead → "Sette situazioni reali, per le quattro aree in cui lavoro.", SEO description aggiornata.
+- Finanza.jsx: secondo link CASE STUDY nel blocco Aziende → /case-study#caso-07 (accanto a #caso-05).
+- Contatti.jsx: "oltre alle tre aree del sito" → "oltre alle quattro aree del sito".
+- Docs aggiornati: CLAUDE.md e memory/SITEMAP_CONTENUTI.md (4 aree, /m-a nel menu, 7 casi, caso-07, corretto duplicato bio nel SITEMAP).
+- Verificato con screenshot: Home 4 aree 2×2, /case-study#caso-07 si apre espanso con filtro gruppo Finanza, link visibile su /finanza, menu con M&A.
+- Decisione utente: il box M&A in "In evidenza" resta OLTRE alla card nella griglia aree (doppio trattamento voluto).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
 - P2: configurazione dominio alessandroimmobile.com in fase di deploy.
+- P2: rifare la cover LinkedIn (sottotitolo ancora a 3 aree, sito ora a 4) — lavoro separato, dopo il completamento del sito.
+- P2: meta tag Open Graph + og:image per anteprima condivisione social (proposto, in attesa conferma).
