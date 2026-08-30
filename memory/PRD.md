@@ -275,6 +275,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home pull-quote: "…un investitore, una banca, un socio o una controparte facciano la prima domanda."
 - File modificati: Percorso.jsx, QuandoIlProblemaArriva.jsx, Referenze.jsx, Home.jsx.
 
+## Social Preview / Open Graph (30/08/2026)
+- `public/og-image.png`: card 1200×630 brandizzata (navy #1B2A4A, Source Serif 4, occhiello 4 aree, nome, tagline corsiva, dominio) generata via rendering HTML del componente tipografico.
+- `public/index.html`: set Open Graph statico completo (og:type/site_name/locale it_IT/url/title/description/image+width/height) + Twitter card (summary_large_image + title/description/image). Rimossa la vecchia og:image stock della piattaforma. Meta description base aggiornata con M&A.
+- Scelta consapevole (utente): SPA senza prerendering → stessi tag OG per tutte le pagine. Differenziazione per pagina richiede prerendering statico (tema in coda separatamente).
+- og:url/og:image puntano a https://alessandroimmobile.com/ (dominio finale); funzioneranno appena il dominio è attivo su Netlify. In preview l'immagine è servita da /og-image.png sul dominio preview.
+- NOTA tecnica: modifiche a public/index.html richiedono riavvio del dev server (template cachato).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
