@@ -54,7 +54,7 @@ export default function Home() {
     <>
       <Seo
         title="Alessandro Immobile — Aziendalista e dottore commercialista"
-        description="Assetti societari, processi e finanza per imprese e startup. Dal 1996 su bilanci, finanza e assetti societari; dal 2019 anche startup, dalla costituzione alla raccolta di capitale."
+        description="Assetti societari, processi, finanza e M&A per imprese e startup. Dal 1996 su bilanci, finanza e assetti societari; dal 2019 startup, dalla costituzione alla raccolta di capitale."
       />
       <main data-testid="home-page" className="pb-24 md:pb-32">
         {/* Hero immersivo a colori naturali (opz. 3b) */}
@@ -109,7 +109,7 @@ export default function Home() {
           <Body>
             Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
             gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società,
-            e su operazioni di acquisizione e cessione.
+            e su operazioni di M&A.
           </Body>
 
           <Body>
@@ -136,19 +136,22 @@ export default function Home() {
           </FadeIn>
 
           <SectionTitle>Le quattro aree</SectionTitle>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-16">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-0">
             {areas.map((a, i) => (
               <FadeIn
                 key={a.id}
                 delay={i * 0.05}
-                className={i % 2 === 0 ? "md:pr-12" : "md:border-l md:border-navy/15 md:pl-12"}
+                className={[
+                  i % 2 === 0 ? "md:pr-12" : "md:border-l md:border-navy/15 md:pl-12",
+                  i < 2 ? "md:pb-14" : "md:border-t md:border-navy/15 md:pt-14",
+                ].join(" ")}
               >
-                <div data-testid={a.id}>
+                <div data-testid={a.id} className="flex h-full flex-col">
                   <p className="text-base leading-relaxed text-gray-700">
                     <strong className="font-semibold text-gray-900">{a.name}</strong>
                     {a.text}
                   </p>
-                  <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-5" labelClassName="text-[15px]">
+                  <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-auto pt-5" labelClassName="text-[15px]">
                     Scopri di più
                   </ArrowLink>
                 </div>
@@ -159,7 +162,7 @@ export default function Home() {
           <FadeIn>
             <figure className="mt-24 md:mt-32 border-l-2 border-navy pl-6 md:pl-8">
               <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
-                Il lavoro che conta si fa prima che un investitore, una banca o un socio facciano la prima domanda.
+                Il lavoro che conta si fa prima che un investitore, una banca, un socio o una controparte facciano la prima domanda.
               </blockquote>
             </figure>
           </FadeIn>
