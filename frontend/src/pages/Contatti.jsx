@@ -112,7 +112,7 @@ export default function Contatti() {
           <FadeIn delay={0.05}>
             <p className="mt-8 text-lg leading-relaxed text-gray-700">
               Il confronto può toccare anche organizzazione, innovazione e intelligenza
-              artificiale, oltre alle tre aree del sito.
+              artificiale, oltre alle quattro aree del sito.
             </p>
           </FadeIn>
 

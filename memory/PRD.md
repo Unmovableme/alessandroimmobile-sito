@@ -256,7 +256,19 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home bio: nuova riga autonoma "Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta." (tra par.2019 e riga dottore commercialista). Nessuna riga inline M&A nella bio.
 - Assetti "Aziende": voce cessioni/acquisizioni ora termina con "...coordinamento fino all'atto, sell side e buy side."
 
+## M&A quarta area + Caso 07 (30/08/2026)
+- Home: "Le tre aree" → "Le quattro aree", griglia da md:grid-cols-3 a md:grid-cols-2 (2×2, divisore verticale sulla colonna destra); quarta card M&A → /m-a. Eyebrow hero già con "· M&A".
+- Header NAV: voce "M&A" → /m-a presente (desktop + mobile). /m-a passa da fuori menu a nel menu.
+- CaseStudy.jsx: aggiunto caso-07 "Valutazione come base della trattativa" (gruppo Finanza, kind Aziende, anonimo permanente, due mandati sell+buy side). Componente Part ora accetta array di paragrafi. Eyebrow → "…· M&A", lead → "Sette situazioni reali, per le quattro aree in cui lavoro.", SEO description aggiornata.
+- Finanza.jsx: secondo link CASE STUDY nel blocco Aziende → /case-study#caso-07 (accanto a #caso-05).
+- Contatti.jsx: "oltre alle tre aree del sito" → "oltre alle quattro aree del sito".
+- Docs aggiornati: CLAUDE.md e memory/SITEMAP_CONTENUTI.md (4 aree, /m-a nel menu, 7 casi, caso-07, corretto duplicato bio nel SITEMAP).
+- Verificato con screenshot: Home 4 aree 2×2, /case-study#caso-07 si apre espanso con filtro gruppo Finanza, link visibile su /finanza, menu con M&A.
+- Decisione utente: il box M&A in "In evidenza" resta OLTRE alla card nella griglia aree (doppio trattamento voluto).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
 - P2: configurazione dominio alessandroimmobile.com in fase di deploy.
+- P2: rifare la cover LinkedIn (sottotitolo ancora a 3 aree, sito ora a 4) — lavoro separato, dopo il completamento del sito.
+- P2: meta tag Open Graph + og:image per anteprima condivisione social (proposto, in attesa conferma).

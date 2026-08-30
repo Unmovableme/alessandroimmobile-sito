@@ -100,6 +100,24 @@ const groups = [
         risultato:
           "Il percorso ha portato Toothfy a un Investment Readiness Level 3, con l'indicazione a procedere verso la costruzione di un MVP testato in ambiente clinico reale. Le interviste hanno registrato un'intenzione d'acquisto del 75% tra gli odontoiatri target e confermato la disponibilità a pagare tra 250 e 300 euro al mese per lo strumento. Il mercato è stato dimensionato in un TAM di 140,86 milioni di euro, un SAM di 51 milioni e un SOM di 261 mila euro sulle prime cliniche obiettivo. È in corso il pre-commitment con gli odontoiatri che hanno partecipato al processo di validazione, primo passo verso la costituzione della società e la raccolta di capitale.",
       },
+      {
+        id: "caso-07",
+        kind: "Aziende",
+        title: "Valutazione come base della trattativa",
+        teaser:
+          "Due mandati distinti, uno per la parte venditrice e uno per quella acquirente, decisi dalla stessa base: la valutazione.",
+        situazione: [
+          "Due mandati distinti, nello stesso perimetro di competenza.",
+          "Nel primo, un'azienda arriva alla cessione dopo un passaggio generazionale non riuscito: al fondatore succede un familiare privo di attitudine imprenditoriale, orientato a un ruolo dipendente all'interno dell'azienda. I soci decidono di vendere.",
+          "Nel secondo, un gruppo di servizi alle imprese persegue una crescita per acquisizioni mirate, in aziende e studi professionali coerenti con il proprio oggetto sociale.",
+        ],
+        intervento: [
+          "Nel primo mandato ho affiancato la parte venditrice: valutazione dell'azienda, negoziazione di prezzo e condizioni con gli advisor della controparte, fino alla cessione delle quote.",
+          "Nel secondo ho lavorato per la parte acquirente: valutazione di due target, conduzione delle rispettive trattative.",
+        ],
+        risultato:
+          "La valutazione, in entrambi i mandati, ha fornito ai clienti il dato su cui negoziare da una posizione informata: nel primo caso un prezzo difendibile in trattativa, nel secondo una lettura puntuale dell'esposizione debitoria dei target, elemento che le controparti non avevano reso evidente.",
+      },
     ],
   },
 ];
@@ -109,7 +127,15 @@ const allIds = groups.flatMap((g) => g.cases.map((c) => c.id));
 const Part = ({ label, children }) => (
   <div className="mt-6 first:mt-0">
     <p className="text-xs uppercase tracking-[0.2em] font-medium text-navy/60">{label}</p>
-    <p className="mt-2 text-lg leading-relaxed text-gray-700">{children}</p>
+    {Array.isArray(children) ? (
+      children.map((t, i) => (
+        <p key={i} className={`${i === 0 ? "mt-2" : "mt-4"} text-lg leading-relaxed text-gray-700`}>
+          {t}
+        </p>
+      ))
+    ) : (
+      <p className="mt-2 text-lg leading-relaxed text-gray-700">{children}</p>
+    )}
   </div>
 );
 
@@ -201,14 +227,14 @@ export default function CaseStudy() {
     <>
       <Seo
         title="Case study — Alessandro Immobile"
-        description="Sei situazioni reali su assetti societari, processi e finanza: per aziende e startup, dalla riorganizzazione di gruppo alla validazione pre-costituzione."
+        description="Sette situazioni reali su assetti societari, processi, finanza e M&A: per aziende e startup, dalla riorganizzazione di gruppo alla valutazione come base della trattativa."
       />
       <main data-testid="case-study-page" className="pb-24 md:pb-32">
         <ImmersiveHero
-          eyebrow="Assetti societari · Processi · Finanza"
+          eyebrow="Assetti societari · Processi · Finanza · M&A"
           title="Case study"
           titleTestId="case-study-title"
-          lead="Sei situazioni reali, per le tre aree in cui lavoro."
+          lead="Sette situazioni reali, per le quattro aree in cui lavoro."
           testId="case-study-hero"
         />
 

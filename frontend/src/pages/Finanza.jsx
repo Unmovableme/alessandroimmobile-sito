@@ -55,6 +55,9 @@ export default function Finanza() {
           <ArrowLink to="/case-study#caso-05" testId="finanza-casestudy-aziende" labelClassName="text-lg">
             Il primo budget strutturato dell'azienda
           </ArrowLink>
+          <ArrowLink to="/case-study#caso-07" testId="finanza-casestudy-ma" className="mt-4" labelClassName="text-lg">
+            Valutazione come base della trattativa
+          </ArrowLink>
         </FadeIn>
 
         <SectionTitle id="startup">Startup</SectionTitle>
