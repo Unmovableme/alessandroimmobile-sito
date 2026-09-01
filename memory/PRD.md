@@ -281,6 +281,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Scelta consapevole (utente): SPA senza prerendering → stessi tag OG per tutte le pagine. Differenziazione per pagina richiede prerendering statico (tema in coda separatamente).
 - og:url/og:image puntano a https://alessandroimmobile.com/ (dominio finale); funzioneranno appena il dominio è attivo su Netlify. In preview l'immagine è servita da /og-image.png sul dominio preview.
 - NOTA tecnica: modifiche a public/index.html richiedono riavvio del dev server (template cachato).
+- og-image.png sostituita (01/09/2026) con versione fornita dall'utente: tagline su due righe "Financial advisor per le aziende. Business angel per le startup. Consultant indipendente per operazioni di M&A." (stesso layout/dimensioni, index.html invariato).
+
+## Restyling "Le quattro aree" (01/09/2026)
+- Home.jsx: sottotitolo eyebrow "PER AZIENDE E STARTUP" sotto il SectionTitle (-mt-6 mb-8, grigio tenue uppercase).
+- Celle griglia: struttura a blocchi — numero "01".."04" (padStart da indice), titolo serif navy text-2xl senza punto finale (replace(/\.$/,"")), corpo testo separato (trim), link "Scopri di più" ancorato in basso. Divisori griglia e resto pagina invariati.
 
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.

@@ -136,6 +136,7 @@ export default function Home() {
           </FadeIn>
 
           <SectionTitle>Le quattro aree</SectionTitle>
+          <p className="-mt-6 mb-8 text-xs tracking-[0.15em] text-gray-400 uppercase">Per aziende e startup</p>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-0">
             {areas.map((a, i) => (
               <FadeIn
@@ -147,10 +148,9 @@ export default function Home() {
                 ].join(" ")}
               >
                 <div data-testid={a.id} className="flex h-full flex-col">
-                  <p className="text-base leading-relaxed text-gray-700">
-                    <strong className="font-semibold text-gray-900">{a.name}</strong>
-                    {a.text}
-                  </p>
+                  <p className="text-xs tracking-[0.15em] text-gray-400 mb-2">{String(i + 1).padStart(2, "0")}</p>
+                  <p className="font-serif text-2xl text-navy mb-3">{a.name.replace(/\.$/, "")}</p>
+                  <p className="text-base leading-relaxed text-gray-700">{a.text.trim()}</p>
                   <ArrowLink to={a.to} testId={`${a.id}-link`} className="mt-auto pt-5" labelClassName="text-[15px]">
                     Scopri di più
                   </ArrowLink>
