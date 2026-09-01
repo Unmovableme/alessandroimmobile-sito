@@ -283,6 +283,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - NOTA tecnica: modifiche a public/index.html richiedono riavvio del dev server (template cachato).
 - og-image.png sostituita (01/09/2026) con versione fornita dall'utente: tagline su due righe "Financial advisor per le aziende. Business angel per le startup. Consultant indipendente per operazioni di M&A." (stesso layout/dimensioni, index.html invariato).
 
+## Restyling "Le quattro aree" (01/09/2026)
+- Home.jsx: sottotitolo eyebrow "PER AZIENDE E STARTUP" sotto il SectionTitle (-mt-6 mb-8, grigio tenue uppercase).
+- Celle griglia: struttura a blocchi — numero "01".."04" (padStart da indice), titolo serif navy text-2xl senza punto finale (replace(/\.$/,"")), corpo testo separato (trim), link "Scopri di più" ancorato in basso. Divisori griglia e resto pagina invariati.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
