@@ -293,6 +293,14 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - MeA.jsx: Sell side "Come lavoro" e "Cosa serve" in due paragrafi; Buy side "Come lavoro" in tre paragrafi; "Dove sta il valore" di entrambe le sezioni convertito in InsightCard (testId mea-sellside-insight / mea-buyside-insight), testo invariato.
 - File modificati: components/Editorial.jsx, pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx.
 
+## Restyling completo "muro di testo" (07/09/2026)
+- Editorial.jsx: nuovi componenti `TopicItem` (voce numerata: numero grigio tabular-nums, titolo serif navy, corpo gray-600; props n/title/children/testId) e `StepSubTitle` (SubTitle con numero step; props step/children).
+- Assetti societari: Aziende 6 Body → 6 TopicItem (assetti-topic-1..6); Startup 5 Body → 5 TopicItem (assetti-startup-topic-1..5).
+- Processi: Aziende 6 Body → 4 TopicItem (il blocco company brain unisce 3 paragrafi; processi-topic-1..4); Startup secondo Body → 5 TopicItem (processi-startup-topic-1..5), primo Body narrativo invariato.
+- Finanza: Aziende — solo il paragrafo "Budget e controllo..." → 2 TopicItem (finanza-topic-1..2); Startup 4 Body → 4 TopicItem (finanza-startup-topic-1..4).
+- MeA.jsx: tutti gli 8 SubTitle sostituiti con StepSubTitle numerati 1→4 per sezione (Obiettivo/Come lavoro/Cosa serve/Dove sta il valore); SubTitle rimosso dagli import.
+- File modificati: components/Editorial.jsx, pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

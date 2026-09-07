@@ -103,6 +103,29 @@ export const SubTitle = ({ children }) => (
   </FadeIn>
 );
 
+// Voce numerata con termine in rilievo (elenchi tematici delle pagine di competenza).
+export const TopicItem = ({ n, title, children, testId }) => (
+  <FadeIn>
+    <div className="flex gap-4 mt-6" data-testid={testId}>
+      <div className="text-sm font-semibold text-gray-300 pt-0.5 tabular-nums">{n}</div>
+      <div>
+        <p className="font-serif text-base md:text-lg font-semibold text-navy mb-1">{title}</p>
+        <p className="text-base leading-relaxed text-gray-600">{children}</p>
+      </div>
+    </div>
+  </FadeIn>
+);
+
+// Variante di SubTitle con numero di step.
+export const StepSubTitle = ({ step, children }) => (
+  <FadeIn>
+    <div className="mt-14 flex items-baseline gap-3">
+      <span className="text-sm font-semibold text-gray-300 tabular-nums">{step}</span>
+      <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900">{children}</h3>
+    </div>
+  </FadeIn>
+);
+
 export const Descriptor = ({ children }) => (
   <FadeIn>
     <blockquote className="border-l-2 border-navy pl-6 text-lg italic text-gray-500 leading-relaxed">

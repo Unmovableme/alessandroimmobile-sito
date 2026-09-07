@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink, TopicItem } from "@/components/Editorial";
 
 export default function Processi() {
   return (
@@ -27,32 +27,26 @@ export default function Processi() {
 
         <SectionTitle id="aziende" tight>Aziende</SectionTitle>
         <Descriptor>Processi cresciuti per sedimentazione, mai ridisegnati.</Descriptor>
-        <Body>
-          Mappatura AS IS: come funziona oggi il processo, chi fa cosa, dove sono i colli di
-          bottiglia e le informazioni che si perdono per strada.
-        </Body>
-        <Body>
-          Ridisegno TO BE: il processo si riscrive prima di essere informatizzato. I dati che
-          produce si strutturano in un impianto unico, pensato per essere consultato e usato quando
-          serve.
-        </Body>
-        <Body>
-          Un company brain è la memoria operativa dell'impresa: raccoglie regole, processi, stato
-          dei progetti, decisioni prese, e la conoscenza che oggi vive nella testa di poche persone.
-          La rende leggibile per chi lavora in azienda e per gli assistenti AI, prima che producano
-          qualsiasi output.
-        </Body>
-        <Body>
-          In molte adozioni AI la conoscenza operativa resta sparsa fra email, chat, drive, CRM, mai
-          scritta in un formato che un assistente possa usare in modo affidabile. Ogni strumento
-          finisce per generalizzare, con un risultato che non riflette il modo specifico in cui
-          quell'azienda lavora.
-        </Body>
-        <Body>
+        <TopicItem n="01" title="Mappatura AS IS" testId="processi-topic-1">
+          Come funziona oggi il processo, chi fa cosa, dove sono i colli di bottiglia e le
+          informazioni che si perdono per strada.
+        </TopicItem>
+        <TopicItem n="02" title="Ridisegno TO BE" testId="processi-topic-2">
+          Il processo si riscrive prima di essere informatizzato. I dati che produce si strutturano
+          in un impianto unico, pensato per essere consultato e usato quando serve.
+        </TopicItem>
+        <TopicItem n="03" title="Company brain" testId="processi-topic-3">
+          La memoria operativa dell'impresa: raccoglie regole, processi, stato dei progetti,
+          decisioni prese, e la conoscenza che oggi vive nella testa di poche persone. La rende
+          leggibile per chi lavora in azienda e per gli assistenti AI, prima che producano qualsiasi
+          output. In molte adozioni AI la conoscenza operativa resta sparsa fra email, chat, drive,
+          CRM, mai scritta in un formato che un assistente possa usare in modo affidabile.
           Costruirlo richiede una fonte unica considerata valida, regole su chi la aggiorna e con
           quale frequenza, e un collegamento agli strumenti operativi già in uso.
-        </Body>
-        <Body>Riorganizzazione: ruoli e responsabilità ridisegnati insieme al processo.</Body>
+        </TopicItem>
+        <TopicItem n="04" title="Riorganizzazione" testId="processi-topic-4">
+          Ruoli e responsabilità ridisegnati insieme al processo.
+        </TopicItem>
         <DeepLink to="/ai-senza-governance" testId="processi-deeplink-ai" label="Approfondimento">
           L'intelligenza artificiale è già in azienda. Nessuno la governa.
         </DeepLink>
@@ -74,13 +68,21 @@ export default function Processi() {
           prima che diventino urgenti, e mostrare a chi valuta se investire che le operations sono
           sistemiche, non affidate all'estro di una persona sola.
         </Body>
-        <Body>
-          Validare il modello, prima di scalare quello che ancora non funziona. Governare i soci,
-          attraverso uno statuto pensato per i round futuri. Raccogliere capitale, con modalità che
-          responsabilizzano gli investitori che aderiscono. Pianificare i round successivi, con la
-          diluizione governata nel tempo. Attrarre e trattenere i talenti, con piani di
-          incentivazione in equity e vesting.
-        </Body>
+        <TopicItem n="01" title="Validare il modello" testId="processi-startup-topic-1">
+          Prima di scalare quello che ancora non funziona.
+        </TopicItem>
+        <TopicItem n="02" title="Governare i soci" testId="processi-startup-topic-2">
+          Attraverso uno statuto pensato per i round futuri.
+        </TopicItem>
+        <TopicItem n="03" title="Raccogliere capitale" testId="processi-startup-topic-3">
+          Con modalità che responsabilizzano gli investitori che aderiscono.
+        </TopicItem>
+        <TopicItem n="04" title="Pianificare i round successivi" testId="processi-startup-topic-4">
+          Con la diluizione governata nel tempo.
+        </TopicItem>
+        <TopicItem n="05" title="Attrarre e trattenere i talenti" testId="processi-startup-topic-5">
+          Con piani di incentivazione in equity e vesting.
+        </TopicItem>
         <DeepLink to="/founder-e-agenti" testId="processi-deeplink-founder" label="Approfondimento">
           Un founder, gli agenti come squadra
         </DeepLink>
