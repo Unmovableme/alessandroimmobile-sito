@@ -301,6 +301,13 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - MeA.jsx: tutti gli 8 SubTitle sostituiti con StepSubTitle numerati 1→4 per sezione (Obiettivo/Come lavoro/Cosa serve/Dove sta il valore); SubTitle rimosso dagli import.
 - File modificati: components/Editorial.jsx, pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx.
 
+## Riduzione spaziature globali + restyling bio/aree Home (07/09/2026)
+- Editorial.jsx: SectionTitle non-tight mt-12/md:mt-24 → mt-10/md:mt-16; TintBand mt-14/md:mt-28 → mt-10/md:mt-16 e py-12/md:py-24 → py-10/md:py-16; PullQuote non-tight my-12/md:my-24 → my-10/md:my-16. Valido su tutto il sito via componenti condivisi.
+- Home.jsx bio: 4 Body → blocchi card bg #F4F6FA rounded-xl con grassetto navy sui punti chiave (Dal 1996/M&A, Dal 2019, Imment/P3 Ventures/Business Angel Club, GIOYA + Dottore commercialista/revisore legale in due card affiancate su desktop). Body rimosso dagli import (non più usato).
+- Home.jsx "Le quattro aree": da celle con divisori a card bianche bordate (border-gray-200 rounded-xl p-6/7, gap-4), numerazione/titoli/link invariati.
+- Home.jsx pull quote custom: mt-24/md:mt-32 → mt-16/md:mt-20.
+- File modificati: components/Editorial.jsx, pages/Home.jsx.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

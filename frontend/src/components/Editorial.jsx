@@ -54,7 +54,7 @@ export const SectionTitle = ({ children, id, tight }) => (
     <h2
       id={id}
       className={`scroll-mt-24 mb-8 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-gray-900 leading-tight ${
-        tight ? "mt-8 md:mt-10" : "mt-12 md:mt-24"
+        tight ? "mt-8 md:mt-10" : "mt-10 md:mt-16"
       }`}
     >
       {children}
@@ -178,9 +178,9 @@ export const DeepLink = ({ to, children, testId, label }) => (
 export const TintBand = ({ children, testId }) => (
   <div
     data-testid={testId}
-    className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-14 md:mt-28 mb-0"
+    className="relative left-1/2 w-screen -translate-x-1/2 bg-[#F4F6FA] border-y border-[#E5EAF3] mt-10 md:mt-16 mb-0"
   >
-    <div className="mx-auto max-w-3xl px-6 py-12 md:py-24">{children}</div>
+    <div className="mx-auto max-w-3xl px-6 py-10 md:py-16">{children}</div>
   </div>
 );
 
@@ -197,7 +197,7 @@ export const PullQuote = ({ children, testId, tight }) => (
     <p
       data-testid={testId}
       className={`font-serif italic text-navy text-[1.75rem] md:text-[2rem] leading-snug ${
-        tight ? "mt-8 md:mt-10 mb-4 md:mb-5" : "my-12 md:my-24"
+        tight ? "mt-8 md:mt-10 mb-4 md:mb-5" : "my-10 md:my-16"
       }`}
     >
       {children}

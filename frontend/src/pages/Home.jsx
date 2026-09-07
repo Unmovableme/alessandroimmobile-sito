@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { Body, SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
+import { SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
 
 const areas = [
   {
@@ -106,28 +106,44 @@ export default function Home() {
         </section>
 
         <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
-          <Body>
-            Dal 1996 lavoro su bilanci, finanza, processi e assetti societari: in studio, per
-            gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società,
-            e su operazioni di M&A.
-          </Body>
+          <FadeIn>
+          <div className="rounded-xl bg-[#F4F6FA] p-6 md:p-7 mb-3.5">
+            <p className="text-lg leading-relaxed text-gray-700">
+              <b className="text-navy">Dal 1996</b> lavoro su bilanci, finanza, processi e assetti societari: in studio, per gruppi bancari e imprese industriali, poi con ruoli esecutivi e di governo in società, e su operazioni di <b className="text-navy">M&A</b>.
+            </p>
+          </div>
+        </FadeIn>
 
-          <Body>
-            Dal 2019 il campo si è esteso alle startup: validazione del modello, costituzione e
-            statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione
-            per i round di finanziamento. Sono fondatore e CEO di Imment S.r.l., dedicata ai modelli
-            di crescita e di raccolta di capitale per startup e PMI. Sono partner di P3 Ventures,
-            fondo che investe nelle fasi più giovani delle startup, co-fondatore di Business Angel
-            Club, associazione di business angel.
-          </Body>
+        <FadeIn delay={0.05}>
+          <div className="rounded-xl bg-[#F4F6FA] p-6 md:p-7 mb-3.5">
+            <p className="text-lg leading-relaxed text-gray-700">
+              <b className="text-navy">Dal 2019</b> il campo si è esteso alle startup: validazione del modello, costituzione e statuto in chiave innovativa, raccolta di capitale di rischio e di debito, valutazione per i round di finanziamento.
+            </p>
+          </div>
+        </FadeIn>
 
-          <Body>
-            Docente di finanziamento aziendale alla GIOYA Higher Education Institution, a Malta.
-          </Body>
+        <FadeIn delay={0.1}>
+          <div className="rounded-xl bg-[#F4F6FA] p-6 md:p-7 mb-3.5">
+            <p className="text-lg leading-relaxed text-gray-700">
+              Sono fondatore e CEO di <b className="text-navy">Imment S.r.l.</b>, dedicata ai modelli di crescita e di raccolta di capitale per startup e PMI. Sono partner di <b className="text-navy">P3 Ventures</b>, fondo che investe nelle fasi più giovani delle startup, co-fondatore di <b className="text-navy">Business Angel Club</b>, associazione di business angel.
+            </p>
+          </div>
+        </FadeIn>
 
-          <Body>
-            Dottore commercialista, iscritto all'Ordine di Torino, e revisore legale.
-          </Body>
+        <FadeIn delay={0.15}>
+          <div className="flex flex-col md:flex-row gap-3.5 mb-8">
+            <div className="rounded-xl bg-[#F4F6FA] p-5 md:p-6 flex-1">
+              <p className="text-base leading-relaxed text-gray-700">
+                Docente di finanziamento aziendale alla <b className="text-navy">GIOYA Higher Education Institution</b>, a Malta.
+              </p>
+            </div>
+            <div className="rounded-xl bg-[#F4F6FA] p-5 md:p-6 flex-1">
+              <p className="text-base leading-relaxed text-gray-700">
+                <b className="text-navy">Dottore commercialista</b>, iscritto all'Ordine di Torino, e <b className="text-navy">revisore legale</b>.
+              </p>
+            </div>
+          </div>
+        </FadeIn>
 
           <FadeIn delay={0.05}>
             <ArrowLink to="/referenze" testId="home-referenze-link" className="mt-8" labelClassName="text-[15px]">
@@ -137,17 +153,13 @@ export default function Home() {
 
           <SectionTitle>Le quattro aree</SectionTitle>
           <p className="-mt-6 mb-8 text-xs tracking-[0.15em] text-gray-400 uppercase">Per aziende e startup</p>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-0">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
             {areas.map((a, i) => (
-              <FadeIn
-                key={a.id}
-                delay={i * 0.05}
-                className={[
-                  i % 2 === 0 ? "md:pr-12" : "md:border-l md:border-navy/15 md:pl-12",
-                  i < 2 ? "md:pb-14" : "md:border-t md:border-navy/15 md:pt-14",
-                ].join(" ")}
-              >
-                <div data-testid={a.id} className="flex h-full flex-col">
+              <FadeIn key={a.id} delay={i * 0.05}>
+                <div
+                  data-testid={a.id}
+                  className="flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 md:p-7"
+                >
                   <p className="text-xs tracking-[0.15em] text-gray-400 mb-2">{String(i + 1).padStart(2, "0")}</p>
                   <p className="font-serif text-2xl text-navy mb-3">{a.name.replace(/\.$/, "")}</p>
                   <p className="text-base leading-relaxed text-gray-700">{a.text.trim()}</p>
@@ -160,7 +172,7 @@ export default function Home() {
           </div>
 
           <FadeIn>
-            <figure className="mt-24 md:mt-32 border-l-2 border-navy pl-6 md:pl-8">
+            <figure className="mt-16 md:mt-20 border-l-2 border-navy pl-6 md:pl-8">
               <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
                 Il lavoro che conta si fa prima che un investitore, una banca, un socio o una controparte facciano la prima domanda.
               </blockquote>
