@@ -308,6 +308,21 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home.jsx pull quote custom: mt-24/md:mt-32 → mt-16/md:mt-20.
 - File modificati: components/Editorial.jsx, pages/Home.jsx.
 
+## Lead pagine + titolo M&A + CTA referenze Home (07/09/2026)
+- Lead riscritti: Assetti (senza "si prende una volta", senza "cosa si può vendere"), Processi (nuovo testo AI "non si limita ad accelerare: moltiplica"), Finanza (forma aggiornata "tre domande distinte… convergono sulla stessa persona").
+- MeA.jsx: H1 pagina da "M&A: due lati dello stesso tavolo" a "M&A" (Seo title invariato, resta "M&A: due lati dello stesso tavolo — Alessandro Immobile").
+- Home.jsx: CTA referenze da ArrowLink a card bordata (Link react-router, testId home-referenze-link invariato): "Cosa dicono le persone con cui ho lavorato" + "Leggi le referenze →". Aggiunto import Link.
+- File modificati: pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx, pages/Home.jsx.
+
+## Rimozione em dash "—" da tutto il sito (07/09/2026)
+- Lead Processi: "nel mezzo — rivedere" → "nel mezzo: rivedere".
+- Tutti i separatori " — " (titoli SEO "X — Alessandro Immobile", titoli formati Contatti, label PrenotaCall, og:title/twitter:title in index.html) → " · ". Causale bonifico PrenotaCall: "—" → "·".
+- Verificato: zero occorrenze di "—" in src/ e public/index.html; riavvio frontend fatto (index.html cachato dal dev server).
+
+## Spaziatura globale + fix allineamento Contatti (07/09/2026)
+- Tabella di conversione applicata (sed a 2 passi con placeholder per evitare catene): mt-28→mt-16, mt-24 md:mt-28→mt-16 md:mt-20, mt-24→mt-16, mt-20 md:mt-24→mt-14 md:mt-16, mt-20→mt-14, mt-16 md:mt-20→mt-12 md:mt-14, mt-12→mt-8, pb-24 md:pb-32→pb-16 md:pb-20, pb-16 md:pb-24→pb-10 md:pb-14, pb-16→pb-10, pb-14 md:pb-16→pb-10 md:pb-12, py-14 md:py-16→py-10 md:py-12, pt-12 md:pt-16→pt-8 md:pt-10. File: CaseStudy, Contatti, Home, MetricheEStatuto, Percorso, Referenze. scroll-mt-24/28 protetti (offset ancore). Assetti/Finanza/MeA/Processi/QuandoIlProblemaArriva NON toccati per indicazione utente.
+- Contatti.jsx: link LinkedIn ArrowLink con pl-7 per allinearlo al testo del bottone Scrivimi (px-7).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

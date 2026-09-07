@@ -89,7 +89,7 @@ export default function MetricheEStatuto() {
   return (
     <>
       <Seo
-        title="Metriche e statuto: la posizione da cui si negozia — Alessandro Immobile"
+        title="Metriche e statuto: la posizione da cui si negozia · Alessandro Immobile"
         description="Le metriche di validazione arrivano prima della raccolta, la cap table è governance, la valuation nasce da metriche verificabili. Dove sta il valore."
       />
       <CriterioPage
@@ -99,7 +99,7 @@ export default function MetricheEStatuto() {
         lead="Un investitore arriva alla due diligence e trova quello che nessuno aveva ancora guardato: categorie di quote non previste, strumenti finanziari non disciplinati, tag along e drag along assenti. Da quel momento le condizioni le decide lui, non i founder che fino a un istante prima le stavano ancora impostando."
         intro={
           <FadeIn>
-            <figure className="mt-16 md:mt-20 border-l-2 border-navy pl-6 md:pl-8">
+            <figure className="mt-12 md:mt-14 border-l-2 border-navy pl-6 md:pl-8">
               <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
                 Il lavoro che conta si fa prima che l'investitore faccia la prima domanda.
               </blockquote>

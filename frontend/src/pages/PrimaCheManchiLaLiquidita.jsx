@@ -101,7 +101,7 @@ export default function PrimaCheManchiLaLiquidita() {
   return (
     <>
       <Seo
-        title="La crisi finanziaria inizia prima che manchi la liquidità — Alessandro Immobile"
+        title="La crisi finanziaria inizia prima che manchi la liquidità · Alessandro Immobile"
         description="Controllo di gestione, budget come modello e tesoreria in anticipo: i segnali deboli si intercettano prima che diventino emergenze, quando c'è ancora tempo per decidere."
       />
       <CriterioPage

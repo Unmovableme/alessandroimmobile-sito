@@ -70,10 +70,10 @@ export default function Referenze() {
   return (
     <>
       <Seo
-        title="Referenze — Alessandro Immobile"
+        title="Referenze · Alessandro Immobile"
         description="Quello che dicono di me le persone con cui ho lavorato: founder, manager e professionisti su assetti societari, finanza, M&A e raccolta di capitale."
       />
-      <main data-testid="referenze-page" className="pb-24 md:pb-32">
+      <main data-testid="referenze-page" className="pb-16 md:pb-20">
         <ImmersiveHero
           eyebrow="Founder · Manager · Professionisti"
           title="Referenze"
@@ -86,12 +86,12 @@ export default function Referenze() {
         <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20">
           <Evidenza variant="full" testId="referenze-evidenza" />
 
-          <div className="mt-20 md:mt-24 divide-y divide-navy/15">
+          <div className="mt-14 md:mt-16 divide-y divide-navy/15">
           {referenze.map((r, i) => (
             <FadeIn key={r.name} delay={Math.min(i, 5) * 0.04}>
               <figure
                 data-testid={`referenza-${i + 1}`}
-                className={i === 0 ? "pb-14 md:pb-16" : "py-14 md:py-16"}
+                className={i === 0 ? "pb-10 md:pb-12" : "py-10 md:py-12"}
               >
                 <figcaption>
                   <p className="font-serif text-xl md:text-2xl font-semibold tracking-tight text-gray-900">

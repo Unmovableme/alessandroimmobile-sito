@@ -1,4 +1,5 @@
 import { Seo } from "@/components/Seo";
+import { Link } from "react-router-dom";
 import { SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
 
 const areas = [
@@ -53,10 +54,10 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Alessandro Immobile — Aziendalista e dottore commercialista"
+        title="Alessandro Immobile · Aziendalista e dottore commercialista"
         description="Assetti societari, processi, finanza e M&A per imprese e startup. Dal 1996 su bilanci, finanza e assetti societari; dal 2019 startup, dalla costituzione alla raccolta di capitale."
       />
-      <main data-testid="home-page" className="pb-24 md:pb-32">
+      <main data-testid="home-page" className="pb-16 md:pb-20">
         {/* Hero immersivo a colori naturali (opz. 3b) */}
         <section
           data-testid="home-hero"
@@ -73,7 +74,7 @@ export default function Home() {
             className="absolute inset-0 bg-gradient-to-t from-[#0d1526]/95 via-[#0d1526]/55 to-transparent md:from-[#0d1526]/90 md:via-[#0d1526]/35"
           />
           <div className="relative z-10 w-full">
-            <div className="mx-auto max-w-6xl px-6 pb-16 md:pb-24">
+            <div className="mx-auto max-w-6xl px-6 pb-10 md:pb-14">
               <FadeIn>
                 <p className="mb-4 text-xs uppercase tracking-[0.24em] text-white/75 font-medium">
                   Assetti societari · Processi · Finanza · M&A
@@ -105,7 +106,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+        <div className="mx-auto max-w-3xl px-6 mt-12 md:mt-14">
           <FadeIn>
           <div className="rounded-xl bg-[#F4F6FA] p-6 md:p-7 mb-3.5">
             <p className="text-lg leading-relaxed text-gray-700">
@@ -146,14 +147,19 @@ export default function Home() {
         </FadeIn>
 
           <FadeIn delay={0.05}>
-            <ArrowLink to="/referenze" testId="home-referenze-link" className="mt-8" labelClassName="text-[15px]">
-              Cosa dicono di me
-            </ArrowLink>
+            <Link
+              to="/referenze"
+              data-testid="home-referenze-link"
+              className="mt-3.5 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-6 py-5 no-underline hover:border-navy/30 transition-colors"
+            >
+              <span className="text-[15px] text-gray-700">Cosa dicono le persone con cui ho lavorato</span>
+              <span className="text-sm font-semibold text-navy whitespace-nowrap">Leggi le referenze →</span>
+            </Link>
           </FadeIn>
 
           <SectionTitle>Le quattro aree</SectionTitle>
           <p className="-mt-6 mb-8 text-xs tracking-[0.15em] text-gray-400 uppercase">Per aziende e startup</p>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             {areas.map((a, i) => (
               <FadeIn key={a.id} delay={i * 0.05}>
                 <div
@@ -172,7 +178,7 @@ export default function Home() {
           </div>
 
           <FadeIn>
-            <figure className="mt-16 md:mt-20 border-l-2 border-navy pl-6 md:pl-8">
+            <figure className="mt-12 md:mt-14 border-l-2 border-navy pl-6 md:pl-8">
               <blockquote className="font-serif text-[1.75rem] md:text-[2.15rem] italic leading-snug text-navy">
                 Il lavoro che conta si fa prima che un investitore, una banca, un socio o una controparte facciano la prima domanda.
               </blockquote>

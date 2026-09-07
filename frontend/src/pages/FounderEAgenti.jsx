@@ -102,7 +102,7 @@ export default function FounderEAgenti() {
   return (
     <>
       <Seo
-        title="Un founder, gli agenti come squadra — Alessandro Immobile"
+        title="Un founder, gli agenti come squadra · Alessandro Immobile"
         description="Startup AI-native: un solo founder affiancato da agenti su sviluppo, marketing e operations. Il vantaggio è reale quando si mantiene il controllo del metodo."
       />
       <CriterioPage

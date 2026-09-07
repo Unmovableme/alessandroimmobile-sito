@@ -116,13 +116,13 @@ export default function MeA() {
   return (
     <>
       <Seo
-        title="M&A: due lati dello stesso tavolo — Alessandro Immobile"
+        title="M&A: due lati dello stesso tavolo · Alessandro Immobile"
         description="Cessioni e acquisizioni come advisor indipendente. Sell side e buy side: una valutazione che regge e una trattativa condotta su quella base, fino alla chiusura."
       />
       <CriterioPage
         testId="ma-page"
         titleTestId="ma-title"
-        title="M&A: due lati dello stesso tavolo"
+        title="M&A"
         lead="Chi vende e chi compra arrivano al tavolo con interessi opposti. Il lavoro serio è lo stesso da entrambi i lati: una valutazione che regge, e una trattativa condotta su quella base."
         intro={
           <FadeIn delay={0.05}>

@@ -87,7 +87,7 @@ h2 {
     }
 }
 
-/* Indicatore "scorri" — Opzione A: la linea si disegna dall'alto verso il basso,
+/* Indicatore "scorri" · Opzione A: la linea si disegna dall'alto verso il basso,
    poi svanisce e riparte, su una traccia base molto tenue sempre presente. */
 @keyframes scroll-draw {
     0% {

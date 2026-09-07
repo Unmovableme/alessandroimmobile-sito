@@ -5,16 +5,15 @@ export default function AssettiSocietari() {
   return (
     <>
       <Seo
-        title="Assetti societari — Alessandro Immobile"
+        title="Assetti societari · Alessandro Immobile"
         description="Struttura societaria, holding e riordino di gruppo, ingresso e uscita di soci, passaggio generazionale, cessioni e acquisizioni. Per aziende e startup."
       />
       <PageContainer testId="assetti-page">
         <PageTitle testId="assetti-title">Assetti societari</PageTitle>
 
         <Lead>
-          La struttura di un'impresa è una decisione che si prende una volta e condiziona tutto
-          quello che viene dopo: chi comanda, chi rischia, chi guadagna, cosa si può vendere, chi
-          può entrare e a quali condizioni.
+          La struttura di un'impresa è una decisione che condiziona tutto quello che viene dopo:
+          chi comanda, chi rischia, chi guadagna, chi può entrare e a quali condizioni.
         </Lead>
 
         <PullQuote testId="assetti-pullquote" tight>Va progettata prima che serva.</PullQuote>

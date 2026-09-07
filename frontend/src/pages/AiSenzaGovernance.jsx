@@ -106,7 +106,7 @@ export default function AiSenzaGovernance() {
   return (
     <>
       <Seo
-        title="L'intelligenza artificiale è già in azienda. Nessuno la governa. — Alessandro Immobile"
+        title="L'intelligenza artificiale è già in azienda. Nessuno la governa. · Alessandro Immobile"
         description="L'adozione dell'AI anticipa la governance. Perché lo strumento non è il processo, il dato è il prerequisito, e dove sta il lavoro che conta."
       />
       <CriterioPage
