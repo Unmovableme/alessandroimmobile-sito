@@ -12,10 +12,10 @@ export default function Processi() {
         <PageTitle testId="processi-title">Processi</PageTitle>
 
         <Lead>
-          Molte aziende hanno strumenti informatici stratificati negli anni: un gestionale per la
-          contabilità, un CRM per le vendite, fogli excel per il resto, nessuno che li fa parlare
-          tra loro. Prima di introdurre l'intelligenza artificiale in un processo così, bisogna
-          sapere come lavora davvero, non come dovrebbe lavorare secondo l'organigramma.
+          I processi governano e rendono efficiente il lavoro di un'azienda. L'intelligenza
+          artificiale, quando si innesta su un processo pensato per riceverla, non si limita ad
+          accelerare: moltiplica. Il lavoro sta nel mezzo — rivedere il processo perché l'AI possa
+          davvero renderlo.
         </Lead>
 
         <PullQuote testId="processi-pullquote" tight>

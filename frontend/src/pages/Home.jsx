@@ -1,4 +1,5 @@
 import { Seo } from "@/components/Seo";
+import { Link } from "react-router-dom";
 import { SectionTitle, TintBand, BandTitle, ArrowLink, FadeIn } from "@/components/Editorial";
 
 const areas = [
@@ -146,9 +147,14 @@ export default function Home() {
         </FadeIn>
 
           <FadeIn delay={0.05}>
-            <ArrowLink to="/referenze" testId="home-referenze-link" className="mt-8" labelClassName="text-[15px]">
-              Cosa dicono di me
-            </ArrowLink>
+            <Link
+              to="/referenze"
+              data-testid="home-referenze-link"
+              className="mt-3.5 flex items-center justify-between rounded-xl border border-gray-200 bg-white px-6 py-5 no-underline hover:border-navy/30 transition-colors"
+            >
+              <span className="text-[15px] text-gray-700">Cosa dicono le persone con cui ho lavorato</span>
+              <span className="text-sm font-semibold text-navy whitespace-nowrap">Leggi le referenze →</span>
+            </Link>
           </FadeIn>
 
           <SectionTitle>Le quattro aree</SectionTitle>

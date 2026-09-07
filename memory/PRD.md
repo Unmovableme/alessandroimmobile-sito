@@ -308,6 +308,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home.jsx pull quote custom: mt-24/md:mt-32 → mt-16/md:mt-20.
 - File modificati: components/Editorial.jsx, pages/Home.jsx.
 
+## Lead pagine + titolo M&A + CTA referenze Home (07/09/2026)
+- Lead riscritti: Assetti (senza "si prende una volta", senza "cosa si può vendere"), Processi (nuovo testo AI "non si limita ad accelerare: moltiplica"), Finanza (forma aggiornata "tre domande distinte… convergono sulla stessa persona").
+- MeA.jsx: H1 pagina da "M&A: due lati dello stesso tavolo" a "M&A" (Seo title invariato, resta "M&A: due lati dello stesso tavolo — Alessandro Immobile").
+- Home.jsx: CTA referenze da ArrowLink a card bordata (Link react-router, testId home-referenze-link invariato): "Cosa dicono le persone con cui ho lavorato" + "Leggi le referenze →". Aggiunto import Link.
+- File modificati: pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx, pages/Home.jsx.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

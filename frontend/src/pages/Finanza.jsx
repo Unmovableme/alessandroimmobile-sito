@@ -12,9 +12,10 @@ export default function Finanza() {
         <PageTitle testId="finanza-title">Finanza</PageTitle>
 
         <Lead>
-          La contabilità, il controllo di gestione e la tesoreria rispondono a tre domande diverse:
-          cosa è successo, cosa sta succedendo, se domani si riesce a pagare. In molte imprese le
-          tre risposte arrivano dalla stessa persona, con lo stesso gestionale, e spesso in ritardo.
+          Contabilità, controllo di gestione e tesoreria rispondono a tre domande distinte: cos'è
+          accaduto, cosa sta accadendo, se l'impresa sarà in grado di far fronte ai pagamenti. In
+          molte realtà le tre risposte convergono sulla stessa persona, con lo stesso gestionale,
+          spesso in ritardo.
         </Lead>
 
         <PullQuote testId="finanza-pullquote" tight>Va misurata prima che manchi.</PullQuote>
