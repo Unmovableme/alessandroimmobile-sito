@@ -238,7 +238,7 @@ export default function CaseStudy() {
           testId="case-study-hero"
         />
 
-        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20 space-y-12 md:space-y-20">
+        <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-14 space-y-12 md:space-y-20">
           {visibleGroups.map((g) => (
             <section key={g.id} data-testid={g.id}>
               <FadeIn>
