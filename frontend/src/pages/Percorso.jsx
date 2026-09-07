@@ -79,7 +79,7 @@ export default function Percorso() {
   return (
     <>
       <Seo
-        title="Percorso — Alessandro Immobile"
+        title="Percorso · Alessandro Immobile"
         description="Dal 1996 a oggi: studio e prime esperienze, consulenza per gruppi bancari e imprese industriali, ruoli esecutivi e di governo, startup e venture."
       />
       <main data-testid="percorso-page" className="pb-24 md:pb-32">

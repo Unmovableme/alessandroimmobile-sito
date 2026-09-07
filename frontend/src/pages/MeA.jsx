@@ -116,7 +116,7 @@ export default function MeA() {
   return (
     <>
       <Seo
-        title="M&A: due lati dello stesso tavolo — Alessandro Immobile"
+        title="M&A: due lati dello stesso tavolo · Alessandro Immobile"
         description="Cessioni e acquisizioni come advisor indipendente. Sell side e buy side: una valutazione che regge e una trattativa condotta su quella base, fino alla chiusura."
       />
       <CriterioPage

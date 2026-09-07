@@ -10,7 +10,7 @@ export default function Grazie() {
   return (
     <>
       <Seo
-        title="Grazie — Alessandro Immobile"
+        title="Grazie · Alessandro Immobile"
         description="Prenotazione ricevuta. Confermo l'appuntamento a breve via email."
       />
       <PageContainer testId="grazie-page">

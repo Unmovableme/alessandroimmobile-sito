@@ -13,15 +13,15 @@ const summary = [
 
 const formats = [
   {
-    title: "Intro & Focus Call — 10 minuti — gratuita",
+    title: "Intro & Focus Call · 10 minuti · gratuita",
     desc: "Ci conosciamo, definiamo il tema, prepariamo la sessione successiva.",
   },
   {
-    title: "Executive Advisory — 30 minuti — 300 €",
+    title: "Executive Advisory · 30 minuti · 300 €",
     desc: "Una domanda aziendale specifica. Un confronto senior. Una raccomandazione operativa.",
   },
   {
-    title: "Corporate Strategic Sprint — 3 sessioni da 60 minuti, in circa tre settimane — 900 €",
+    title: "Corporate Strategic Sprint · 3 sessioni da 60 minuti, in circa tre settimane · 900 €",
     desc: "Dalla diagnosi al piano operativo: si comprende il problema, si valutano le alternative, si costruisce una soluzione e una roadmap a novanta giorni.",
   },
 ];
@@ -30,7 +30,7 @@ export default function Contatti() {
   return (
     <>
       <Seo
-        title="Contatti — Alessandro Immobile"
+        title="Contatti · Alessandro Immobile"
         description="Scrivimi direttamente, senza moduli da compilare. Rispondo io. Email e LinkedIn di Alessandro Immobile."
       />
       <main data-testid="contatti-page" className="pb-24 md:pb-32">

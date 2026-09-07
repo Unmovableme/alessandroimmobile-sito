@@ -5,7 +5,7 @@ export default function Processi() {
   return (
     <>
       <Seo
-        title="Processi — Alessandro Immobile"
+        title="Processi · Alessandro Immobile"
         description="Mappatura AS IS e ridisegno TO BE dei processi, company brain e layer informativo, intelligenza artificiale governata. Per aziende e startup."
       />
       <PageContainer testId="processi-page">
@@ -14,7 +14,7 @@ export default function Processi() {
         <Lead>
           I processi governano e rendono efficiente il lavoro di un'azienda. L'intelligenza
           artificiale, quando si innesta su un processo pensato per riceverla, non si limita ad
-          accelerare: moltiplica. Il lavoro sta nel mezzo — rivedere il processo perché l'AI possa
+          accelerare: moltiplica. Il lavoro sta nel mezzo: rivedere il processo perché l'AI possa
           davvero renderlo.
         </Lead>
 

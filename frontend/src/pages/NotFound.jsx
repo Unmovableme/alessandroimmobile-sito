@@ -4,7 +4,7 @@ import { PageContainer, PageTitle, Lead, ArrowLink } from "@/components/Editoria
 export default function NotFound() {
   return (
     <>
-      <Seo title="Pagina non trovata — Alessandro Immobile" description="La pagina richiesta non esiste." />
+      <Seo title="Pagina non trovata · Alessandro Immobile" description="La pagina richiesta non esiste." />
       <PageContainer testId="notfound-page">
         <PageTitle testId="notfound-title">Pagina non trovata</PageTitle>
         <Lead>La pagina che cercavi non esiste o è stata spostata.</Lead>

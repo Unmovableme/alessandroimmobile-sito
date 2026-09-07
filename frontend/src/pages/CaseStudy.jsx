@@ -226,7 +226,7 @@ export default function CaseStudy() {
   return (
     <>
       <Seo
-        title="Case study — Alessandro Immobile"
+        title="Case study · Alessandro Immobile"
         description="Sette situazioni reali su assetti societari, processi, finanza e M&A: per aziende e startup, dalla riorganizzazione di gruppo alla valutazione come base della trattativa."
       />
       <main data-testid="case-study-page" className="pb-24 md:pb-32">

@@ -5,7 +5,7 @@ export default function AssettiSocietari() {
   return (
     <>
       <Seo
-        title="Assetti societari — Alessandro Immobile"
+        title="Assetti societari · Alessandro Immobile"
         description="Struttura societaria, holding e riordino di gruppo, ingresso e uscita di soci, passaggio generazionale, cessioni e acquisizioni. Per aziende e startup."
       />
       <PageContainer testId="assetti-page">

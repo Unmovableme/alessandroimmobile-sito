@@ -8,21 +8,21 @@ const IBAN = "IT73 D032 9601 6010 0006 4413 394";
 const FORMATS = [
   {
     id: "intro",
-    label: "10 minuti — gratuita",
+    label: "10 minuti · gratuita",
     title: "Intro & Focus Call",
     paid: false,
     causale: null,
   },
   {
     id: "executive",
-    label: "30 minuti — 300 €",
+    label: "30 minuti · 300 €",
     title: "Executive Advisory",
     paid: true,
     causale: "Executive Advisory",
   },
   {
     id: "sprint",
-    label: "3 sessioni da 60 minuti (circa 3 settimane) — 900 €",
+    label: "3 sessioni da 60 minuti (circa 3 settimane) · 900 €",
     title: "Corporate Strategic Sprint",
     paid: true,
     causale: "Corporate Strategic Sprint",
@@ -327,7 +327,7 @@ export default function PrenotaCall() {
             </p>
             <p className="mt-3 font-serif text-lg text-navy break-words">{IBAN}</p>
             <p className="mt-3 text-sm text-gray-600">
-              Causale: {form.azienda ? form.azienda : "[Nome azienda]"} —{" "}
+              Causale: {form.azienda ? form.azienda : "[Nome azienda]"} ·{" "}
               {selected.causale}
             </p>
           </div>

@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Alessandro Immobile — Aziendalista e dottore commercialista"
+        title="Alessandro Immobile · Aziendalista e dottore commercialista"
         description="Assetti societari, processi, finanza e M&A per imprese e startup. Dal 1996 su bilanci, finanza e assetti societari; dal 2019 startup, dalla costituzione alla raccolta di capitale."
       />
       <main data-testid="home-page" className="pb-24 md:pb-32">

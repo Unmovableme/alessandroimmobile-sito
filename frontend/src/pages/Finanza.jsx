@@ -5,7 +5,7 @@ export default function Finanza() {
   return (
     <>
       <Seo
-        title="Finanza — Alessandro Immobile"
+        title="Finanza · Alessandro Immobile"
         description="Contabilità, controllo di gestione e tesoreria per le aziende; struttura della raccolta di capitale, strumenti e valutazione per le startup."
       />
       <PageContainer testId="finanza-page">

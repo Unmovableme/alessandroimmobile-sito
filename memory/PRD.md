@@ -314,6 +314,11 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home.jsx: CTA referenze da ArrowLink a card bordata (Link react-router, testId home-referenze-link invariato): "Cosa dicono le persone con cui ho lavorato" + "Leggi le referenze →". Aggiunto import Link.
 - File modificati: pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx, pages/Home.jsx.
 
+## Rimozione em dash "—" da tutto il sito (07/09/2026)
+- Lead Processi: "nel mezzo — rivedere" → "nel mezzo: rivedere".
+- Tutti i separatori " — " (titoli SEO "X — Alessandro Immobile", titoli formati Contatti, label PrenotaCall, og:title/twitter:title in index.html) → " · ". Causale bonifico PrenotaCall: "—" → "·".
+- Verificato: zero occorrenze di "—" in src/ e public/index.html; riavvio frontend fatto (index.html cachato dal dev server).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

@@ -96,7 +96,7 @@ export default function QuantoValiQuantoRaccogli() {
   return (
     <>
       <Seo
-        title="Prima del round: sapere quanto vali e quanto puoi raccogliere — Alessandro Immobile"
+        title="Prima del round: sapere quanto vali e quanto puoi raccogliere · Alessandro Immobile"
         description="Valutazione su metriche verificabili, Investment Readiness Level e runway: arrivare al round con numeri che reggono al confronto con un investitore."
       />
       <CriterioPage
