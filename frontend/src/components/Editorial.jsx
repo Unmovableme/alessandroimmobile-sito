@@ -182,6 +182,26 @@ export const PullQuote = ({ children, testId, tight }) => (
   </FadeIn>
 );
 
+// Riflessione dell'autore: stesso stile delle schede Evidenza, ma senza attribuzione.
+export const InsightCard = ({ children, testId }) => (
+  <FadeIn>
+    <div
+      data-testid={testId}
+      className="relative rounded-xl border border-[#E5EAF3] bg-[#F4F6FA] p-7 pt-10 mt-6"
+    >
+      <span
+        aria-hidden
+        className="absolute left-6 top-3 font-serif leading-none text-navy/25 select-none text-5xl"
+      >
+        &ldquo;
+      </span>
+      <blockquote className="font-serif italic leading-snug text-navy text-lg md:text-xl">
+        {children}
+      </blockquote>
+    </div>
+  </FadeIn>
+);
+
 export const Portrait = ({ variant = "bw", className = "", testId = "portrait" }) => (
   <figure data-testid={testId} className={`relative ${className}`}>
     <div className="relative overflow-hidden rounded-2xl bg-[#EDF0F5] shadow-[0_20px_50px_-28px_rgba(30,58,107,0.45)]">

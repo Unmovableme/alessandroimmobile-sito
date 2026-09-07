@@ -91,10 +91,12 @@ export default function Finanza() {
         <TintBand testId="finanza-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            Sistemi di reporting/controllo su gruppi multi-paese, ristrutturazioni con piani
-            industriali e rinegoziazione debito, direzione finanziaria in società operative;
-            affiancamento startup/PMI su struttura raccolta, strumenti, investitori; nelle cessioni
-            e acquisizioni, valutazione d'azienda e struttura finanziaria dell'operazione.
+            Sistemi di reporting e controllo su gruppi multi-paese, ristrutturazioni con piani
+            industriali, direzione finanziaria in società operative.
+          </Body>
+          <Body>
+            Affiancamento startup e PMI su struttura della raccolta, strumenti, investitori. Nelle
+            cessioni e acquisizioni, valutazione d'azienda e struttura finanziaria dell'operazione.
           </Body>
         </TintBand>
 

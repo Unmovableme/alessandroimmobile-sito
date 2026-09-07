@@ -96,11 +96,13 @@ export default function AssettiSocietari() {
         <TintBand testId="assetti-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            Ruolo di regia sopra i professionisti (notaio, avvocato, fiscalista, esperto,
-            consulente del lavoro); definisce l'obiettivo con chi decide, sceglie la struttura,
-            coordina, verifica coerenza fino all'atto; perizia di stima affidata ad advisor
-            indipendente; nelle cessioni e acquisizioni, negoziazione diretta con la controparte
-            esterna.
+            Regia sopra i professionisti coinvolti: notaio, avvocato, fiscalista, esperto,
+            consulente del lavoro. Definizione dell'obiettivo con chi decide, scelta della
+            struttura, coordinamento fino all'atto.
+          </Body>
+          <Body>
+            Perizia di stima affidata ad advisor indipendente. Nelle cessioni e acquisizioni,
+            negoziazione diretta con la controparte esterna.
           </Body>
         </TintBand>
       </PageContainer>

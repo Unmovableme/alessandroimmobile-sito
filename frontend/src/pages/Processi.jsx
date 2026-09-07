@@ -94,14 +94,15 @@ export default function Processi() {
         <TintBand testId="processi-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            Sui processi porto una lunga esperienza maturata in una primaria società di consulenza
-            internazionale, su processi finance per grandi banche e corporate, poi mappatura,
-            reingegnerizzazione e riorganizzazione di funzioni in gruppi bancari e aziende di
-            produzione e logistica. Per le startup l'esperienza è diretta: sono founder e investitore
-            in startup che nascono con l'intelligenza artificiale integrata nel prodotto fin dal primo
-            giorno. Il lavoro più recente sull'AI applicata ai processi delle aziende nasce nel
-            percorso istituzionale con l'Osservatorio Intelligenza Artificiale e Trasformazione
-            Digitale dell'ODCEC di Torino.
+            Sui processi porto l'esperienza di una primaria società di consulenza internazionale,
+            su processi finance per banche e corporate, poi mappatura e riorganizzazione di
+            funzioni in gruppi bancari e aziende di produzione e logistica.
+          </Body>
+          <Body>
+            Per le startup l'esperienza è diretta: sono founder e investitore in startup che
+            nascono con l'AI integrata nel prodotto. Il lavoro più recente sull'AI applicata ai
+            processi nasce nell'Osservatorio Intelligenza Artificiale e Trasformazione Digitale
+            dell'ODCEC di Torino.
           </Body>
         </TintBand>
       </PageContainer>

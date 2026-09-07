@@ -287,6 +287,12 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Home.jsx: sottotitolo eyebrow "PER AZIENDE E STARTUP" sotto il SectionTitle (-mt-6 mb-8, grigio tenue uppercase).
 - Celle griglia: struttura a blocchi — numero "01".."04" (padStart da indice), titolo serif navy text-2xl senza punto finale (replace(/\.$/,"")), corpo testo separato (trim), link "Scopri di più" ancorato in basso. Divisori griglia e resto pagina invariati.
 
+## Restyling "muro di testo" + InsightCard (07/09/2026)
+- Editorial.jsx: nuovo componente `InsightCard` (stile scheda Evidenza — bg #F4F6FA, border #E5EAF3, rounded-xl, virgoletta decorativa navy/25, blockquote serif italic navy — ma SENZA attribuzione; props: children, testId).
+- Bande "Come lavoro" spezzate in due paragrafi su Assetti, Processi, Finanza (testi aggiornati da prompt).
+- MeA.jsx: Sell side "Come lavoro" e "Cosa serve" in due paragrafi; Buy side "Come lavoro" in tre paragrafi; "Dove sta il valore" di entrambe le sezioni convertito in InsightCard (testId mea-sellside-insight / mea-buyside-insight), testo invariato.
+- File modificati: components/Editorial.jsx, pages/AssettiSocietari.jsx, pages/Processi.jsx, pages/Finanza.jsx, pages/MeA.jsx.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
