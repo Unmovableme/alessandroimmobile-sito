@@ -33,7 +33,7 @@ export default function Contatti() {
         title="Contatti · Alessandro Immobile"
         description="Scrivimi direttamente, senza moduli da compilare. Rispondo io. Email e LinkedIn di Alessandro Immobile."
       />
-      <main data-testid="contatti-page" className="pb-24 md:pb-32">
+      <main data-testid="contatti-page" className="pb-16 md:pb-20">
         <ImmersiveHero
           eyebrow="Un confronto diretto"
           title="Contatti"
@@ -62,7 +62,7 @@ export default function Contatti() {
             <a
               href={`mailto:${EMAIL}`}
               data-testid="contatti-email-link"
-              className="group mt-12 inline-flex items-center gap-2 rounded-md bg-[#1B2A4A] px-7 py-3 text-base md:text-lg font-medium text-white transition-colors duration-300 hover:bg-[#22345a]"
+              className="group mt-8 inline-flex items-center gap-2 rounded-md bg-[#1B2A4A] px-7 py-3 text-base md:text-lg font-medium text-white transition-colors duration-300 hover:bg-[#22345a]"
             >
               Scrivimi
               <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-1">
@@ -77,7 +77,7 @@ export default function Contatti() {
               target="_blank"
               rel="noopener noreferrer"
               testId="contatti-linkedin-link"
-              className="mt-6"
+              className="mt-6 pl-7"
               labelClassName="text-lg"
             >
               LinkedIn
@@ -85,7 +85,7 @@ export default function Contatti() {
           </FadeIn>
 
           {/* ---------- Prenota una call ---------- */}
-          <section data-testid="prenota-call-section" className="mt-16 md:mt-20 border-t border-navy/15 pt-12 md:pt-16">
+          <section data-testid="prenota-call-section" className="mt-12 md:mt-14 border-t border-navy/15 pt-8 md:pt-10">
           <FadeIn>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-navy leading-tight">
               Prenota una call
@@ -124,7 +124,7 @@ export default function Contatti() {
             </p>
           </FadeIn>
 
-          <div className="mt-12 space-y-8">
+          <div className="mt-8 space-y-8">
             {formats.map((f, i) => (
               <FadeIn key={f.title} delay={i * 0.05}>
                 <div data-testid={`prenota-formato-desc-${i}`}>
@@ -138,7 +138,7 @@ export default function Contatti() {
           </div>
 
           <FadeIn>
-            <p className="mt-12 text-base leading-relaxed text-gray-500">
+            <p className="mt-8 text-base leading-relaxed text-gray-500">
               Per i formati a pagamento, dopo la prenotazione compaiono IBAN e causale per il
               bonifico, da effettuare prima della call. Ricevuta la prenotazione, confermo
               l'appuntamento via email.

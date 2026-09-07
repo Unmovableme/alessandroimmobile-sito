@@ -229,7 +229,7 @@ export default function CaseStudy() {
         title="Case study · Alessandro Immobile"
         description="Sette situazioni reali su assetti societari, processi, finanza e M&A: per aziende e startup, dalla riorganizzazione di gruppo alla valutazione come base della trattativa."
       />
-      <main data-testid="case-study-page" className="pb-24 md:pb-32">
+      <main data-testid="case-study-page" className="pb-16 md:pb-20">
         <ImmersiveHero
           eyebrow="Assetti societari · Processi · Finanza · M&A"
           title="Case study"
@@ -261,7 +261,7 @@ export default function CaseStudy() {
         </div>
 
         {focusedGroup && !revealAll && (
-          <div className="mx-auto max-w-3xl px-6 mt-16 md:mt-20">
+          <div className="mx-auto max-w-3xl px-6 mt-12 md:mt-14">
             <button
               type="button"
               onClick={() => setRevealAll(true)}

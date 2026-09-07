@@ -82,7 +82,7 @@ export default function Percorso() {
         title="Percorso · Alessandro Immobile"
         description="Dal 1996 a oggi: studio e prime esperienze, consulenza per gruppi bancari e imprese industriali, ruoli esecutivi e di governo, startup e venture."
       />
-      <main data-testid="percorso-page" className="pb-24 md:pb-32">
+      <main data-testid="percorso-page" className="pb-16 md:pb-20">
         <ImmersiveHero
           eyebrow="Dal 1996 a oggi"
           title="Percorso"
@@ -95,7 +95,7 @@ export default function Percorso() {
         <div className="mx-auto max-w-3xl px-6 mt-10 md:mt-20">
           <div className="border-l border-navy/25 pl-8" data-testid="percorso-timeline">
           {stages.map((s, i) => (
-            <FadeIn key={s.title} delay={i * 0.04} className={i < stages.length - 1 ? "pb-16" : ""}>
+            <FadeIn key={s.title} delay={i * 0.04} className={i < stages.length - 1 ? "pb-10" : ""}>
               <div className="relative" data-testid={`timeline-stage-${i + 1}`}>
                 <span
                   aria-hidden
@@ -111,7 +111,7 @@ export default function Percorso() {
           ))}
         </div>
 
-        <section data-testid="percorso-pubblicazioni" id="pubblicazioni" className="mt-24 md:mt-28 scroll-mt-24">
+        <section data-testid="percorso-pubblicazioni" id="pubblicazioni" className="mt-16 md:mt-20 scroll-mt-24">
           <FadeIn>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
               Pubblicazioni
