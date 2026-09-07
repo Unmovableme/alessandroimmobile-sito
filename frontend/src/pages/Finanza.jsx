@@ -1,5 +1,5 @@
 import { Seo } from "@/components/Seo";
-import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink } from "@/components/Editorial";
+import { PageContainer, PageTitle, Lead, Body, SectionTitle, SectionJump, Descriptor, DeepLink, TintBand, BandTitle, PullQuote, FadeIn, ArrowLink, TopicItem } from "@/components/Editorial";
 
 export default function Finanza() {
   return (
@@ -38,10 +38,12 @@ export default function Finanza() {
           risposta, in questi casi, è spesso un progetto di revisione dei processi, di introduzione
           dell'intelligenza artificiale, di efficienza: i dati finanziari ne sono un pezzo.
         </Body>
-        <Body>
-          Budget e controllo di gestione: un piano che si confronta con i risultati ogni mese. Cash
-          flow e tesoreria: la cassa vista con settimane di anticipo.
-        </Body>
+        <TopicItem n="01" title="Budget e controllo di gestione" testId="finanza-topic-1">
+          Un piano che si confronta con i risultati ogni mese.
+        </TopicItem>
+        <TopicItem n="02" title="Cash flow e tesoreria" testId="finanza-topic-2">
+          La cassa vista con settimane di anticipo.
+        </TopicItem>
         <Body>
           Il bisogno emerge spesso subito dopo un'operazione societaria: una trasformazione, una
           scissione, un ingresso di soci cambiano il modo in cui l'impresa deve leggere e comunicare
@@ -62,22 +64,20 @@ export default function Finanza() {
 
         <SectionTitle id="startup">Startup</SectionTitle>
         <Descriptor>Capitale da raccogliere prima che il fatturato lo giustifichi.</Descriptor>
-        <Body>
-          Il percorso di raccolta si disegna per fasi, con obiettivi e strumenti diversi da una fase
-          all'altra.
-        </Body>
-        <Body>
-          Strumenti convertibili e aumenti di capitale: la scelta dipende dal contesto, dalla fase e
-          dagli investitori a cui ci si rivolge.
-        </Body>
-        <Body>
-          Misurare la capacità di attrarre investimenti, e lavorare per costruirla: cosa manca
-          perché la startup sia leggibile a chi valuta se investire, e cosa fare per colmarlo.
-        </Body>
-        <Body>
-          Relazione con gli investitori: chi ha già messo capitale riceve aggiornamenti regolari,
-          con la stessa cura riservata al round successivo.
-        </Body>
+        <TopicItem n="01" title="Percorso di raccolta per fasi" testId="finanza-startup-topic-1">
+          Obiettivi e strumenti diversi da una fase all'altra.
+        </TopicItem>
+        <TopicItem n="02" title="Strumenti convertibili e aumenti di capitale" testId="finanza-startup-topic-2">
+          La scelta dipende dal contesto, dalla fase e dagli investitori a cui ci si rivolge.
+        </TopicItem>
+        <TopicItem n="03" title="Capacità di attrarre investimenti" testId="finanza-startup-topic-3">
+          Cosa manca perché la startup sia leggibile a chi valuta se investire, e cosa fare per
+          colmarlo.
+        </TopicItem>
+        <TopicItem n="04" title="Relazione con gli investitori" testId="finanza-startup-topic-4">
+          Chi ha già messo capitale riceve aggiornamenti regolari, con la stessa cura riservata al
+          round successivo.
+        </TopicItem>
         <DeepLink to="/quanto-vali-quanto-raccogli" testId="finanza-deeplink-quantovali" label="Approfondimento">
           Prima del round: sapere quanto vali e quanto puoi raccogliere
         </DeepLink>
@@ -91,10 +91,12 @@ export default function Finanza() {
         <TintBand testId="finanza-come-lavoro">
           <BandTitle>Come lavoro</BandTitle>
           <Body>
-            Sistemi di reporting/controllo su gruppi multi-paese, ristrutturazioni con piani
-            industriali e rinegoziazione debito, direzione finanziaria in società operative;
-            affiancamento startup/PMI su struttura raccolta, strumenti, investitori; nelle cessioni
-            e acquisizioni, valutazione d'azienda e struttura finanziaria dell'operazione.
+            Sistemi di reporting e controllo su gruppi multi-paese, ristrutturazioni con piani
+            industriali, direzione finanziaria in società operative.
+          </Body>
+          <Body>
+            Affiancamento startup e PMI su struttura della raccolta, strumenti, investitori. Nelle
+            cessioni e acquisizioni, valutazione d'azienda e struttura finanziaria dell'operazione.
           </Body>
         </TintBand>
 
