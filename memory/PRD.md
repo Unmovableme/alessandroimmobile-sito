@@ -327,6 +327,9 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Applicata solo la parte genuina: `mt-10 md:mt-20` → `mt-10 md:mt-14` in CaseStudy.jsx:241, Percorso.jsx:95, Referenze.jsx:86 (offset contenuto dopo hero).
 - NON applicati (falsi positivi da grep): doppie conversioni di valori già convertiti (pb-16 md:pb-20, mt-16 md:mt-20) e offset ancore scroll-mt-28/scroll-mt-24 (legati all'altezza dell'header fisso, non al ritmo verticale). In attesa di eventuale conferma utente.
 
+## Addendum finale Percorso (07/09/2026)
+- Percorso.jsx sezione Pubblicazioni: mt-16 md:mt-20 → mt-12 md:mt-14 (scroll-mt-24 preservato, come da nota utente).
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.

@@ -111,7 +111,7 @@ export default function Percorso() {
           ))}
         </div>
 
-        <section data-testid="percorso-pubblicazioni" id="pubblicazioni" className="mt-16 md:mt-20 scroll-mt-24">
+        <section data-testid="percorso-pubblicazioni" id="pubblicazioni" className="mt-12 md:mt-14 scroll-mt-24">
           <FadeIn>
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 leading-tight">
               Pubblicazioni
