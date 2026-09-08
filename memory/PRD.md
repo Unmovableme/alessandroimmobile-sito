@@ -323,6 +323,10 @@ Title + meta description coerenti per ogni pagina via Helmet. lang="it".
 - Tabella di conversione applicata (sed a 2 passi con placeholder per evitare catene): mt-28→mt-16, mt-24 md:mt-28→mt-16 md:mt-20, mt-24→mt-16, mt-20 md:mt-24→mt-14 md:mt-16, mt-20→mt-14, mt-16 md:mt-20→mt-12 md:mt-14, mt-12→mt-8, pb-24 md:pb-32→pb-16 md:pb-20, pb-16 md:pb-24→pb-10 md:pb-14, pb-16→pb-10, pb-14 md:pb-16→pb-10 md:pb-12, py-14 md:py-16→py-10 md:py-12, pt-12 md:pt-16→pt-8 md:pt-10. File: CaseStudy, Contatti, Home, MetricheEStatuto, Percorso, Referenze. scroll-mt-24/28 protetti (offset ancore). Assetti/Finanza/MeA/Processi/QuandoIlProblemaArriva NON toccati per indicazione utente.
 - Contatti.jsx: link LinkedIn ArrowLink con pl-7 per allinearlo al testo del bottone Scrivimi (px-7).
 
+## Addendum spaziatura (07/09/2026)
+- Applicata solo la parte genuina: `mt-10 md:mt-20` → `mt-10 md:mt-14` in CaseStudy.jsx:241, Percorso.jsx:95, Referenze.jsx:86 (offset contenuto dopo hero).
+- NON applicati (falsi positivi da grep): doppie conversioni di valori già convertiti (pb-16 md:pb-20, mt-16 md:mt-20) e offset ancore scroll-mt-28/scroll-mt-24 (legati all'altezza dell'header fisso, non al ritmo verticale). In attesa di eventuale conferma utente.
+
 ## Backlog / note aperte (dal documento)
 - P1: sostituire email provvisoria alessandro.immobile@gmail.com con indirizzo su dominio proprio quando disponibile.
 - P2: sezione "Alcuni esempi" per criterio Processi/Finanza/Startup quando disponibile materiale autorizzato.
